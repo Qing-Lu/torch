@@ -133,6 +133,7 @@ Audio
 
 Natural Language Processing
 ------------
+* nn - Neural language models such as ones defined in [Natural Language Processing (almost) from Scratch](http://arxiv.org/abs/1103.0398) can be implemented using the nn package. nn.LookupTable is useful in this regard.
 
 Input/Output
 ------------
