@@ -14,7 +14,7 @@ A quick page for everything Torch.
   * [Audio](#audio)
   * [Natural Language Processing](#natural-language-processing)
   * [Input/Output](#input/output)
-  * [Distributed Computing / Parallel Processing](#distribute-computing-/-parallel-processing)
+  * [Distributed Computing / Parallel Processing](#distributed-computing--parallel-processing)
   * [Alternative REPLs](#alternative-repls)
   * [Interfaces to third-party libraries](#interfaces-to-third-party-libraries)
   * [Asynchronous paradigm - (like nodejs)](#asynchronous-paradigm---like-nodejs)
