@@ -83,6 +83,7 @@ Data formats
 * LuaXML - a module that maps between Lua and XML without much ado
 * LuaZip - Library for reading files inside zip files
 * MIDI - Reading, writing and manipulating MIDI data
+* audio - Loads as Tensors, all audio formats supported by libsox (mp3, wav, aac, ogg, flac, etc.)
 
 Machine Learning
 ------------
