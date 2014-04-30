@@ -1,7 +1,7 @@
 A quick page for everything Torch.
 
 * [Newbies](#newbies)
-* [Installing Torch](#installing-torch)
+* [Installing and Running Torch](#installing-and-running-torch)
 * [Installing Packages](#installing-packages)
 * [Tutorials, Demos by Category](#tutorials-demos-by-category)
 * [Loading popular datasets](#loading-popular-datasets)
@@ -40,15 +40,20 @@ Newbies
 6. Create your own package
 7. Contribute! :)
 
-Installing Torch
-=============
-
-OSX and Ubuntu:
+Installing and Running Torch
+============================
+OSX and Ubuntu
 ---------------
 Run the commands to install Torch globally:
 ```
 curl -sk https://raw.githubusercontent.com/torch/ezinstall/master/install-deps | bash
 curl -sk https://raw.githubusercontent.com/torch/ezinstall/master/install-luajit+torch | bash
+luarocks install env
+```
+
+Run torch using the command
+```
+luajit -lenv
 ```
 
 iOS
