@@ -113,7 +113,11 @@ Computer Vision
 * fex - A package for feature extraction in Torch. Provides SIFT and dSIFT modules. 
 * imgraph - An image/graph library for Torch. This package provides routines to construct graphs on images, segment them, build trees out of them, and convert them back to images.
 * videograph - A video/graph library for Torch. This package provides routines to construct graphs on videos, segment them, build trees out of them, and convert them back to videos.
-* opencv wrapper by @marcoscoffier: https://github.com/marcoscoffier/lua---opencv
+* [opencv wrapper](https://github.com/marcoscoffier/lua---opencv) by @marcoscoffier
+* [saliency](https://github.com/marcoscoffier/torch-saliency) - code and tools around integral images. A library for finding interest points based on fast integral histograms. 
+* [stitch](https://github.com/marcoscoffier/lua---stitch) - allows us to use hugin to stitch images and apply same stitching to a video sequence
+* [sfm](https://github.com/marcoscoffier/lua---sfm) - A bundle adjustment/structure from motion package
+* [optical-flow](https://github.com/marcoscoffier/optical-flow) - This is a simple wrapper around the optical-flow algorithm developed/published by C.Liu
 
 Images
 ------------
