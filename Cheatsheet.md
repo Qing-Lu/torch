@@ -3,6 +3,8 @@ A quick page for everything Torch.
 * [Newbies](#newbies)
 * [Installing Torch](#installing-torch)
 * [Installing Packages](#installing-packages)
+* [Tutorials, Demos by Category](#tutorials-demos-by-category)
+* [Loading popular datasets](#loading-popular-datasets)
 * [List of Packages by Category](#list-of-packages-by-category)
   * [General Math](#general-math)
   * [Data formats](#data-formats)
@@ -25,7 +27,6 @@ A quick page for everything Torch.
 * [Creating your own package](#creating-your-own-package)
 * [Debuggers / Visual Debuggers / IDEs](#debuggers--visual-debuggers--ides)
 * [GPU Support](#gpu-support)
-* [Tutorials, Demos by Category](#tutorials-demos-by-category)
 * [Gotchas](#gotchas)
 
 Newbies
@@ -63,6 +64,18 @@ Given a package name, you can install it at your terminal with:
 ```
 luarocks install [packagename]
 ```
+
+Loading popular datasets
+============================
+[torch-datasets](https://github.com/rosejn/torch-datasets) - Scripts to load several popular datasets including:
+* BSR 500
+* CIFAR-10
+* COIL
+* Street View House Numbers
+* MNIST
+* NORB
+
+Also look at the forks of this repository, if anyone added support for more datasets in their branches.
 
 List of Packages by Category
 ============================
