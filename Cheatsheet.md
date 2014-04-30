@@ -97,6 +97,7 @@ Data formats
 * LuaZip - Library for reading files inside zip files
 * MIDI - Reading, writing and manipulating MIDI data
 * audio - Loads as Tensors, all audio formats supported by libsox (mp3, wav, aac, ogg, flac, etc.)
+* [csv2torchdatasets](https://github.com/andreirusu/csv2torch-datasets) - Simple Torch7 tool for converting Kaggle-style csv files to torch-datasets.
 
 Machine Learning
 ------------
@@ -111,6 +112,7 @@ Machine Learning
 * [vowpalwabbit](https://github.com/clementfarabet/vowpal_wabbit) - An old vowpalwabbit interface to torch.
 * [OpenGM](https://github.com/clementfarabet/lua---opengm) - OpenGM is a C++ library for graphical modeling, and inference. The Lua bindings provide a simple way of describing graphs, from Lua, and then optimizing them with OpenGM.
 * [sphagetti](https://github.com/MichaelMathieu/lua---spaghetti) - Spaghetti (sparse linear) module for torch7 by @MichaelMathieu
+* [LuaSHKit](https://github.com/ocallaco/LuaSHkit) - A lua wrapper around the Locality sensitive hashing library SHKit
 
 Visualization
 ------------
@@ -139,6 +141,9 @@ Computer Vision
 * [depth-estimation2](https://github.com/MichaelMathieu/depth-estimation2) - Depth estimation scripts by @MichaelMathieu
 * [OpenCV 2.4](https://github.com/MichaelMathieu/lua---opencv24) - a simple wrapper for certain funcs from the OpenCV library, version 2.4
 * [sfm2](https://github.com/MichaelMathieu/lua---sfm2) - OpenCV based SFM functions for Torch
+* [OverFeat](https://github.com/sermanet/OverFeat) - A quick feature extractor based on Overfeat with pretty clunky torch bindings
+* [Overfeat-torch](https://github.com/jhjin/overfeat-torch) - Better torch bindings for Torch by @jhjin
+
 
 Images
 ------------
@@ -171,8 +176,8 @@ Distributed Computing / Parallel Processing
 ------------
 * parallel - A package to easily fork processes, for Torch
 * thmap - Map jobs onto th nodes.
-* threads - A FFI threading system
-
+* threads - A FFI threading system based on SDL2 by Ronan Collobert
+* [lua-llthreads](https://github.com/Neopallium/lua-llthreads) - Low-Level threads(pthreads or WIN32 threads) for Lua.
 Alternative REPLs
 ------------
 * trepl - An embedabble, Lua-only REPL for Torch.
@@ -180,6 +185,7 @@ Alternative REPLs
 
 Utility libraries
 ------------
+* [torch-dokx](https://github.com/d11/torch-dokx) - An awesome automatic documentation generator for torch7
 * argcheck - Advanced function argument checker
 * buffer - A buffer object for LuaJIT (to get around LuaJIT limitations)
 * class - Simple object-oriented system for Lua, with classes supporting inheritance. 
@@ -207,6 +213,7 @@ Utility libraries
 * SocialLua - Library for interfacing with many sites and services
 * twitter - A Twitter library for Lua.
 * uuid - Generates uuids in pure Lua
+* [torch-ipython](https://github.com/d11/torch-ipython) - An ipython kernel for torch
 
 Interfaces to third-party libraries
 ------------
@@ -218,6 +225,7 @@ Interfaces to third-party libraries
 * lzmq-ffi - Lua bindings to ZeroMQ
 * Readline - Interface to the readline library
 * LuaSec - A binding for OpenSSL library to provide TLS/SSL communication over LuaSocket.
+* [PLPlot-FFI](https://github.com/sergomezcol/plplot-ffi) - LuaJIT wrapper for PLplot
 
 Asynchronous paradigm - (like nodejs)
 ------------
