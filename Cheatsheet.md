@@ -69,12 +69,12 @@ Loading popular datasets
 ============================
 * [MNIST Loader](https://github.com/andresy/mnist) - by Ronan Collobert
 * [torch-datasets](https://github.com/rosejn/torch-datasets) - Scripts to load several popular datasets including:
-* BSR 500
-* CIFAR-10
-* COIL
-* Street View House Numbers
-* MNIST
-* NORB
+  * BSR 500
+  * CIFAR-10
+  * COIL
+  * Street View House Numbers
+  * MNIST
+  * NORB
 
 Also look at the forks of this repository, if anyone added support for more datasets in their branches.
 
