@@ -115,7 +115,6 @@ Machine Learning
 * [sphagetti](https://github.com/MichaelMathieu/lua---spaghetti) - Spaghetti (sparse linear) module for torch7 by @MichaelMathieu
 * [LuaSHKit](https://github.com/ocallaco/LuaSHkit) - A lua wrapper around the Locality sensitive hashing library SHKit
 * [kernel smoothing](https://github.com/rlowrance/kernel-smoothers) - KNN, kernel-weighted average, local linear regression smoothers
-* [Recpool](https://github.com/soumith/recpool) - Reconstructing pooling networks by Jason Rolfe, this branch has some fixes.
 
 Visualization
 ------------
@@ -308,24 +307,12 @@ Tutorials
 
 Demos
 ------
-Original demos repository, lots of demos:
-
-https://github.com/clementfarabet/torch7-demos
-
-Better maintained and more updated repository by Purdue e-Lab:
-
-https://github.com/e-lab/torch7-demos
-
-Another face detector by @jonathantompson:
-https://github.com/jonathantompson/geiger_facedetector
-
-Some body tracking stuff by @jonathantompson:
-
-https://github.com/jonathantompson/cbody
-
-Galaxy-Zoo training (CUDA demo):
-
-https://github.com/soumith/galaxyzoo
+* [Original demos repository, lots of demos](https://github.com/clementfarabet/torch7-demos)
+* [Better maintained and more updated repository by Purdue e-Lab](https://github.com/e-lab/torch7-demos)
+* [Another face detector by @jonathantompson](https://github.com/jonathantompson/geiger_facedetector)
+* [Some body tracking stuff by @jonathantompson](https://github.com/jonathantompson/cbody)
+* [Galaxy-Zoo training (CUDA demo)](https://github.com/soumith/galaxyzoo)
+* [Recpool](https://github.com/soumith/recpool) - Reconstructing pooling networks by Jason Rolfe, this branch has some fixes.
 
 Gotchas
 =======
