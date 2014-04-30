@@ -24,6 +24,7 @@ A quick page for everything Torch.
   * [Security](#security)
   * [CUDA](#cuda)
   * [OpenCL](#opencl)
+  * [Miscellaneous](#miscellaneous)
 * [Creating your own package](#creating-your-own-package)
 * [Debuggers / Visual Debuggers / IDEs](#debuggers--visual-debuggers--ides)
 * [GPU Support](#gpu-support)
@@ -92,6 +93,7 @@ Demos
 * [Some body tracking stuff by @jonathantompson](https://github.com/jonathantompson/cbody)
 * [Galaxy-Zoo training (CUDA demo)](https://github.com/soumith/galaxyzoo)
 * [Recpool](https://github.com/soumith/recpool) - Reconstructing pooling networks by Jason Rolfe, this branch has some fixes.
+* [Music Tagging](https://github.com/mbhenaff/MusicTagging) - Music Tagging scripts for torch7 by Mikael Henaff
 
 List of Packages by Category
 ============================
@@ -178,7 +180,6 @@ Videos
 Audio
 ------------
 * audio - Audio library for Torch-7. Support audio I/O (Load files) Common audio operations (Short-time Fourier transforms, Spectrograms).
-* [Music Tagging](https://github.com/mbhenaff/MusicTagging) - Music Tagging scripts for torch7 by Mikael Henaff
 * [lua-sndfile](https://github.com/andresy/lua---sndfile) - An interface to libsndfile 
 * [lua-pa](https://github.com/andresy/lua---pa) - Interface to PortAudio library
 
