@@ -78,6 +78,21 @@ Loading popular datasets
 
 Also look at the forks of this repository, if anyone added support for more datasets in their branches.
 
+Tutorials, Demos by Category
+===================================
+Tutorials
+---------
+* http://code.cogbits.com/wiki/doku.php?id=start
+
+Demos
+------
+* [Original demos repository, lots of demos](https://github.com/clementfarabet/torch7-demos)
+* [Better maintained and more updated repository by Purdue e-Lab](https://github.com/e-lab/torch7-demos)
+* [Another face detector by @jonathantompson](https://github.com/jonathantompson/geiger_facedetector)
+* [Some body tracking stuff by @jonathantompson](https://github.com/jonathantompson/cbody)
+* [Galaxy-Zoo training (CUDA demo)](https://github.com/soumith/galaxyzoo)
+* [Recpool](https://github.com/soumith/recpool) - Reconstructing pooling networks by Jason Rolfe, this branch has some fixes.
+
 List of Packages by Category
 ============================
 General Math
@@ -298,21 +313,6 @@ There is barely any OpenCL support.
 The only known public OpenCL code is by @jonathantompson over here:
 
 https://github.com/jonathantompson/jtorch
-
-Tutorials, Demos by Category
-===================================
-Tutorials
----------
-* http://code.cogbits.com/wiki/doku.php?id=start
-
-Demos
-------
-* [Original demos repository, lots of demos](https://github.com/clementfarabet/torch7-demos)
-* [Better maintained and more updated repository by Purdue e-Lab](https://github.com/e-lab/torch7-demos)
-* [Another face detector by @jonathantompson](https://github.com/jonathantompson/geiger_facedetector)
-* [Some body tracking stuff by @jonathantompson](https://github.com/jonathantompson/cbody)
-* [Galaxy-Zoo training (CUDA demo)](https://github.com/soumith/galaxyzoo)
-* [Recpool](https://github.com/soumith/recpool) - Reconstructing pooling networks by Jason Rolfe, this branch has some fixes.
 
 Gotchas
 =======
