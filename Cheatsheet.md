@@ -15,7 +15,7 @@ A quick page for everything Torch.
   * [Videos](#videos)
   * [Audio](#audio)
   * [Natural Language Processing](#natural-language-processing)
-  * [Input/Output](#input/output)
+  * [Sensor Input/Output](#sensor-inputoutput)
   * [Distributed Computing / Parallel Processing](#distributed-computing--parallel-processing)
   * [Alternative REPLs](#alternative-repls)
   * [Interfaces to third-party libraries](#interfaces-to-third-party-libraries)
