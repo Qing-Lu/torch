@@ -67,7 +67,8 @@ luarocks install [packagename]
 
 Loading popular datasets
 ============================
-[torch-datasets](https://github.com/rosejn/torch-datasets) - Scripts to load several popular datasets including:
+* [MNIST Loader](https://github.com/andresy/mnist) - by Ronan Collobert
+* [torch-datasets](https://github.com/rosejn/torch-datasets) - Scripts to load several popular datasets including:
 * BSR 500
 * CIFAR-10
 * COIL
@@ -113,6 +114,8 @@ Machine Learning
 * [OpenGM](https://github.com/clementfarabet/lua---opengm) - OpenGM is a C++ library for graphical modeling, and inference. The Lua bindings provide a simple way of describing graphs, from Lua, and then optimizing them with OpenGM.
 * [sphagetti](https://github.com/MichaelMathieu/lua---spaghetti) - Spaghetti (sparse linear) module for torch7 by @MichaelMathieu
 * [LuaSHKit](https://github.com/ocallaco/LuaSHkit) - A lua wrapper around the Locality sensitive hashing library SHKit
+* [kernel smoothing](https://github.com/rlowrance/kernel-smoothers) - KNN, kernel-weighted average, local linear regression smoothers
+* [Recpool](https://github.com/soumith/recpool) - Reconstructing pooling networks by Jason Rolfe, this branch has some fixes.
 
 Visualization
 ------------
@@ -161,6 +164,9 @@ Videos
 Audio
 ------------
 * audio - Audio library for Torch-7. Support audio I/O (Load files) Common audio operations (Short-time Fourier transforms, Spectrograms).
+* [Music Tagging](https://github.com/mbhenaff/MusicTagging) - Music Tagging scripts for torch7 by Mikael Henaff
+* [lua-sndfile](https://github.com/andresy/lua---sndfile) - An interface to libsndfile 
+* [lua-pa](https://github.com/andresy/lua---pa) - Interface to PortAudio library
 
 Natural Language Processing
 ------------
@@ -178,6 +184,8 @@ Distributed Computing / Parallel Processing
 * thmap - Map jobs onto th nodes.
 * threads - A FFI threading system based on SDL2 by Ronan Collobert
 * [lua-llthreads](https://github.com/Neopallium/lua-llthreads) - Low-Level threads(pthreads or WIN32 threads) for Lua.
+* [MPIT](https://github.com/sixin-zh/mpiT) - MPI for Torch by Sixin Zhang
+
 Alternative REPLs
 ------------
 * trepl - An embedabble, Lua-only REPL for Torch.
@@ -214,6 +222,7 @@ Utility libraries
 * twitter - A Twitter library for Lua.
 * uuid - Generates uuids in pure Lua
 * [torch-ipython](https://github.com/d11/torch-ipython) - An ipython kernel for torch
+* [net-toolkit](https://github.com/Atcold/net-toolkit) - This package allows to save and retrive to/from disk a lighter version of neural networks that is being trained by clearing out their gradients and states.
 
 Interfaces to third-party libraries
 ------------
@@ -250,6 +259,11 @@ CUDA
 OpenCL
 ------------
 * https://github.com/jonathantompson/jtorch
+
+Miscellaneous
+-------------
+Packages which I didn't know where to put
+* [re](https://github.com/rlowrance/re) - Real Estate software 
 
 
 Creating your own package
