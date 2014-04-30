@@ -113,6 +113,7 @@ Computer Vision
 * fex - A package for feature extraction in Torch. Provides SIFT and dSIFT modules. 
 * imgraph - An image/graph library for Torch. This package provides routines to construct graphs on images, segment them, build trees out of them, and convert them back to images.
 * videograph - A video/graph library for Torch. This package provides routines to construct graphs on videos, segment them, build trees out of them, and convert them back to videos.
+* opencv wrapper by @marcoscoffier: https://github.com/marcoscoffier/lua---opencv
 
 Images
 ------------
