@@ -99,20 +99,20 @@ General Math
 ------------
 * [torch](https://github.com/torch/torch7) - The core torch package. Apart from tensor operations, has convolutions, cross-correlations, basic linear algebra operations, eigen values/vectors etc.
 * [cephes](http://jucor.github.io/torch-cephes) - Cephes mathematical functions library, wrapped for Torch. Provides and wraps the 180+ special mathematical functions from the Cephes mathematical library, developed by Stephen L. Moshier. It is used, among many other places, at the heart of SciPy.
-* graph - Graph package for Torch
-* randomkit - Numpy's randomkit, wrapped for 
-* signal - A signal processing toolbox for Torch-7. FFT, DCT, Hilbert, cepstrums, stft
+* [graph](https://github.com/torch/graph) - Graph package for Torch
+* [randomkit](http://jucor.github.io/torch-randomkit/) - Numpy's randomkit, wrapped for 
+* [signal](http://soumith.ch/torch-signal/signal/) - A signal processing toolbox for Torch-7. FFT, DCT, Hilbert, cepstrums, stft
 
 Data formats
 ------------
-* csvigo - A CSV library, for Torch
-* hdf5 - Read and write Torch tensor data to and from Hierarchical Data Format files.
+* [csvigo](https://github.com/clementfarabet/lua---csv) - A CSV library, for Torch
+* [hdf5](https://github.com/d11/torch-hdf5) - Read and write Torch tensor data to and from Hierarchical Data Format files.
 * [lua-cjson](http://www.kyne.com.au/~mark/software/lua-cjson.php) - A fast JSON encoding/parsing module
-* mattorch - An interface between Matlab and Torch
+* [mattorch](https://github.com/clementfarabet/lua---mattorch) - An interface between Matlab and Torch
 * LuaXML - a module that maps between Lua and XML without much ado
 * LuaZip - Library for reading files inside zip files
 * MIDI - Reading, writing and manipulating MIDI data
-* audio - Loads as Tensors, all audio formats supported by libsox (mp3, wav, aac, ogg, flac, etc.)
+* [audio](https://github.com/soumith/lua---audio/) - Loads as Tensors, all audio formats supported by libsox (mp3, wav, aac, ogg, flac, etc.)
 * [csv2torchdatasets](https://github.com/andreirusu/csv2torch-datasets) - Simple Torch7 tool for converting Kaggle-style csv files to torch-datasets.
 
 Machine Learning
