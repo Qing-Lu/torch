@@ -55,6 +55,14 @@ Run torch using the command
 ```
 luajit -lenv
 ```
+If you need QT visualization, run torch using the command
+```
+qlua
+```
+If you need gfx.js visualization, run torch using the following command
+```
+luajit -lgfx.go
+```
 
 iOS
 ---------------
