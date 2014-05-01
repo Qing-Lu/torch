@@ -312,16 +312,14 @@ GPU Support
 ===========
 CUDA Support, CUDA examples
 --------------------------------
-* Torch: CUDA is supported by installing the package __cutorch__ . You get an additional tensor type torch.CudaTensor (just like torch.FloatTensor). CUDA double precision is not supported. Simultaneous use of multiple GPUs at the same time is also not supported, though you can get around this by constantly switching the device using cutorch.setDevice(opt.gpuid)
+* Torch: CUDA is supported by installing the package __cutorch__ . 
+  * You get an additional tensor type torch.CudaTensor (just like torch.FloatTensor). 
+  * CUDA double precision is not supported. 
+  * Simultaneous use of multiple GPUs at the same time is also not supported, though you can get around this by constantly switching the device using cutorch.setDevice(opt.gpuid)
 
 * NN: Install the package __cunn__
-
-__Caveats__: __SpatialConvolution__ is really slow on CUDA, instead use __SpatialConvolutionCUDA__ and __SpatialMaxPoolingCUDA__ modules. 
-These two modules only support batch mode, and take samples of format ( Depth x Height x Width x Batch ). So you might have to wrap the modules with __nn.Transpose__.
-
-Example of using SpatialConvolutionCUDA is here: 
-
-https://github.com/soumith/galaxyzoo
+  * __Caveats__: __SpatialConvolution__ is really slow on CUDA, instead use __SpatialConvolutionCUDA__ and __SpatialMaxPoolingCUDA__ modules. These two modules only support batch mode and square images, and take samples of format ( Depth x Height x Width x Batch ) instead of (Batch x Depth x Height x Width) which is the torch default. [So you might have to wrap the modules with __nn.Transpose__](https://gist.github.com/soumith/c5a7ac73e06aee39e48d).
+  * A more full example of using SpatialConvolutionCUDA is here: https://github.com/soumith/galaxyzoo
 
 OpenCL support, OpenCL examples
 --------------------------------
