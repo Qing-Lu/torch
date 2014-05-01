@@ -225,7 +225,7 @@ Sensor Input/Output
 
 Distributed Computing / Parallel Processing
 ------------
-* parallel - A package to easily fork processes, for Torch
+* parallel - A simple yet powerful parallel compute package for Torch. Provides a simple mechanism to dispatch and run Torch/Lua code as independent processes and communicate via ZeroMQ sockets. Processes can be forked locally or on remote machines (via ssh).
 * thmap - Map jobs onto th nodes.
 * threads - A FFI threading system based on SDL2 by Ronan Collobert
 * [lua-llthreads](https://github.com/Neopallium/lua-llthreads) - Low-Level threads(pthreads or WIN32 threads) for Lua.
