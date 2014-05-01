@@ -312,7 +312,7 @@ GPU Support
 ===========
 CUDA Support, CUDA examples
 --------------------------------
-* Torch: CUDA is supported by installing the package __cutorch__ . You get an additional tensor type torch.CudaTensor (just like torch.FloatTensor). CUDA double precision is not supported.
+* Torch: CUDA is supported by installing the package __cutorch__ . You get an additional tensor type torch.CudaTensor (just like torch.FloatTensor). CUDA double precision is not supported. Simultaneous use of multiple GPUs at the same time is also not supported, though you can get around this by constantly switching the device using cutorch.setDevice(opt.gpuid)
 
 * NN: Install the package __cunn__
 
