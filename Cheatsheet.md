@@ -100,11 +100,24 @@ Tutorials
 
 Demos
 ------
-* [Original demos repository, lots of demos](https://github.com/clementfarabet/torch7-demos)
-* [Better maintained and more updated repository by Purdue e-Lab](https://github.com/e-lab/torch7-demos)
+* [Better maintained and more updated demos repository by Purdue e-Lab](https://github.com/e-lab/torch7-demos)
+  * loading data
+  * tensors
+  * linear-regression, logistic-regression
+  * face detector (training and detection as separate demos)
+  * mst-based-segmenter
+  * train-a-digit-classifier
+  * train-autoencoder
+  * optical flow demo
+  * train-on-housenumbers
+  * train-on-cifar
+  * tracking with deep nets
+  * kinect demo
+  * filter-bank visualization
+  * saliency-networks
 * [Another face detector by @jonathantompson](https://github.com/jonathantompson/geiger_facedetector)
 * [Some body tracking stuff by @jonathantompson](https://github.com/jonathantompson/cbody)
-* [Galaxy-Zoo training (CUDA demo)](https://github.com/soumith/galaxyzoo)
+* [Training a Convnet for the Galaxy-Zoo Kaggle challenge(CUDA demo)](https://github.com/soumith/galaxyzoo)
 * [Recpool](https://github.com/soumith/recpool) - Reconstructing pooling networks by Jason Rolfe, this branch has some fixes.
 * [Music Tagging](https://github.com/mbhenaff/MusicTagging) - Music Tagging scripts for torch7 by Mikael Henaff
 
