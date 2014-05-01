@@ -9,12 +9,12 @@ A quick page for everything Torch.
 
  [Core Math](#general-math) | [Visualization](#visualization) | .
 ------------- | ------------- | ---------- 
-[Data formats I/O](#data-formats) | [Sensor I/O](#sensor-inputoutput) 
-[Machine Learning](#machine-learning)  | [Computer Vision](#computer-vision) | [NLP](#natural-language-processing)
-[CUDA](#cuda) | [OpenCL](#opencl) | [Parallel Processing](#distributed-computing--parallel-processing) 
-[Images](#images)  | [Videos](#videos) | [Audio](#audio)
-[Asynchronous](#asynchronous-paradigm---like-nodejs) | [Networking](#networking) | [Security](#security)
-[Alternative REPLs](#alternative-repls) | [Interfaces to third-party libs](#interfaces-to-third-party-libraries) | [Miscellaneous](#miscellaneous)
+**[Data formats I/O](#data-formats)** | **[Sensor I/O](#sensor-inputoutput)** 
+**[Machine Learning](#machine-learning)**  | **[Computer Vision](#computer-vision)** | [NLP](#natural-language-processing)
+**[CUDA](#cuda)** | **[Parallel Processing](#distributed-computing--parallel-processing)**| [OpenCL](#opencl) |  
+**[Images](#images)**  | **[Videos](#videos)** | **[Audio](#audio)**
+**[Asynchronous](#asynchronous-paradigm---like-nodejs)** | **[Networking](#networking)** | **[Security](#security)**
+[Alternative REPLs](#alternative-repls) | **[Interfaces to third-party libs](#interfaces-to-third-party-libraries)** | [Miscellaneous](#miscellaneous)
 
 * [Creating your own package](#creating-your-own-package)
 * [Debuggers / Visual Debuggers / IDEs](#debuggers--visual-debuggers--ides)
