@@ -129,6 +129,9 @@ Data formats
 * MIDI - Reading, writing and manipulating MIDI data
 * [audio](https://github.com/soumith/lua---audio/) - Loads as Tensors, all audio formats supported by libsox (mp3, wav, aac, ogg, flac, etc.)
 * [csv2torchdatasets](https://github.com/andreirusu/csv2torch-datasets) - Simple Torch7 tool for converting Kaggle-style csv files to torch-datasets.
+* [image](https://github.com/torch/image) - Loads png, jpg, ppm images
+* [graphicsmagick](https://github.com/clementfarabet/graphicsmagick) - A full Torch/C interface to GraphicsMagick's Wand API and to imagemagick commandline utility, loads all images thrown its way.
+* ffmpeg - A simple abstraction class, that uses ffmpeg to encode/decode videos from/to Torch Tensors
 
 Machine Learning
 ------------
