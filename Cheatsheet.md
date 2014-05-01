@@ -323,6 +323,10 @@ Debuggers / Visual Debuggers / IDEs
 * [ZeroBrane Studio](http://studio.zerobrane.com) -Provides a great IDE and visual debugging.
 * [zbs-torch](https://github.com/soumith/zbs-torch) - Use this to debug qlua based programs 
 
+I never used them, but look good on paper:
+* [LDT](http://www.eclipse.org/koneki/ldt/) - An eclipse plugin for Lua
+* [LuaEclipse](http://luaeclipse.luaforge.net/) - Another eclipse plugin for Lua
+
 GPU Support
 ===========
 CUDA Support, CUDA examples
