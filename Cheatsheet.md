@@ -100,7 +100,7 @@ Tutorials
 
 Demos
 ------
-* [Better maintained and more updated demos repository by Purdue e-Lab](https://github.com/e-lab/torch7-demos)
+* [Core torch7 demos repository](https://github.com/e-lab/torch7-demos). Maintained by Purdue's e-lab now. The [original](https://github.com/clementfarabet/torch7-demos) was populated by @clementfarabet and @rlowrance
   * loading data
   * tensors
   * linear-regression, logistic-regression
