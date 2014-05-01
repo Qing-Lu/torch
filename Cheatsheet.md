@@ -7,13 +7,14 @@ A quick page for everything Torch.
 * [Loading popular datasets](#loading-popular-datasets)
 * [List of Packages by Category](#list-of-packages-by-category)
 
- [Core Math](#general-math) | [Data formats I/O](#data-formats), [Sensor I/O](#sensor-inputoutput) | [Visualization](#visualization) 
+ [Core Math](#general-math) | [Visualization](#visualization) | .
 ------------- | ------------- | ---------- 
-[Machine Learning](#machine-learning)  | [Computer Vision](#computer-vision) | [Natural Language Processing](#natural-language-processing)
-[CUDA](#cuda) | [OpenCL](#opencl) | [Distributed Computing / Parallel Processing](#distributed-computing--parallel-processing) 
+[Data formats I/O](#data-formats) | [Sensor I/O](#sensor-inputoutput) 
+[Machine Learning](#machine-learning)  | [Computer Vision](#computer-vision) | [NLP](#natural-language-processing)
+[CUDA](#cuda) | [OpenCL](#opencl) | [Parallel Processing](#distributed-computing--parallel-processing) 
 [Images](#images)  | [Videos](#videos) | [Audio](#audio)
-[Asynchronous (like nodejs)](#asynchronous-paradigm---like-nodejs) | [Networking](#networking) | [Security](#security)
-[Alternative REPLs](#alternative-repls) | [Interfaces to third-party libraries](#interfaces-to-third-party-libraries) | [Miscellaneous](#miscellaneous)
+[Asynchronous](#asynchronous-paradigm---like-nodejs) | [Networking](#networking) | [Security](#security)
+[Alternative REPLs](#alternative-repls) | [Interfaces to third-party libs](#interfaces-to-third-party-libraries) | [Miscellaneous](#miscellaneous)
 
 * [Creating your own package](#creating-your-own-package)
 * [Debuggers / Visual Debuggers / IDEs](#debuggers--visual-debuggers--ides)
