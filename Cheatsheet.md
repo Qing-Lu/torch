@@ -34,10 +34,11 @@ Newbies
 =======
 1. Read this page end-to-end (especially the Gotchas)
 2. Install torch
-3. Look at the intro tutorial
+3. [Learn lua in 15 minutes](http://tylerneylon.com/a/learn-lua/)
+3. [Look at the tutorial](#tutorials-demos-by-category)
 4. Play around with the interpreter
 5. Create your own script
-6. Create your own package
+6. [Create your own package](#creating-your-own-package)
 7. Contribute! :)
 
 Installing and Running Torch
