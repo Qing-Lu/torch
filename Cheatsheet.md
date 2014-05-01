@@ -164,7 +164,6 @@ or
 
 * qtlua - Powerful QT interface to Lua
 * qttorch - QT interface to Torch
-
 * gnuplot - Torch interface to Gnuplot
 
 
