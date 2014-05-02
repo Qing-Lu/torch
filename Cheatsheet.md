@@ -130,6 +130,7 @@ Data formats
 * [hdf5](https://github.com/d11/torch-hdf5) - Read and write Torch tensor data to and from Hierarchical Data Format files.
 * [lua-cjson](http://www.kyne.com.au/~mark/software/lua-cjson.php) - A fast JSON encoding/parsing module
 * [mattorch](https://github.com/clementfarabet/lua---mattorch) - An interface between Matlab and Torch
+* [matio](https://github.com/soumith/matio-ffi.torch) - Package to load tensors from Matlab .mat files, without having matlab installed on your system. Needs open source libmatio.
 * LuaXML - a module that maps between Lua and XML without much ado
 * LuaZip - Library for reading files inside zip files
 * MIDI - Reading, writing and manipulating MIDI data
@@ -271,6 +272,7 @@ Interfaces to third-party libraries
 * Readline - Interface to the readline library
 * LuaSec - A binding for OpenSSL library to provide TLS/SSL communication over LuaSocket.
 * [PLPlot-FFI](https://github.com/sergomezcol/plplot-ffi) - LuaJIT wrapper for PLplot
+* [libmatio](https://github.com/soumith/matio-ffi.torch) - An FFI interface to libmatio and torch wrappers to load tensors as well.
 
 Asynchronous paradigm - (like nodejs)
 ------------
