@@ -222,6 +222,7 @@ Distributed Computing / Parallel Processing
 * threads - A FFI threading system based on SDL2 by Ronan Collobert
 * [lua-llthreads](https://github.com/Neopallium/lua-llthreads) - Low-Level threads(pthreads or WIN32 threads) for Lua.
 * [MPIT](https://github.com/sixin-zh/mpiT) - MPI for Torch by Sixin Zhang
+* [lua-mapreduce](https://github.com/pakozm/lua-mapreduce) - A map-reduce framework by Paco Zamora Martínez
 
 Alternative REPLs
 ------------
