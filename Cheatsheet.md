@@ -81,8 +81,8 @@ Loading popular datasets
   * Street View House Numbers
   * MNIST
   * NORB
+* [KITTI](https://github.com/Aysegul/torch-KITTI) - KITTI dataset loader by Aysegul Dundar
 
-Also look at the forks of this repository, if anyone added support for more datasets in their branches.
 
 Tutorials, Demos by Category
 ===================================
