@@ -7,9 +7,9 @@ A quick page for everything Torch.
 * [Loading popular datasets](#loading-popular-datasets)
 * [List of Packages by Category](#list-of-packages-by-category)
 
- [Core Math](#general-math) | [Visualization](#visualization) | .
+ [Core Math](#general-math) | [Visualization](#visualization) | **[Utility libraries](#utility-libraries)**
 ------------- | ------------- | ---------- 
-**[Data formats I/O](#data-formats)** | **[Sensor I/O](#sensor-inputoutput)** | **[Utility libraries](#utility-libraries)**
+**[Data formats I/O](#data-formats)** | **[Sensor I/O](#sensor-inputoutput)** | **[Databases](#databases)** 
 **[Machine Learning](#machine-learning)**  | **[Computer Vision](#computer-vision)** | [NLP](#natural-language-processing)
 **[Parallel Processing](#distributed-computing--parallel-processing)** | **[CUDA](#cuda)** | [OpenCL](#opencl) |  
 **[Images](#images)**  | **[Videos](#videos)** | **[Audio](#audio)**
@@ -268,7 +268,6 @@ Utility libraries
 * buffer - A buffer object for LuaJIT (to get around LuaJIT limitations)
 * curl - An interface to CURL.
 * eex - Torch extras from e-Lab
-* persist - A persisting table, built on Redis.
 * python - A wrapper to Python
 * [torch-ipython](https://github.com/d11/torch-ipython) - An ipython kernel for torch
 * restclient - A REST Client.
@@ -277,6 +276,19 @@ Utility libraries
 * util - Random utilities for Lua and Torch.
 * uuid - Generates uuids in pure Lua
 * [net-toolkit](https://github.com/Atcold/net-toolkit) - This package allows to save and retrive to/from disk a lighter version of neural networks that is being trained by clearing out their gradients and states.
+
+Databases
+---------
+* [luamongo](https://github.com/moai/luamongo) - Lua driver for mongodb
+* lsqlite3 - A binding for Lua to the SQLite3 database library
+* LuaSQL-MySQL - Database connectivity for Lua (MySQL driver)
+* LuaSQL-Postgres - Database connectivity for Lua (Postgres driver)
+* LuaSQL-SQLite3 - Database connectivity for Lua (SQLite3 driver)
+* Luchia - Lua API for CouchDB.
+* sqltable - Use sql databases as lua tables, SELECT, INSERT, UPDATE, and DELETE are all handled with metamethods in such a way that no SQL needs to be written in most cases.
+* persist - A persisting table, built on Redis.
+* redis-async - A redis client built off the torch/lua async framework
+* redis-queue - A redis queue framework using async redis
 
 Interfaces to third-party libraries
 ------------
