@@ -9,7 +9,7 @@ A quick page for everything Torch.
 
  [Core Math](#general-math) | [Visualization](#visualization) | .
 ------------- | ------------- | ---------- 
-**[Data formats I/O](#data-formats)** | **[Sensor I/O](#sensor-inputoutput)** 
+**[Data formats I/O](#data-formats)** | **[Sensor I/O](#sensor-inputoutput)** | **[Utility libraries](#utility-libraries)**
 **[Machine Learning](#machine-learning)**  | **[Computer Vision](#computer-vision)** | [NLP](#natural-language-processing)
 **[Parallel Processing](#distributed-computing--parallel-processing)** | **[CUDA](#cuda)** | [OpenCL](#opencl) |  
 **[Images](#images)**  | **[Videos](#videos)** | **[Audio](#audio)**
@@ -232,35 +232,50 @@ Alternative REPLs
 
 Utility libraries
 ------------
-* [torch-dokx](https://github.com/d11/torch-dokx) - An awesome automatic documentation generator for torch7
-* argcheck - Advanced function argument checker
-* buffer - A buffer object for LuaJIT (to get around LuaJIT limitations)
-* class - Simple object-oriented system for Lua, with classes supporting inheritance. 
-* curl - An interface to CURL.
-* cwrap - Advanced automatic wrapper for C functions
-* eex - Torch extras from e-Lab
-* fn - Some functional programming tools for Lua and Torch.
-* fs - File system toolbox
-* inline-c - A package to dynamically build and run C from within Lua. Each function gets wrapped in it own little lua library which is then made accessible to the Lua runtime.
-* logroll - A basic logging library for Lua and Torch.
-* paths - Paths manipulations
-* persist - A persisting table, built on Redis.
-* pprint - A pretty print library for Torch and lua
-* python - A wrapper to Python
-* restclient - A REST Client.
-* sys - A system library for Torch
-* totem - Alternate torch unit test module
-* underscore - Underscore is a utility-belt library for Lua
-* utf8 - Basic UTF-8 support.
-* util - Random utilities for Lua and Torch.
-* xlua - Extra Lua functions. Lua is pretty compact in terms of built-in functionalities: this package extends the table and string libraries, and provide other general purpose tools (progress bar, ...). 
-* MobDebug - MobDebug is a remote debugger for the Lua programming language
-* OAuth - Lua OAuth, an OAuth client library.
+##### Utility toolboxes
 * penlight - Lua utility libraries loosely based on the Python standard libraries
+* underscore - Underscore is a utility-belt library for Lua
+
+##### Documentation
+* [torch-dokx](https://github.com/d11/torch-dokx) - An awesome automatic documentation generator for torch7
+
+##### File System
+* fs - File system toolbox
+* paths - Paths manipulations
+
+##### Programming helpers
+* argcheck - Advanced function argument checker
+* class - Simple object-oriented system for Lua, with classes supporting inheritance. 
+* cwrap - Advanced automatic wrapper for C functions
+* fn - Some functional programming tools for Lua and Torch.
+* inline-c - A package to dynamically build and run C from within Lua. Each function gets wrapped in it own little lua library which is then made accessible to the Lua runtime.
+
+##### Printing / Logging / Debugging
+* MobDebug - The best debugger for lua. Remote debugger for the Lua programming language
+* pprint - A pretty print library for Torch and lua
+* logroll - A basic logging library for Lua and Torch.
+* xlua - Extra Lua functions. Lua is pretty compact in terms of built-in functionalities: this package extends the table and string libraries, and provide other general purpose tools (progress bar, ...). 
+
+##### Testing
+* totem - Alternate torch unit test module
+
+##### Social
+* OAuth - Lua OAuth, an OAuth client library.
 * SocialLua - Library for interfacing with many sites and services
 * twitter - A Twitter library for Lua.
-* uuid - Generates uuids in pure Lua
+
+##### Uncategorized
+* buffer - A buffer object for LuaJIT (to get around LuaJIT limitations)
+* curl - An interface to CURL.
+* eex - Torch extras from e-Lab
+* persist - A persisting table, built on Redis.
+* python - A wrapper to Python
 * [torch-ipython](https://github.com/d11/torch-ipython) - An ipython kernel for torch
+* restclient - A REST Client.
+* sys - A system library for Torch
+* utf8 - Basic UTF-8 support.
+* util - Random utilities for Lua and Torch.
+* uuid - Generates uuids in pure Lua
 * [net-toolkit](https://github.com/Atcold/net-toolkit) - This package allows to save and retrive to/from disk a lighter version of neural networks that is being trained by clearing out their gradients and states.
 
 Interfaces to third-party libraries
