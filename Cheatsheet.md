@@ -71,7 +71,7 @@ Given a package name, you can install it at your terminal with:
 luarocks install [packagename]
 ```
 
-Loading popular datasets
+Loading popular datasets 
 ============================
 * [MNIST Loader](https://github.com/andresy/mnist) - by Ronan Collobert
 * [torch-datasets](https://github.com/rosejn/torch-datasets) - Scripts to load several popular datasets including:
@@ -215,6 +215,7 @@ Sensor Input/Output
 * camera - A simple wrapper package to give torch access to a webcam
 * [mongoose 9dof](https://github.com/MichaelMathieu/lua---mongoose) - Lua/Torch bindings for the Mongoose 9DoF IMU
 * [AR.Drone](https://github.com/MichaelMathieu/lua---ardrone) - AR.Drone bindings for torch by @MichaelMathieu
+* [Arcade Learning Environment](https://github.com/fidlej/alewrap) - A lua wrapper to ALE by Google Deepmind
 
 Distributed Computing / Parallel Processing
 ------------
