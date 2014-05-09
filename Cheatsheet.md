@@ -82,7 +82,7 @@ Loading popular datasets
   * MNIST
   * NORB
 * [KITTI](https://github.com/Aysegul/torch-KITTI) - KITTI dataset loader by Aysegul Dundar
-* [Atari2600](https://github.com/fidlej/aledataset) - Frames from Atari 2600 games using Arcade Learning Environment
+* [Atari2600](https://github.com/fidlej/aledataset) - Scripts to generate a dataset with static frames from the Arcade Learning Environment
 
 
 Tutorials, Demos by Category
