@@ -4,7 +4,7 @@ A quick page for everything Torch.
 * [Installing and Running Torch](#installing-and-running-torch)
 * [Installing Packages](#installing-packages)
 * [Tutorials, Demos by Category](#tutorials-demos-by-category)
-* [Loading popular datasets](#loading-popular-datasets)
+* [Loading popular datasets](#loading-popular-datasets-)
 * [List of Packages by Category](#list-of-packages-by-category)
 
  [Core Math](#general-math) | [Visualization](#visualization) | **[Utility libraries](#utility-libraries)**
