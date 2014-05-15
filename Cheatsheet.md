@@ -203,7 +203,7 @@ Videos
 
 Audio
 ------------
-* audio - Audio library for Torch-7. Support audio I/O (Load files) Common audio operations (Short-time Fourier transforms, Spectrograms).
+* [audio](https://github.com/soumith/lua---audio) - Audio library for Torch-7. Support audio I/O (Load files) Common audio operations (Short-time Fourier transforms, Spectrograms).
 * [lua-sndfile](https://github.com/andresy/lua---sndfile) - An interface to libsndfile 
 * [lua-pa](https://github.com/andresy/lua---pa) - Interface to PortAudio library
 
@@ -213,7 +213,7 @@ Natural Language Processing
 
 Sensor Input/Output
 ------------
-* camera - A simple wrapper package to give torch access to a webcam
+* [camera](https://github.com/clementfarabet/lua---camera) - A simple wrapper package to give torch access to a webcam
 * [mongoose 9dof](https://github.com/MichaelMathieu/lua---mongoose) - Lua/Torch bindings for the Mongoose 9DoF IMU
 * [AR.Drone](https://github.com/MichaelMathieu/lua---ardrone) - AR.Drone bindings for torch by @MichaelMathieu
 * [Arcade Learning Environment](https://github.com/fidlej/alewrap) - A lua wrapper to ALE by Google Deepmind
