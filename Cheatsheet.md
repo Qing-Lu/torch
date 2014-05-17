@@ -89,7 +89,7 @@ Tutorials, Demos by Category
 ===================================
 Tutorials
 ---------
-* http://code.cogbits.com/wiki/doku.php?id=start
+* [Tutorial](http://code.madbits.com/)
 * [code accompanying the tutorials](https://github.com/clementfarabet/torch-tutorials)
 
 Demos
