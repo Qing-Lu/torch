@@ -160,20 +160,20 @@ Machine Learning
 Visualization
 ------------
 Mainly provided by two styles:
-* gfx.js - A graphics backend for the browser, with a Torch7 client. Extend this by writing simple html/javascript templates
+* [gfx.js](https://github.com/clementfarabet/gfx.js) - A graphics backend for the browser, with a Torch7 client. Extend this by writing simple html/javascript templates
 
 or
 
-* qtlua - Powerful QT interface to Lua
-* qttorch - QT interface to Torch
-* gnuplot - Torch interface to Gnuplot
+* [qtlua](https://github.com/torch/qtlua) - Powerful QT interface to Lua
+* [qttorch](https://github.com/torch/qttorch) - QT interface to Torch
+* [gnuplot](https://github.com/torch/gnuplot) - Torch interface to Gnuplot
 
 
 Computer Vision
 ------------
-* fex - A package for feature extraction in Torch. Provides SIFT and dSIFT modules. 
-* imgraph - An image/graph library for Torch. This package provides routines to construct graphs on images, segment them, build trees out of them, and convert them back to images.
-* videograph - A video/graph library for Torch. This package provides routines to construct graphs on videos, segment them, build trees out of them, and convert them back to videos.
+* [fex](https://github.com/koraykv/fex) - A package for feature extraction in Torch. Provides SIFT and dSIFT modules. 
+* [imgraph](https://github.com/clementfarabet/lua---imgraph) - An image/graph library for Torch. This package provides routines to construct graphs on images, segment them, build trees out of them, and convert them back to images.
+* [videograph](https://github.com/clementfarabet/videograph) - A video/graph library for Torch. This package provides routines to construct graphs on videos, segment them, build trees out of them, and convert them back to videos.
 * [opencv wrapper](https://github.com/marcoscoffier/lua---opencv) by @marcoscoffier
 * [saliency](https://github.com/marcoscoffier/torch-saliency) - code and tools around integral images. A library for finding interest points based on fast integral histograms. 
 * [stitch](https://github.com/marcoscoffier/lua---stitch) - allows us to use hugin to stitch images and apply same stitching to a video sequence
@@ -198,8 +198,8 @@ Images
 Videos
 ------------
 * [camera](https://github.com/clementfarabet/lua---camera) - A simple wrapper package to give torch access to a webcam
-* ffmpeg - An FFMPEG interface for Torch. A simple abstraction class, that uses ffmpeg to encode/decode videos, and represent them as Tensors, in Torch.
-* videograph - A video/graph library for Torch. This package provides routines to construct graphs on videos, segment them, build trees out of them, and convert them back to videos.
+* [ffmpeg](https://github.com/clementfarabet/lua---ffmpeg) - An FFMPEG interface for Torch. A simple abstraction class, that uses ffmpeg to encode/decode videos, and represent them as Tensors, in Torch.
+* [videograph](https://github.com/clementfarabet/videograph) - A video/graph library for Torch. This package provides routines to construct graphs on videos, segment them, build trees out of them, and convert them back to videos.
 
 Audio
 ------------
@@ -209,7 +209,7 @@ Audio
 
 Natural Language Processing
 ------------
-* nn - Neural language models such as ones defined in [Natural Language Processing (almost) from Scratch](http://arxiv.org/abs/1103.0398) can be implemented using the nn package. nn.LookupTable is useful in this regard.
+* [nn](https://github.com/torch/nn) - Neural language models such as ones defined in [Natural Language Processing (almost) from Scratch](http://arxiv.org/abs/1103.0398) can be implemented using the nn package. nn.LookupTable is useful in this regard.
 
 Sensor Input/Output
 ------------
@@ -220,23 +220,23 @@ Sensor Input/Output
 
 Distributed Computing / Parallel Processing
 ------------
-* parallel - A simple yet powerful parallel compute package for Torch. Provides a simple mechanism to dispatch and run Torch/Lua code as independent processes and communicate via ZeroMQ sockets. Processes can be forked locally or on remote machines (via ssh).
-* thmap - Map jobs onto th nodes.
-* threads - A FFI threading system based on SDL2 by Ronan Collobert
+* [parallel](https://github.com/clementfarabet/lua---parallel) - A simple yet powerful parallel compute package for Torch. Provides a simple mechanism to dispatch and run Torch/Lua code as independent processes and communicate via ZeroMQ sockets. Processes can be forked locally or on remote machines (via ssh).
+* [thmap](https://github.com/clementfarabet/thmap) - Map jobs onto th nodes (built on top of [async](https://github.com/clementfarabet/async))
+* [threads](https://github.com/torch/threads-ffi) - An FFI threading system based on SDL2 by Ronan Collobert. More powerful than llthreads, as it allows trivial data sharing between threads.
 * [lua-llthreads](https://github.com/Neopallium/lua-llthreads) - Low-Level threads(pthreads or WIN32 threads) for Lua.
 * [MPIT](https://github.com/sixin-zh/mpiT) - MPI for Torch by Sixin Zhang
 * [lua-mapreduce](https://github.com/pakozm/lua-mapreduce) - A map-reduce framework by Paco Zamora Martínez
 
 Alternative REPLs
 ------------
-* trepl - An embedabble, Lua-only REPL for Torch.
-* env - Adds pretty printing of tensors/tables and additional path handling to luajit 
+* [trepl](https://github.com/torch/trepl) - An embedabble, Lua-only REPL for Torch.
+* [env](https://github.com/torch/env) - Adds pretty printing of tensors/tables and additional path handling to luajit 
 
 Utility libraries
 ------------
 ##### Utility toolboxes
-* penlight - Lua utility libraries loosely based on the Python standard libraries
-* underscore - Underscore is a utility-belt library for Lua
+* [penlight](http://stevedonovan.github.io/Penlight/api/index.html) - Lua utility libraries loosely based on the Python standard libraries
+* [underscore](http://mirven.github.io/underscore.lua/) - Underscore is a utility-belt library for Lua
 
 ##### Documentation
 * [torch-dokx](https://github.com/d11/torch-dokx) - An awesome automatic documentation generator for torch7
@@ -307,9 +307,9 @@ Interfaces to third-party libraries
 
 Asynchronous paradigm - (like nodejs)
 ------------
-* async - An async framework for Torch (based on LibUV)
-* redis-async - A redis client built off the torch/lua async framework
-* redis-queue - A redis queue framework using async redis
+* [async](https://github.com/clementfarabet/async) - An async framework for Torch (based on LibUV)
+* [redis-async](https://github.com/ocallaco/redis-async) - A redis client built off the torch/lua async framework
+* [redis-queue](https://github.com/ocallaco/redis-queue) - A redis queue framework using async redis
 
 Networking
 ----------
