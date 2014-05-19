@@ -139,17 +139,17 @@ Data formats
 * [csv2torchdatasets](https://github.com/andreirusu/csv2torch-datasets) - Simple Torch7 tool for converting Kaggle-style csv files to torch-datasets.
 * [image](https://github.com/torch/image) - Loads png, jpg, ppm images
 * [graphicsmagick](https://github.com/clementfarabet/graphicsmagick) - A full Torch/C interface to GraphicsMagick's Wand API and to imagemagick commandline utility, loads all images thrown its way.
-* ffmpeg - A simple abstraction class, that uses ffmpeg to encode/decode videos from/to Torch Tensors
+* [ffmpeg](https://github.com/clementfarabet/lua---ffmpeg) - A simple abstraction class, that uses ffmpeg to encode/decode videos from/to Torch Tensors
 
 Machine Learning
 ------------
 * [nn](https://github.com/torch/nn) - Neural Network package for Torch
-* nngraph - This package provides graphical computation for nn library in Torch7.
-* nnx - A completely unstable and experimental package that extends Torch's builtin nn library
+* [nngraph](https://github.com/torch/nngraph) - This package provides graphical computation for nn library in Torch7.
+* [nnx](https://github.com/clementfarabet/lua---nnx) - A completely unstable and experimental package that extends Torch's builtin nn library
 * [optim](https://github.com/torch/optim) - An optimization library for Torch. SGD, Adagrad, Conjugate-Gradient, LBFGS, RProp and more.
-* unsup - A package for unsupervised learning in Torch. Provides modules that are compatible with nn (LinearPsd, ConvPsd, AutoEncoder, ...), and self-contained algorithms (k-means, PCA). 
-* manifold - A package to manipulate manifolds
-* svm - Torch-SVM library
+* [unsup](https://github.com/koraykv/unsup) - A package for unsupervised learning in Torch. Provides modules that are compatible with nn (LinearPsd, ConvPsd, AutoEncoder, ...), and self-contained algorithms (k-means, PCA). 
+* [manifold](https://github.com/clementfarabet/manifold) - A package to manipulate manifolds
+* [svm](https://github.com/koraykv/torch-svm) - Torch-SVM library
 * [lbfgs](https://github.com/clementfarabet/lbfgs) - FFI Wrapper for liblbfgs
 * [vowpalwabbit](https://github.com/clementfarabet/vowpal_wabbit) - An old vowpalwabbit interface to torch.
 * [OpenGM](https://github.com/clementfarabet/lua---opengm) - OpenGM is a C++ library for graphical modeling, and inference. The Lua bindings provide a simple way of describing graphs, from Lua, and then optimizing them with OpenGM.
@@ -243,14 +243,14 @@ Utility libraries
 
 ##### File System
 * fs - File system toolbox
-* paths - Paths manipulations
+* [paths](https://github.com/torch/paths) - Paths manipulations
 
 ##### Programming helpers
-* argcheck - Advanced function argument checker
-* class - Simple object-oriented system for Lua, with classes supporting inheritance. 
-* cwrap - Advanced automatic wrapper for C functions
-* fn - Some functional programming tools for Lua and Torch.
-* inline-c - A package to dynamically build and run C from within Lua. Each function gets wrapped in it own little lua library which is then made accessible to the Lua runtime.
+* [argcheck](https://github.com/torch/argcheck) - Advanced function argument checker
+* [class](https://github.com/torch/class) - Simple object-oriented system for Lua, with classes supporting inheritance. 
+* [cwrap](https://github.com/torch/cwrap) - Advanced automatic wrapper for C functions
+* [fn](https://github.com/rosejn/lua-fn) - Some functional programming tools for Lua and Torch.
+* [inline-c](https://github.com/clementfarabet/lua---inline-C) - A package to dynamically build and run C from within Lua. Each function gets wrapped in it own little lua library which is then made accessible to the Lua runtime.
 
 ##### Printing / Logging / Debugging
 * MobDebug - The best debugger for lua. Remote debugger for the Lua programming language
@@ -259,7 +259,7 @@ Utility libraries
 * xlua - Extra Lua functions. Lua is pretty compact in terms of built-in functionalities: this package extends the table and string libraries, and provide other general purpose tools (progress bar, ...). 
 
 ##### Testing
-* totem - Alternate torch unit test module
+* [totem](https://github.com/akfidjeland/torch-totem) - Alternate torch unit test module
 
 ##### Social
 * OAuth - Lua OAuth, an OAuth client library.
