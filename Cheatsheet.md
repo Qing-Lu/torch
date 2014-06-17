@@ -322,8 +322,9 @@ Security
 
 CUDA
 ------------
-* cunn - Torch CUDA Neural Network Implementation
-* cutorch - Torch CUDA Implementation
+* [cutorch](https://github.com/torch/cutorch) - Torch CUDA Implementation
+* [cunn](https://github.com/torch/cunn) - Torch CUDA Neural Network Implementation
+* [cunnx](https://github.com/nicholas-leonard/cunnx) - Experimental CUDA NN implementations
 
 OpenCL
 ------------
