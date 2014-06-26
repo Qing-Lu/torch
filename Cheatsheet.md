@@ -304,6 +304,7 @@ Interfaces to third-party libraries
 * LuaSec - A binding for OpenSSL library to provide TLS/SSL communication over LuaSocket.
 * [PLPlot-FFI](https://github.com/sergomezcol/plplot-ffi) - LuaJIT wrapper for PLplot
 * [libmatio](https://github.com/soumith/matio-ffi.torch) - An FFI interface to libmatio and torch wrappers to load tensors as well.
+* [ncurses](https://github.com/ocallaco/lua-ncurses) - ncurses wrapper for lua
 
 Asynchronous paradigm - (like nodejs)
 ------------
