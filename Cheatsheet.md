@@ -311,7 +311,7 @@ Asynchronous paradigm - (like nodejs)
 * [async](https://github.com/clementfarabet/async) - An async framework for Torch (based on LibUV)
 * [redis-async](https://github.com/ocallaco/redis-async) - A redis client built off the torch/lua async framework
 * [redis-queue](https://github.com/ocallaco/redis-queue) - A redis queue framework using async redis
-
+* [async-connect](https://github.com/ad2476/async-connect) - A [Connect](http://www.senchalabs.org/connect/) implementation in Lua
 Networking
 ----------
 * LuaSocket - Network support for the Lua language
