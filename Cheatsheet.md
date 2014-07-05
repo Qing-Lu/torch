@@ -376,8 +376,8 @@ https://github.com/jonathantompson/jtorch
 
 Gotchas
 =======
-LuaJIT limitations
-------
-2GB and addressing limit
+LuaJIT limitations, gotchas and assumptions
+-------------------------------------------
+Must read! - http://luapower.com/luajit-notes.html
 
-http://hacksoflife.blogspot.com/2012/12/integrating-luajit-with-x-plane-64-bit.html
+[2GB and addressing limit](http://hacksoflife.blogspot.com/2012/12/integrating-luajit-with-x-plane-64-bit.html)
