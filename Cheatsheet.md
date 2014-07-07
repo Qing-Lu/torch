@@ -45,7 +45,7 @@ luarocks install env
 
 Run torch using the command
 ```
-luajit -lenv
+th
 ```
 If you need QT visualization, run torch using the command
 ```
