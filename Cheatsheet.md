@@ -363,8 +363,8 @@ CUDA Support, CUDA examples
   * Simultaneous use of multiple GPUs at the same time is also not supported, though you can get around this by constantly switching the device using cutorch.setDevice(opt.gpuid)
 
 * NN: Install the package __cunn__
-  * __Caveats__: __SpatialConvolution__ is really slow on CUDA, instead use __SpatialConvolutionCUDA__ and __SpatialMaxPoolingCUDA__ modules. These two modules only support batch mode and square images, and take samples of format ( Depth x Height x Width x Batch ) instead of (Batch x Depth x Height x Width) which is the torch default. [So you might have to wrap the modules with __nn.Transpose__](https://gist.github.com/soumith/c5a7ac73e06aee39e48d).
-  * A more full example of using SpatialConvolutionCUDA is here: https://github.com/soumith/galaxyzoo
+  * __Caveats__: __SpatialConvolutionMM__ is the very fast module (on both CPU and GPU), but it takes a little bit of extra memory on the CPU (and a teeny bit extra on the GPU. 
+  * An alternative is to use SpatialConvolutionCUDA, but it uses a different tensor layout (all of torch expects batch x channels x height x width, but this module uses channels x height x width x batch). You can use this by wrapping nn.Transpose modules around it like shown here: https://gist.github.com/soumith/c5a7ac73e06aee39e48d and a more full example of using SpatialConvolutionCUDA is here: https://github.com/soumith/galaxyzoo
 
 OpenCL support, OpenCL examples
 --------------------------------
