@@ -83,6 +83,7 @@ Loading popular datasets
   * NORB
 * [KITTI](https://github.com/Aysegul/torch-KITTI) - KITTI dataset loader by Aysegul Dundar
 * [Atari2600](https://github.com/fidlej/aledataset) - Scripts to generate a dataset with static frames from the Arcade Learning Environment
+* [torch-INRIA](https://github.com/Atcold/torch-INRIA) - INRIA dataset loader by Alfredo Canziani
 
 
 Tutorials, Demos by Category
