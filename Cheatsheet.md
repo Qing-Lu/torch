@@ -150,6 +150,7 @@ Machine Learning
 * [optim](https://github.com/torch/optim) - An optimization library for Torch. SGD, Adagrad, Conjugate-Gradient, LBFGS, RProp and more.
 * [unsup](https://github.com/koraykv/unsup) - A package for unsupervised learning in Torch. Provides modules that are compatible with nn (LinearPsd, ConvPsd, AutoEncoder, ...), and self-contained algorithms (k-means, PCA). 
 * [manifold](https://github.com/clementfarabet/manifold) - A package to manipulate manifolds
+* [rbm_toolbox](https://github.com/skaae/rbm_toolbox_lua) - Restricted Boltzmann Machines in torch
 * [svm](https://github.com/koraykv/torch-svm) - Torch-SVM library
 * [lbfgs](https://github.com/clementfarabet/lbfgs) - FFI Wrapper for liblbfgs
 * [vowpalwabbit](https://github.com/clementfarabet/vowpal_wabbit) - An old vowpalwabbit interface to torch.
