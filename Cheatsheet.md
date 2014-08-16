@@ -84,6 +84,12 @@ Loading popular datasets
 * [KITTI](https://github.com/Aysegul/torch-KITTI) - KITTI dataset loader by Aysegul Dundar
 * [Atari2600](https://github.com/fidlej/aledataset) - Scripts to generate a dataset with static frames from the Arcade Learning Environment
 * [torch-INRIA](https://github.com/Atcold/torch-INRIA) - INRIA dataset loader by Alfredo Canziani
+* [dp](https://github.com/nicholas-leonard/dp) - A pylearn2-like deep learning library with several conveniently wrapped datasets including:
+  * MNIST
+  * NotMNIST
+  * CIFAR-10
+  * CIFAR-100
+  * Google Billion Words
 
 
 Tutorials, Demos by Category
@@ -92,6 +98,9 @@ Tutorials
 ---------
 * [Tutorial](http://code.madbits.com/)
 * [code accompanying the tutorials](https://github.com/clementfarabet/torch-tutorials)
+* [dp Tutorials](https://github.com/nicholas-leonard/dp/blob/master/README.md#dp.tutorials)
+  * [Neural Network](https://github.com/nicholas-leonard/dp/blob/master/doc/neuralnetworktutorial.md)
+  * [Kaggle Facial Keypoint Detection](https://github.com/nicholas-leonard/dp/blob/master/doc/facialkeypointstutorial.md)
 
 Demos
 ------
@@ -115,6 +124,13 @@ Demos
 * [Training a Convnet for the Galaxy-Zoo Kaggle challenge(CUDA demo)](https://github.com/soumith/galaxyzoo)
 * [Recpool](https://github.com/soumith/recpool) - Reconstructing pooling networks by Jason Rolfe, this branch has some fixes.
 * [Music Tagging](https://github.com/mbhenaff/MusicTagging) - Music Tagging scripts for torch7 by Mikael Henaff
+* [dp examples](https://github.com/nicholas-leonard/dp/tree/master/examples):
+  * [Kaggle Facial Keypoint Detector](https://github.com/nicholas-leonard/dp/blob/master/examples/facialkeypointdetector.lua) using an MLP or a Convolution Neural Network
+  * [Neural Network](https://github.com/nicholas-leonard/dp/blob/master/examples/neuralnetwork.lua) for Image Classification
+  * [Mixture of Experts](https://github.com/nicholas-leonard/dp/blob/master/examples/mixtureofexperts.lua) for Image Classification
+  * [Convolution Neural Network](https://github.com/nicholas-leonard/dp/blob/master/examples/convolutionneuralnetwork.lua) for Image Classification
+  * [Neural Network Language Model](https://github.com/nicholas-leonard/dp/blob/master/examples/languagemodel.lua) for Google Billion Words dataset
+  * [Distributed Conditional Computation](https://github.com/nicholas-leonard/dp/blob/master/examples/conditionalcomputation.lua) for language modelling 
 
 List of Packages by Category
 ============================
