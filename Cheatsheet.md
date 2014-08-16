@@ -162,6 +162,7 @@ Machine Learning
 ------------
 * [nn](https://github.com/torch/nn) - Neural Network package for Torch
 * [nngraph](https://github.com/torch/nngraph) - This package provides graphical computation for nn library in Torch7.
+* [dp](https://github.com/nicholas-leonard/dp) - A deep learning library designed for streamlining research and development using the Torch7 distribution. It emphasizes flexibility through the elegant use of object-oriented design patterns.
 * [nnx](https://github.com/clementfarabet/lua---nnx) - A completely unstable and experimental package that extends Torch's builtin nn library
 * [optim](https://github.com/torch/optim) - An optimization library for Torch. SGD, Adagrad, Conjugate-Gradient, LBFGS, RProp and more.
 * [unsup](https://github.com/koraykv/unsup) - A package for unsupervised learning in Torch. Provides modules that are compatible with nn (LinearPsd, ConvPsd, AutoEncoder, ...), and self-contained algorithms (k-means, PCA). 
@@ -192,6 +193,7 @@ Computer Vision
 * [fex](https://github.com/koraykv/fex) - A package for feature extraction in Torch. Provides SIFT and dSIFT modules. 
 * [imgraph](https://github.com/clementfarabet/lua---imgraph) - An image/graph library for Torch. This package provides routines to construct graphs on images, segment them, build trees out of them, and convert them back to images.
 * [videograph](https://github.com/clementfarabet/videograph) - A video/graph library for Torch. This package provides routines to construct graphs on videos, segment them, build trees out of them, and convert them back to videos.
+* [dp](https://github.com/nicholas-leonard/dp) - A deep learning library for Torch. Includes preprocessing like Zero-Component Analysis whitening, Global Contrast Normalization, Lecun's Local Contrast Normalization and facilities for interfacing your own.
 * [opencv wrapper](https://github.com/marcoscoffier/lua---opencv) by @marcoscoffier
 * [saliency](https://github.com/marcoscoffier/torch-saliency) - code and tools around integral images. A library for finding interest points based on fast integral histograms. 
 * [stitch](https://github.com/marcoscoffier/lua---stitch) - allows us to use hugin to stitch images and apply same stitching to a video sequence
@@ -228,6 +230,7 @@ Audio
 Natural Language Processing
 ------------
 * [nn](https://github.com/torch/nn) - Neural language models such as ones defined in [Natural Language Processing (almost) from Scratch](http://arxiv.org/abs/1103.0398) can be implemented using the nn package. nn.LookupTable is useful in this regard.
+* [dp](https://github.com/nicholas-leonard/dp) - A deep learning library for Torch. Includes example Neural Network Language Model implementations using the Google Billion Words dataset.
 
 Sensor Input/Output
 ------------
@@ -254,6 +257,7 @@ Utility libraries
 ------------
 ##### Utility toolboxes
 * [penlight](http://stevedonovan.github.io/Penlight/api/index.html) - Lua utility libraries loosely based on the Python standard libraries
+* [moses](https://github.com/Yonaba/Moses) - A more up-to-date alternative to underscore
 * [underscore](http://mirven.github.io/underscore.lua/) - Underscore is a utility-belt library for Lua
 
 ##### Documentation
@@ -376,6 +380,7 @@ GPU Support
 CUDA Support, CUDA examples
 --------------------------------
 * Torch: CUDA is supported by installing the package __cutorch__ . 
+  * Call `require "cutorch"` on a CUDA-capable machine
   * You get an additional tensor type torch.CudaTensor (just like torch.FloatTensor). 
   * CUDA double precision is not supported. 
   * Simultaneous use of multiple GPUs at the same time is also not supported, though you can get around this by constantly switching the device using cutorch.setDevice(opt.gpuid)
