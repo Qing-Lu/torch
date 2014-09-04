@@ -349,6 +349,7 @@ CUDA
 * [cutorch](https://github.com/torch/cutorch) - Torch CUDA Implementation
 * [cunn](https://github.com/torch/cunn) - Torch CUDA Neural Network Implementation
 * [cunnx](https://github.com/nicholas-leonard/cunnx) - Experimental CUDA NN implementations
+* [Tutorial for GPU on EC2](https://gist.github.com/y0ast/1e80daf19a6d4e210706) - Tutorial for running Torch7 with CUDA on Amazon EC2 GPU instances.
 
 OpenCL
 ------------
