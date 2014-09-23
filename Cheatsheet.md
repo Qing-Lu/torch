@@ -349,6 +349,11 @@ CUDA
 * [cutorch](https://github.com/torch/cutorch) - Torch CUDA Implementation
 * [cunn](https://github.com/torch/cunn) - Torch CUDA Neural Network Implementation
 * [cunnx](https://github.com/nicholas-leonard/cunnx) - Experimental CUDA NN implementations
+* [nnbhwd](https://github.com/qassemoquab/nnbhwd) - Convnet implementations with the data-layout BHWD (by Maxime Oquab), very useful for certain applications. 
+* [cudnn](https://github.com/soumith/cudnn.torch) - NVIDIA CuDNN Bindings
+* [ccn2](https://github.com/soumith/cuda-convnet2.torch) - cuda-convnet2 ported to torch
+
+
 * [Tutorial for GPU on EC2](https://gist.github.com/y0ast/1e80daf19a6d4e210706) - Tutorial for running Torch7 with CUDA on Amazon EC2 GPU instances.
 
 OpenCL
@@ -387,8 +392,13 @@ CUDA Support, CUDA examples
   * Simultaneous use of multiple GPUs at the same time is also not supported, though you can get around this by constantly switching the device using cutorch.setDevice(opt.gpuid)
 
 * NN: Install the package __cunn__
-  * __Caveats__: __SpatialConvolutionMM__ is the very fast module (on both CPU and GPU), but it takes a little bit of extra memory on the CPU (and a teeny bit extra on the GPU. 
-  * An alternative is to use SpatialConvolutionCUDA, but it uses a different tensor layout (all of torch expects batch x channels x height x width, but this module uses channels x height x width x batch). You can use this by wrapping nn.Transpose modules around it like shown here: https://gist.github.com/soumith/c5a7ac73e06aee39e48d and a more full example of using SpatialConvolutionCUDA is here: https://github.com/soumith/galaxyzoo
+  * __Caveats__: __SpatialConvolutionMM__ is the very fast module (on both CPU and GPU), but it takes a little bit of extra memory on the CPU (and a teeny bit extra on the GPU). 
+  
+  * An alternative is to use NVidia CuDNN, which is very reliable, or cuda-convnet2 bindings, or nnbhwd package
+  * [nnbhwd](https://github.com/qassemoquab/nnbhwd) - Convnet implementations with the data-layout BHWD (by Maxime Oquab), very useful for certain applications.
+  * [cudnn](https://github.com/soumith/cudnn.torch) - NVIDIA CuDNN Bindings
+  * [ccn2](https://github.com/soumith/cuda-convnet2.torch) - cuda-convnet2 ported to torch
+
 
 OpenCL support, OpenCL examples
 --------------------------------
