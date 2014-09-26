@@ -150,6 +150,7 @@ Data formats
 * [mattorch](https://github.com/clementfarabet/lua---mattorch) - An interface between Matlab and Torch
 * [matio](https://github.com/soumith/matio-ffi.torch) - Package to load tensors from Matlab .mat files, without having matlab installed on your system. Needs open source libmatio.
 * LuaXML - a module that maps between Lua and XML without much ado
+* [lua-capnproto](https://github.com/cloudflare/lua-capnproto) Basically like Protocol buffers except MUCH faster 
 * LuaZip - Library for reading files inside zip files
 * MIDI - Reading, writing and manipulating MIDI data
 * [audio](https://github.com/soumith/lua---audio/) - Loads as Tensors, all audio formats supported by libsox (mp3, wav, aac, ogg, flac, etc.)
