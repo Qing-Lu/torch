@@ -347,6 +347,7 @@ Security
 
 CUDA
 ------------
+Using multiple GPUs parallely is supported. Look at [this link](https://github.com/torch/cutorch/issues/42) for more info
 * [cutorch](https://github.com/torch/cutorch) - Torch CUDA Implementation
 * [cunn](https://github.com/torch/cunn) - Torch CUDA Neural Network Implementation
 * [cunnx](https://github.com/nicholas-leonard/cunnx) - Experimental CUDA NN implementations
@@ -390,7 +391,7 @@ CUDA Support, CUDA examples
   * Call `require "cutorch"` on a CUDA-capable machine
   * You get an additional tensor type torch.CudaTensor (just like torch.FloatTensor). 
   * CUDA double precision is not supported. 
-  * Simultaneous use of multiple GPUs at the same time is also not supported, though you can get around this by constantly switching the device using cutorch.setDevice(opt.gpuid)
+  * Using multiple GPUs parallely is supported. Look at [this link](https://github.com/torch/cutorch/issues/42) for more info
 
 * NN: Install the package __cunn__
   * __Caveats__: __SpatialConvolutionMM__ is the very fast module (on both CPU and GPU), but it takes a little bit of extra memory on the CPU (and a teeny bit extra on the GPU). 
