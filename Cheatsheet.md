@@ -20,6 +20,7 @@ A quick page for everything Torch.
 * [Debuggers / Visual Debuggers / IDEs](#debuggers--visual-debuggers--ides)
 * [GPU Support](#gpu-support)
 * [Gotchas](#gotchas)
+* [Shipping proprietary torch scripts (sharing scripts with others without sharing source code](https://github.com/soumith/torch-ship-binaries)
 
 Newbies
 =======
