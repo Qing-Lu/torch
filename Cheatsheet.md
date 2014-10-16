@@ -33,6 +33,8 @@ Newbies
 6. [Create your own package](#creating-your-own-package)
 7. Contribute! :)
 
+If you are used to numpy, [have a look at this page](https://github.com/torch/torch7/wiki/Torch-for-Numpy-users)
+
 Installing and Running Torch
 ============================
 OSX and Ubuntu
