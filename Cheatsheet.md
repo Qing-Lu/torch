@@ -127,6 +127,7 @@ Demos
 * [Training a Convnet for the Galaxy-Zoo Kaggle challenge(CUDA demo)](https://github.com/soumith/galaxyzoo)
 * [Recpool](https://github.com/soumith/recpool) - Reconstructing pooling networks by Jason Rolfe, this branch has some fixes.
 * [Music Tagging](https://github.com/mbhenaff/MusicTagging) - Music Tagging scripts for torch7 by Mikael Henaff
+* [K-Means feature learning over CIFAR-10: Coates-Single-Layer Networks in Unsupervised Feature Learning](https://github.com/jhjin/kmeans-learning-torch)
 * [dp examples](https://github.com/nicholas-leonard/dp/tree/master/examples):
   * [Kaggle Facial Keypoint Detector](https://github.com/nicholas-leonard/dp/blob/master/examples/facialkeypointdetector.lua) using an MLP or a Convolution Neural Network
   * [Neural Network](https://github.com/nicholas-leonard/dp/blob/master/examples/neuralnetwork.lua) for Image Classification
@@ -134,7 +135,7 @@ Demos
   * [Convolution Neural Network](https://github.com/nicholas-leonard/dp/blob/master/examples/convolutionneuralnetwork.lua) for Image Classification
   * [Neural Network Language Model](https://github.com/nicholas-leonard/dp/blob/master/examples/languagemodel.lua) for Google Billion Words dataset
   * [Distributed Conditional Computation](https://github.com/nicholas-leonard/dp/blob/master/examples/conditionalcomputation.lua) for language modelling 
-  * [K-Means feature learning over CIFAR-10: Coates-Single-Layer Networks in Unsupervised Feature Learning](https://github.com/jhjin/kmeans-learning-torch)
+  
 
 List of Packages by Category
 ============================
