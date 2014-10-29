@@ -237,6 +237,7 @@ Natural Language Processing
 ------------
 * [nn](https://github.com/torch/nn) - Neural language models such as ones defined in [Natural Language Processing (almost) from Scratch](http://arxiv.org/abs/1103.0398) can be implemented using the nn package. nn.LookupTable is useful in this regard.
 * [dp](https://github.com/nicholas-leonard/dp) - A deep learning library for Torch. Includes example Neural Network Language Model implementations using the Google Billion Words dataset.
+* [senna](https://github.com/torch/senna) - Part-of-speech tagging, Chunking, Name Entity Recognition and Semantic Role Labeling, extremely fast and used to be state-of-the-art (dont know now)
 
 Sensor Input/Output
 ------------
