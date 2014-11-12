@@ -135,6 +135,7 @@ Demos
   * [Mixture of Experts](https://github.com/nicholas-leonard/dp/blob/master/examples/mixtureofexperts.lua) for Image Classification
   * [Convolution Neural Network](https://github.com/nicholas-leonard/dp/blob/master/examples/convolutionneuralnetwork.lua) for Image Classification
   * [Neural Network Language Model](https://github.com/nicholas-leonard/dp/blob/master/examples/languagemodel.lua) for Google Billion Words dataset
+  * [Recurrent Neural Network Language Model] (https://github.com/nicholas-leonard/dp/blob/master/examples/recurrentlanguagemodel.lua)
   * [Distributed Conditional Computation](https://github.com/nicholas-leonard/dp/blob/master/examples/conditionalcomputation.lua) for language modelling 
   
 
@@ -237,7 +238,7 @@ Audio
 Natural Language Processing
 ------------
 * [nn](https://github.com/torch/nn) - Neural language models such as ones defined in [Natural Language Processing (almost) from Scratch](http://arxiv.org/abs/1103.0398) can be implemented using the nn package. nn.LookupTable is useful in this regard.
-* [dp](https://github.com/nicholas-leonard/dp) - A deep learning library for Torch. Includes example Neural Network Language Model implementations using the Google Billion Words dataset.
+* [dp](https://github.com/nicholas-leonard/dp) - A deep learning library for Torch. Includes example Neural Network and Recurrent Neural Network Language Model implementations using the Google Billion Words dataset.
 * [senna](https://github.com/torch/senna) - Part-of-speech tagging, Chunking, Name Entity Recognition and Semantic Role Labeling, extremely fast and used to be state-of-the-art (dont know now)
 
 Sensor Input/Output
