@@ -92,6 +92,7 @@ Loading popular datasets
   * NotMNIST
   * CIFAR-10
   * CIFAR-100
+  * Google Street View House Numbers (SVHN)
   * Google Billion Words
 
 
