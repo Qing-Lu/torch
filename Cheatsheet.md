@@ -411,6 +411,9 @@ CUDA Support, CUDA examples
   * [cudnn](https://github.com/soumith/cudnn.torch) - NVIDIA CuDNN Bindings
   * [ccn2](https://github.com/soumith/cuda-convnet2.torch) - cuda-convnet2 ported to torch
 
+NVIDIA Jetson TK1
+-----------------
+* [Installation and usage instructions for Torch + CuDNN on Jetson TK1](https://github.com/e-lab/torch-toolbox/blob/master/Tutorials/Setup-Torch-cuDNN-on-Jetson-TK1.md)
 
 OpenCL support, OpenCL examples
 --------------------------------
