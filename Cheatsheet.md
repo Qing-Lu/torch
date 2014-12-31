@@ -124,7 +124,6 @@ Demos
   * filter-bank visualization
   * saliency-networks
 * [Another face detector by @jonathantompson](https://github.com/jonathantompson/geiger_facedetector)
-* [Some body tracking stuff by @jonathantompson](https://github.com/jonathantompson/cbody)
 * [Training a Convnet for the Galaxy-Zoo Kaggle challenge(CUDA demo)](https://github.com/soumith/galaxyzoo)
 * [Kaggle CIFAR-10 competition](https://github.com/nagadomi/kaggle-cifar10-torch7) Examples of Network-in-Network and GoogleNet Inception modules by @nagadomi
 * [Recpool](https://github.com/soumith/recpool) - Reconstructing pooling networks by Jason Rolfe, this branch has some fixes.
