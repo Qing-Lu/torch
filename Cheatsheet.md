@@ -132,6 +132,7 @@ Demos
 * [Music Tagging](https://github.com/mbhenaff/MusicTagging) - Music Tagging scripts for torch7 by Mikael Henaff
 * [K-Means feature learning over CIFAR-10: Coates-Single-Layer Networks in Unsupervised Feature Learning](https://github.com/jhjin/kmeans-learning-torch)
 * [imagenet loading + training](https://github.com/eladhoffer/ImageNet-Training) - Train imagenet networks, like AlexNet, MattNet etc.
+* [Caffe models in Torch](https://github.com/szagoruyko/loadcaffe) - Several state-of-the-art models released to the Caffe PublicZoo can now be used in torch, thanks to @szagoruyko
 * [dp examples](https://github.com/nicholas-leonard/dp/tree/master/examples):
   * [Kaggle Facial Keypoint Detector](https://github.com/nicholas-leonard/dp/blob/master/examples/facialkeypointdetector.lua) using an MLP or a Convolution Neural Network
   * [Neural Network](https://github.com/nicholas-leonard/dp/blob/master/examples/neuralnetwork.lua) for Image Classification
@@ -218,6 +219,7 @@ Computer Vision
 * [OverFeat](https://github.com/sermanet/OverFeat) - A quick feature extractor based on Overfeat with pretty clunky torch bindings
 * [Overfeat-torch](https://github.com/jhjin/overfeat-torch) - Better Overfeat bindings for Torch by @jhjin
 * [similarity-matching-ratio tracker](https://github.com/Aysegul/smr_tracker) - A state-of-the-art tracker by Aysegul Dundar. [More info here](https://sites.google.com/site/ayseguldundar2012/in-the-news/stateofthearttrackersmrsimilarity-matching-ratio)
+* [Caffe bindings for Torch](https://github.com/szagoruyko/torch-caffe-binding)
 
 
 Images
