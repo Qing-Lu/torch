@@ -77,6 +77,8 @@ luarocks install [packagename]
 Loading popular datasets 
 ============================
 * [MNIST Loader](https://github.com/andresy/mnist) - by Ronan Collobert
+* [Imagenet Loader](https://github.com/soumith/imagenetloader.torch)
+* [Another imagenet loading + training by @eladhoffer](https://github.com/eladhoffer/ImageNet-Training)
 * [torch-datasets](https://github.com/rosejn/torch-datasets) - Scripts to load several popular datasets including:
   * BSR 500
   * CIFAR-10
