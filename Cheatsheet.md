@@ -408,10 +408,27 @@ CUDA Support, CUDA examples
 * NN: Install the package __cunn__
   * __Caveats__: __SpatialConvolutionMM__ is the very fast module (on both CPU and GPU), but it takes a little bit of extra memory on the CPU (and a teeny bit extra on the GPU).
 
--Gotchas
--=======
--LuaJIT limitations, gotchas and assumptions
---------------------------------------------
--Must read! - http://luapower.com/luajit-notes.html
--
--[2GB and addressing limit](http://hacksoflife.blogspot.com/2012/12/integrating-luajit-with-x-plane-64-bit.html)
+  * An alternative is to use NVidia CuDNN, which is very reliable, or cuda-convnet2 bindings, or nnbhwd package
+  * [nnbhwd](https://github.com/qassemoquab/nnbhwd) - Convnet implementations with the data-layout BHWD (by Maxime Oquab), very useful for certain applications.
+  * [cudnn](https://github.com/soumith/cudnn.torch) - NVIDIA CuDNN Bindings
+  * [ccn2](https://github.com/soumith/cuda-convnet2.torch) - cuda-convnet2 ported to torch
+
+NVIDIA Jetson TK1
+-----------------
+* [Installation and usage instructions for Torch + CuDNN on Jetson TK1](https://github.com/e-lab/torch-toolbox/blob/master/Tutorials/Setup-Torch-cuDNN-on-Jetson-TK1.md)
+
+OpenCL support, OpenCL examples
+--------------------------------
+There is barely any OpenCL support.
+
+The only known public OpenCL code is by @jonathantompson over here:
+
+https://github.com/jonathantompson/jtorch
+
+Gotchas
+=======
+LuaJIT limitations, gotchas and assumptions
+-------------------------------------------
+Must read! - http://luapower.com/luajit-notes.html
+
+[2GB and addressing limit](http://hacksoflife.blogspot.com/2012/12/integrating-luajit-with-x-plane-64-bit.html)
