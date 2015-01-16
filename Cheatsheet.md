@@ -406,4 +406,12 @@ CUDA Support, CUDA examples
   * Using **multiple GPUs parallely is supported**. Look at [this link](https://github.com/torch/cutorch/issues/42) for more info
 
 * NN: Install the package __cunn__
-  * __Caveats__: __SpatialConvolutionMM__ is the very fast module (on both CPU and GPU), but it takes a little bit of extra memory on the CPU (and a teeny bit extra 
+  * __Caveats__: __SpatialConvolutionMM__ is the very fast module (on both CPU and GPU), but it takes a little bit of extra memory on the CPU (and a teeny bit extra on the GPU).
+
+-Gotchas
+-=======
+-LuaJIT limitations, gotchas and assumptions
+--------------------------------------------
+-Must read! - http://luapower.com/luajit-notes.html
+-
+-[2GB and addressing limit](http://hacksoflife.blogspot.com/2012/12/integrating-luajit-with-x-plane-64-bit.html)
