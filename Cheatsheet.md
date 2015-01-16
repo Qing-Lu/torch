@@ -37,27 +37,8 @@ If you are used to numpy, [have a look at this page](https://github.com/torch/to
 
 Installing and Running Torch
 ============================
-OSX and Ubuntu
----------------
-Run the commands to install Torch globally:
-```
-curl -sk https://raw.githubusercontent.com/torch/ezinstall/master/install-deps | bash
-curl -sk https://raw.githubusercontent.com/torch/ezinstall/master/install-luajit+torch | bash
-luarocks install env
-```
-
-Run torch using the command
-```
-th
-```
-If you need QT visualization, run torch using the command
-```
-qlua
-```
-If you need gfx.js visualization, run torch using the following command
-```
-luajit -lgfx.go
-```
+To make sure that the install instructions are not replicated, and in a single place, we've put them here:
+[http://torch.ch/docs/getting-started.html#_](http://torch.ch/docs/getting-started.html#_)
 
 iOS
 ---------------
