@@ -48,6 +48,16 @@ Android
 ---------------
 * https://github.com/soumith/torch-android
 
+EC2 Public AMI
+---------------
+EC2 AMI with the following pre-installed packages:
+* CUDA
+* cuDNN
+* Torch
+* iTorch
+* Anaconda
+AMI Id: ami-8a9ce0e2. [Launch](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-8a9ce0e2) an instance
+
 Installing Packages
 ===================
 Given a package name, you can install it at your terminal with:
@@ -397,13 +407,3 @@ CUDA Support, CUDA examples
 
 * NN: Install the package __cunn__
   * __Caveats__: __SpatialConvolutionMM__ is the very fast module (on both CPU and GPU), but it takes a little bit of extra memory on the CPU (and a teeny bit extra 
-
-EC2 Public AMI
-==============
-EC2 AMI with the following pre-installed packages:
-* CUDA
-* cuDNN
-* Torch
-* iTorch
-* Anaconda
-AMI Id: ami-8a9ce0e2. [Launch](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-8a9ce0e2) an instance
