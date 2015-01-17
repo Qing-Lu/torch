@@ -57,8 +57,8 @@ EC2 AMI with the following pre-installed packages:
 * itorch
 * Anaconda
 
-AMI Id: ami-6238470a. (Can be launched using g2.2xlarge instance)   
-[Launch](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-6238470a) an instance
+AMI Id: ami-64017e0c. (Can be launched using g2.2xlarge instance)   
+[Launch](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-64017e0c) an instance
 
 Installing Packages
 ===================
