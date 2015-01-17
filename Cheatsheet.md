@@ -53,10 +53,12 @@ EC2 Public AMI
 EC2 AMI with the following pre-installed packages:
 * CUDA
 * cuDNN
-* Torch
-* iTorch
+* [torch-distro](https://github.com/soumith/torch-distro) (torch + common packages)
+* itorch
 * Anaconda
-AMI Id: ami-6238470a. [Launch](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-6238470a) an instance
+
+AMI Id: ami-6238470a. (Can be launched using g2.2xlarge instance)   
+[Launch](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-6238470a) an instance
 
 Installing Packages
 ===================
