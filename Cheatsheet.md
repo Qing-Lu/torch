@@ -56,7 +56,7 @@ EC2 AMI with the following pre-installed packages:
 * Torch
 * iTorch
 * Anaconda
-AMI Id: ami-8a9ce0e2. [Launch](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-8a9ce0e2) an instance
+AMI Id: ami-6238470a. [Launch](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-6238470a) an instance
 
 Installing Packages
 ===================
