@@ -434,3 +434,9 @@ LuaJIT limitations, gotchas and assumptions
 Must read! - http://luapower.com/luajit-notes.html
 
 [2GB and addressing limit](http://hacksoflife.blogspot.com/2012/12/integrating-luajit-with-x-plane-64-bit.html)
+
+Legacy
+======
+
+* [Torch3](http://torch.ch/torch3)
+* [Torch5](http://torch5.sourceforge.net)
