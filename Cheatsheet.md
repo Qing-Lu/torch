@@ -439,4 +439,5 @@ Legacy
 ======
 
 * [Torch3](http://torch.ch/torch3)
+* [Torch4](https://github.com/andresy/torch4)
 * [Torch5](http://torch5.sourceforge.net)
