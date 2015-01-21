@@ -318,7 +318,7 @@ Utility libraries
 
 Databases
 ---------
-* [luamongo](https://github.com/moai/luamongo) - Lua driver for mongodb
+* [ljffi-mongo](https://github.com/Miroff/ljffi-mongo) - MongoDB bindings using Mongo's C driver
 * lsqlite3 - A binding for Lua to the SQLite3 database library
 * LuaSQL-MySQL - Database connectivity for Lua (MySQL driver)
 * LuaSQL-Postgres - Database connectivity for Lua (Postgres driver)
@@ -328,7 +328,7 @@ Databases
 * persist - A persisting table, built on Redis.
 * redis-async - A redis client built off the torch/lua async framework
 * redis-queue - A redis queue framework using async redis
-
+* [luamongo](https://github.com/moai/luamongo) - Lua driver for mongodb (Use v0.2.0 rockspec)
 Interfaces to third-party libraries
 ------------
 * sdl2 - A FFI interface to SDL2
