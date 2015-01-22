@@ -60,6 +60,11 @@ EC2 AMI with the following pre-installed packages:
 AMI Id: ami-6238470a. (Can be launched using g2.2xlarge instance)   
 [Launch](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-6238470a) an instance
 
+Docker Image
+-------------
+``` docker pull abhishekkr/ml-torch ```
+
+
 Installing Packages
 ===================
 Given a package name, you can install it at your terminal with:
