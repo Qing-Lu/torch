@@ -167,6 +167,7 @@ Data formats
 * [image](https://github.com/torch/image) - Loads png, jpg, ppm images
 * [graphicsmagick](https://github.com/clementfarabet/graphicsmagick) - A full Torch/C interface to GraphicsMagick's Wand API and to imagemagick commandline utility, loads all images thrown its way.
 * [ffmpeg](https://github.com/clementfarabet/lua---ffmpeg) - A simple abstraction class, that uses ffmpeg to encode/decode videos from/to Torch Tensors
+* [csv2tensor](https://github.com/willkurt/csv2tensor) - Package for loading CSV files containing numeric data directly to Torch Tensors
 
 Machine Learning
 ------------
