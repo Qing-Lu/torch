@@ -37,8 +37,7 @@ If you are used to numpy, [have a look at this page](https://github.com/torch/to
 
 Installing and Running Torch
 ============================
-To make sure that the install instructions are not replicated, and in a single place, we've put them here:
-[http://torch.ch/docs/getting-started.html#_](http://torch.ch/docs/getting-started.html#_)
+To make sure that the install instructions are not replicated, and in a single place, we've put them [here](http://torch.ch/docs/getting-started.html#_).
 
 iOS
 ---------------
@@ -102,9 +101,10 @@ Tutorials
 ---------
 * [Tutorial](http://code.madbits.com/)
 * [code accompanying the tutorials](https://github.com/clementfarabet/torch-tutorials)
-* [dp Tutorials](https://github.com/nicholas-leonard/dp/blob/master/README.md#dp.tutorials)
-  * [Neural Network](https://github.com/nicholas-leonard/dp/blob/master/doc/neuralnetworktutorial.md)
-  * [Kaggle Facial Keypoint Detection](https://github.com/nicholas-leonard/dp/blob/master/doc/facialkeypointstutorial.md)
+* [dp Tutorials](http://dp.readthedocs.org/en/latest/#tutorials-and-examples)
+  * [Neural Network](http://dp.readthedocs.org/en/latest/neuralnetworktutorial/index.html)
+  * [Kaggle Facial Keypoint Detection](http://dp.readthedocs.org/en/latest/facialkeypointstutorial/index.html)
+  * [Language Model](http://dp.readthedocs.org/en/latest/languagemodeltutorial/index.html)
 
 Demos
 ------
@@ -250,7 +250,7 @@ Natural Language Processing
 ------------
 * [nn](https://github.com/torch/nn) - Neural language models such as ones defined in [Natural Language Processing (almost) from Scratch](http://arxiv.org/abs/1103.0398) can be implemented using the nn package. nn.LookupTable is useful in this regard.
 * [nnx](https://github.com/clementfarabet/lua---nnx) - Has a [Recurrent](https://github.com/clementfarabet/lua---nnx#recurrent) container that can be used to build simple recurrent neural networks used for language models.
-* [dp](https://github.com/nicholas-leonard/dp) - A deep learning library for Torch. Includes example Neural Network and Recurrent Neural Network Language Model implementations using the Google Billion Words dataset.
+* [dp](https://github.com/nicholas-leonard/dp) - A deep learning library for Torch. Includes Neural Network [Language Model Tutorial](http://dp.readthedocs.org/en/latest/languagemodeltutorial/index.html) and [Recurrent Neural Network Language Model](https://github.com/nicholas-leonard/dp/blob/master/examples/recurrentlanguagemodel.lua) implementations using the Google Billion Words dataset.
 * [senna](https://github.com/torch/senna) - Part-of-speech tagging, Chunking, Name Entity Recognition and Semantic Role Labeling, extremely fast and used to be state-of-the-art (dont know now)
 
 Sensor Input/Output
