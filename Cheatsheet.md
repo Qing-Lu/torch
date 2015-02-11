@@ -168,6 +168,7 @@ Data formats
 * [graphicsmagick](https://github.com/clementfarabet/graphicsmagick) - A full Torch/C interface to GraphicsMagick's Wand API and to imagemagick commandline utility, loads all images thrown its way.
 * [ffmpeg](https://github.com/clementfarabet/lua---ffmpeg) - A simple abstraction class, that uses ffmpeg to encode/decode videos from/to Torch Tensors
 * [csv2tensor](https://github.com/willkurt/csv2tensor) - Package for loading CSV files containing numeric data directly to Torch Tensors
+* [torchx](https://github.com/nicholas-leonard/torchx/blob/master/README.md) - Contains `paths.indexdir` which can be used to efficiently load directories containing thousands of files
 
 Machine Learning
 ------------
@@ -280,6 +281,7 @@ Utility libraries
 * [penlight](http://stevedonovan.github.io/Penlight/api/index.html) - Lua utility libraries loosely based on the Python standard libraries
 * [moses](https://github.com/Yonaba/Moses) - A more up-to-date alternative to underscore
 * [underscore](http://mirven.github.io/underscore.lua/) - Underscore is a utility-belt library for Lua
+* [torchx](https://github.com/nicholas-leonard/torchx/blob/master/README.md) - Contains extensions to torch for concatenating tensors, indexing folders, hashing strings and working with nested tables of tensors. 
 
 ##### Documentation
 * [torch-dokx](https://github.com/d11/torch-dokx) - An awesome automatic documentation generator for torch7
