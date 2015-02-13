@@ -101,7 +101,7 @@ Tutorials, Demos by Category
 Tutorials
 ---------
 * [Tutorial](http://code.madbits.com/)
-* [code accompanying the tutorials](https://github.com/clementfarabet/torch-tutorials)
+* [code accompanying the tutorials](https://github.com/torch/tutorials)
 * [dp Tutorials](http://dp.readthedocs.org/en/latest/#tutorials-and-examples)
   * [Neural Network](http://dp.readthedocs.org/en/latest/neuralnetworktutorial/index.html)
   * [Kaggle Facial Keypoint Detection](http://dp.readthedocs.org/en/latest/facialkeypointstutorial/index.html)
@@ -109,7 +109,8 @@ Tutorials
 
 Demos
 ------
-* [Core torch7 demos repository](https://github.com/torch/demos). Populated by @clementfarabet, @rlowrance and Purdue e-Lab 
+* [Imagenet single GPU and multi-GPU demo by Facebook](https://github.com/facebook/fbcunn/tree/master/examples/imagenet)
+* [Core torch7 demos repository](https://github.com/torch/demos). 
   * loading data
   * tensors
   * linear-regression, logistic-regression
