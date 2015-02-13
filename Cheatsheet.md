@@ -75,6 +75,7 @@ Loading popular datasets
 ============================
 * [MNIST Loader](https://github.com/andresy/mnist) - by Ronan Collobert
 * [Imagenet Loader](https://github.com/soumith/imagenetloader.torch)
+* [Imagenet multi-GPU training on AlexNet and Overfeat](https://github.com/facebook/fbcunn/tree/master/examples/imagenet)
 * [Another imagenet loading + training by @eladhoffer](https://github.com/eladhoffer/ImageNet-Training)
 * [torch-datasets](https://github.com/rosejn/torch-datasets) - Scripts to load several popular datasets including:
   * BSR 500
@@ -126,6 +127,7 @@ Demos
 * [Another face detector by @jonathantompson](https://github.com/jonathantompson/geiger_facedetector)
 * [Training a Convnet for the Galaxy-Zoo Kaggle challenge(CUDA demo)](https://github.com/soumith/galaxyzoo)
 * [Kaggle CIFAR-10 competition](https://github.com/nagadomi/kaggle-cifar10-torch7) Examples of Network-in-Network and GoogleNet Inception modules by @nagadomi
+* [Neural Turing Machines](https://github.com/kaishengtai/torch-ntm) - A modified version of NTM with LSTM memory cells
 * [Recpool](https://github.com/soumith/recpool) - Reconstructing pooling networks by Jason Rolfe, this branch has some fixes.
 * [Music Tagging](https://github.com/mbhenaff/MusicTagging) - Music Tagging scripts for torch7 by Mikael Henaff
 * [K-Means feature learning over CIFAR-10: Coates-Single-Layer Networks in Unsupervised Feature Learning](https://github.com/jhjin/kmeans-learning-torch)
