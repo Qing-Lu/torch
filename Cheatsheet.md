@@ -110,6 +110,7 @@ Tutorials
 Demos
 ------
 * [Imagenet single GPU and multi-GPU demo by Facebook](https://github.com/facebook/fbcunn/tree/master/examples/imagenet)
+* [Recurrent Networks with Long Short-term memory (LSTM)](https://github.com/wojzaremba/lstm) - for Language modeling
 * [Core torch7 demos repository](https://github.com/torch/demos). 
   * loading data
   * tensors
