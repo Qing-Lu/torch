@@ -135,6 +135,7 @@ Demos
 * [K-Means feature learning over CIFAR-10: Coates-Single-Layer Networks in Unsupervised Feature Learning](https://github.com/jhjin/kmeans-learning-torch)
 * [imagenet loading + training](https://github.com/eladhoffer/ImageNet-Training) - Train imagenet networks, like AlexNet, MattNet etc.
 * [Caffe models in Torch](https://github.com/szagoruyko/loadcaffe) - Several state-of-the-art models released to the Caffe PublicZoo can now be used in torch, thanks to @szagoruyko
+* [libCCV models in Torch](https://github.com/deltheil/loadccv) - libccv provides state-of-the-art models for computer vision. Load these models in torch and use them naturally.
 * [dp examples](https://github.com/nicholas-leonard/dp/tree/master/examples):
   * [Kaggle Facial Keypoint Detector](https://github.com/nicholas-leonard/dp/blob/master/examples/facialkeypointdetector.lua) using an MLP or a Convolution Neural Network
   * [Neural Network](https://github.com/nicholas-leonard/dp/blob/master/examples/neuralnetwork.lua) for Image Classification
