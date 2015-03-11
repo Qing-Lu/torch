@@ -94,6 +94,7 @@ Loading popular datasets
   * CIFAR-100
   * Google Street View House Numbers (SVHN)
   * Google Billion Words
+  * ImageNet
 * [STL10 Loader](https://github.com/eladhoffer/stl10.torch)
 
 Tutorials, Demos by Category
