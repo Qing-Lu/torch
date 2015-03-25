@@ -334,6 +334,7 @@ Utility libraries
 
 Databases
 ---------
+* [lmdb.torch](https://github.com/eladhoffer/lmdb.torch) - LMDB Wrapper for Torch
 * [ljffi-mongo](https://github.com/Miroff/ljffi-mongo) - MongoDB bindings using Mongo's C driver
 * lsqlite3 - A binding for Lua to the SQLite3 database library
 * LuaSQL-MySQL - Database connectivity for Lua (MySQL driver)
