@@ -184,6 +184,7 @@ Machine Learning
 * [nn](https://github.com/torch/nn) - Neural Network package for Torch
 * [nngraph](https://github.com/torch/nngraph) - This package provides graphical computation for nn library in Torch7.
 * [dp](https://github.com/nicholas-leonard/dp) - A deep learning library designed for streamlining research and development using the Torch7 distribution. It emphasizes flexibility through the elegant use of object-oriented design patterns.
+* [rnn](https://github.com/Element-Research/rnn) - Recurrent Neural Network library for nn
 * [nnx](https://github.com/clementfarabet/lua---nnx) - A completely unstable and experimental package that extends Torch's builtin nn library
 * [optim](https://github.com/torch/optim) - An optimization library for Torch. SGD, Adagrad, Conjugate-Gradient, LBFGS, RProp and more.
 * [unsup](https://github.com/koraykv/unsup) - A package for unsupervised learning in Torch. Provides modules that are compatible with nn (LinearPsd, ConvPsd, AutoEncoder, ...), and self-contained algorithms (k-means, PCA). 
@@ -260,7 +261,7 @@ Audio
 Natural Language Processing
 ------------
 * [nn](https://github.com/torch/nn) - Neural language models such as ones defined in [Natural Language Processing (almost) from Scratch](http://arxiv.org/abs/1103.0398) can be implemented using the nn package. nn.LookupTable is useful in this regard.
-* [nnx](https://github.com/clementfarabet/lua---nnx) - Has a [Recurrent](https://github.com/clementfarabet/lua---nnx#recurrent) container that can be used to build simple recurrent neural networks used for language models.
+* [rnn](https://github.com/Element-Research/rnn) - Recurrent Neural Network library that has a [Recurrent](https://github.com/Element-Research/rnn/blob/master/README.md#rnn.Recurrent) and [LSTM](https://github.com/Element-Research/rnn/blob/master/README.md#rnn.LSTM) that can be used for language modeling.
 * [dp](https://github.com/nicholas-leonard/dp) - A deep learning library for Torch. Includes Neural Network [Language Model Tutorial](http://dp.readthedocs.org/en/latest/languagemodeltutorial/index.html) and [Recurrent Neural Network Language Model](https://github.com/nicholas-leonard/dp/blob/master/examples/recurrentlanguagemodel.lua) implementations using the Google Billion Words dataset.
 * [senna](https://github.com/torch/senna) - Part-of-speech tagging, Chunking, Name Entity Recognition and Semantic Role Labeling, extremely fast and used to be state-of-the-art (dont know now)
 
