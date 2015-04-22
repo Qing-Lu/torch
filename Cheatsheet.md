@@ -107,6 +107,7 @@ Tutorials
   * [Neural Network](http://dp.readthedocs.org/en/latest/neuralnetworktutorial/index.html)
   * [Kaggle Facial Keypoint Detection](http://dp.readthedocs.org/en/latest/facialkeypointstutorial/index.html)
   * [Language Model](http://dp.readthedocs.org/en/latest/languagemodeltutorial/index.html)
+* [Torch cheatsheet for Matlab users](http://atamahjoubfar.github.io/)
 
 Demos
 ------
