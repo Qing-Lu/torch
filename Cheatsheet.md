@@ -34,6 +34,7 @@ Newbies
 7. Contribute! :)
 
 If you are used to numpy, [have a look at this page](https://github.com/torch/torch7/wiki/Torch-for-Numpy-users)
+If you are used to Matlab, [have a look at this translation pdf](http://atamahjoubfar.github.io/Torch_for_Matlab_users.pdf)
 
 Installing and Running Torch
 ============================
