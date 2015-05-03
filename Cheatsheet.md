@@ -63,7 +63,9 @@ AMI Id: ami-6238470a. (Can be launched using g2.2xlarge instance)
 Docker Image
 -------------
 ``` docker pull kaixhin/torch ```
+
 CUDA 7 version - see [repo](https://registry.hub.docker.com/u/kaixhin/cuda-torch/) for requirements
+
 ``` docker pull kaixhin/cuda-torch ```
 
 Installing Packages
