@@ -48,7 +48,7 @@ Android
 ---------------
 * https://github.com/soumith/torch-android
 
-EC2 Public AMI
+EC2 Public AMI (Kinda outdated by now)
 ---------------
 EC2 AMI with the following pre-installed packages:
 * CUDA
