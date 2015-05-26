@@ -416,10 +416,16 @@ Debuggers / Visual Debuggers / IDEs
 ===================================
 * [ZeroBrane Studio](http://studio.zerobrane.com) -Provides a great IDE and visual debugging.
 * [zbs-torch](https://github.com/soumith/zbs-torch) - Use this to debug qlua based programs 
-
-I never used the ones below, but they look good on paper:
 * [LDT](http://www.eclipse.org/koneki/ldt/) - An eclipse plugin for Lua
-* [LuaEclipse](http://luaeclipse.luaforge.net/) - Another eclipse plugin for Lua
+
+Some advice from Florian STRUB:
+ - Eclipse + plugin. Its debug mode is very powerful with watcher, interactive console, stack-trace and so on. It has nice refactoring features but its coloring is quite poor.
+ - zerobrane is the standard Lua IDE, it works well and its debug mode is fine. Yet, you have to use a fork to use torch (zbs-torch). To my mind, this IDE is a bit limited. 
+ - IntellJ + Lua plugin. The best IDE so far with with nice coloring and excellent refactoring tools. Its debug mode is experimental so it might not work with some of your project.
+  
+Therefore, I strongly advise you to use Eclipse if you are willing to use advanced debugging features.
+http://www.eclipse.org/koneki/ldt/
+
 
 GPU Support
 ===========
