@@ -152,7 +152,7 @@ Demos
   * [Neural Network Language Model](https://github.com/nicholas-leonard/dp/blob/master/examples/languagemodel.lua) for Google Billion Words dataset
   * [Recurrent Neural Network Language Model] (https://github.com/nicholas-leonard/dp/blob/master/examples/recurrentlanguagemodel.lua)
   * [Distributed Conditional Computation](https://github.com/nicholas-leonard/dp/blob/master/examples/conditionalcomputation.lua) for language modelling 
-  
+  * [Object detection using rcnn and spp](https://github.com/fmassa/object-detection.torch) by fmassa
 
 List of Packages by Category
 ============================
