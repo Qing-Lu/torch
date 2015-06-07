@@ -48,7 +48,7 @@ Android
 ---------------
 * https://github.com/soumith/torch-android
 
-EC2 Public AMI (Kinda outdated by now)
+EC2 Public AMI
 ---------------
 EC2 AMI with the following pre-installed packages:
 * CUDA
@@ -57,8 +57,8 @@ EC2 AMI with the following pre-installed packages:
 * itorch
 * Anaconda
 
-AMI Id: ami-6238470a. (Can be launched using g2.2xlarge instance)   
-[Launch](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-6238470a) an instance
+AMI Id: ami-b36981d8. (Can be launched using g2.2xlarge instance)   
+[Launch](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-b36981d8) an instance
 
 Docker Image
 -------------
