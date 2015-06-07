@@ -79,7 +79,7 @@ Loading popular datasets
 ============================
 * [MNIST Loader](https://github.com/andresy/mnist) - by Ronan Collobert
 * [Imagenet Loader](https://github.com/soumith/imagenetloader.torch)
-* [Imagenet multi-GPU training on AlexNet and Overfeat](https://github.com/facebook/fbcunn/tree/master/examples/imagenet)
+* [Imagenet multi-GPU training on AlexNet and Overfeat](https://github.com/soumith/imagenet-multiGPU.torch)
 * [Another imagenet loading + training by @eladhoffer](https://github.com/eladhoffer/ImageNet-Training)
 * [torch-datasets](https://github.com/rosejn/torch-datasets) - Scripts to load several popular datasets including:
   * BSR 500
