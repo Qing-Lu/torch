@@ -398,6 +398,7 @@ Using multiple GPUs parallely is supported. Look at [this link](https://github.c
 
 OpenCL
 ------------
+* [cltorch](https://github.com/hughperkins/cltorch) - Torch OpenCL Implementation
 * https://github.com/jonathantompson/jtorch
 
 Miscellaneous
