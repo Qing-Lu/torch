@@ -462,7 +462,7 @@ Gotchas
 =======
 LuaJIT limitations, gotchas and assumptions
 -------------------------------------------
-Must read! - http://luapower.com/luajit-notes.html
+Must read! - http://luapower.com/luajit-notes
 
 [2GB and addressing limit](http://hacksoflife.blogspot.com/2012/12/integrating-luajit-with-x-plane-64-bit.html)
 
