@@ -14,9 +14,13 @@ This is a community-maintained list.
 * VGG_CNN_F
 * VGG ILSVRC-2014 16-layer
 * VGG ILSVRC-2014 19-layer
-* Network-in-Network Imagenet
-* Network-in-Network CIFAR-10
+* Network-in-Network (Imagenet & CIFAR-10)
+* Oxford 102 Flowers
+* VGG16_SalObjSub
+* AlexNet_SalObjSub
+* Binary Hash Codes
 * MNIST LeNet
 
 [OverFeat](https://github.com/jhjin/overfeat-torch) - Nice clean native models in torch for [Overfeat](https://github.com/sermanet/Overfeat) by Jonghoon Jin. Overfeat is originally developed by Pierre Sermanet and others.
- 
+
+[DeepCompare](https://github.com/szagoruyko/cvpr15deepcompare) - models for comparing image patches and extracting deep convolutional descriptors in native torch and binary formats (by Sergey Zagoruyko).
