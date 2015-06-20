@@ -451,11 +451,11 @@ NVIDIA Jetson TK1
 
 OpenCL support, OpenCL examples
 --------------------------------
-There is barely any OpenCL support.
 
-The only known public OpenCL code is by @jonathantompson over here:
+Partial OpenCL implementations are available at:
 
-https://github.com/jonathantompson/jtorch
+* https://github.com/hughperkins/cltorch
+* https://github.com/jonathantompson/jtorch
 
 Gotchas
 =======
