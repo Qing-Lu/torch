@@ -452,7 +452,7 @@ NVIDIA Jetson TK1
 OpenCL support, OpenCL examples
 --------------------------------
 
-Partial OpenCL implementations are available at:
+OpenCL implementations are available at:
 
 * https://github.com/hughperkins/cltorch
 * https://github.com/jonathantompson/jtorch
