@@ -398,7 +398,8 @@ Using multiple GPUs parallely is supported. Look at [this link](https://github.c
 OpenCL
 ------------
 * [cltorch](https://github.com/hughperkins/cltorch) - Torch OpenCL Implementation
-* https://github.com/jonathantompson/jtorch
+* [https://github.com/jonathantompson/jtorch](jtorch)  - forward-only OpenCL nn implementation
+* [clnn](https://github.com/hughperkins/clnn) - early stage OpenCL nn implementation
 
 Miscellaneous
 -------------
@@ -458,8 +459,8 @@ OpenCL support, OpenCL examples
   * OpenCL double precision is not supported. 
 
 In addition, there are early-stage OpenCL equivalents of `nn` at:
-* https://github.com/hughperkins/clnn  (early stages; just a few layer types provided)
-* https://github.com/jonathantompson/jtorch (forward only, for predicting, using pre-trained weights)
+* [clnn](https://github.com/hughperkins/clnn)  (early stages; just a few layer types provided)
+* [jtorch](https://github.com/jonathantompson/jtorch) (forward only, for predicting, using pre-trained weights)
 
 Gotchas
 =======
