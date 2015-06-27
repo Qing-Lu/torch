@@ -112,6 +112,7 @@ Tutorials
   * [Kaggle Facial Keypoint Detection](http://dp.readthedocs.org/en/latest/facialkeypointstutorial/index.html)
   * [Language Model](http://dp.readthedocs.org/en/latest/languagemodeltutorial/index.html)
 * [Torch cheatsheet for Matlab users](http://atamahjoubfar.github.io/)
+* [Oxford ML course problems](https://github.com/oxford-cs-ml-2015/)
 
 Demos
 ------
