@@ -116,9 +116,6 @@ Tutorials
 
 Demos
 ------
-* [Imagenet single GPU and multi-GPU demo by Facebook](https://github.com/facebook/fbcunn/tree/master/examples/imagenet)
-* [Recurrent Networks with Long Short-term memory (LSTM)](https://github.com/wojzaremba/lstm) - for Language modeling
-* [Character Level RNNs with LSTM/GRU](https://github.com/karpathy/char-rnn) - Training character-level language models for Latex, English language, Linux kernel C code etc.
 * [Core torch7 demos repository](https://github.com/torch/demos). 
   * loading data
   * tensors
@@ -134,6 +131,16 @@ Demos
   * kinect demo
   * filter-bank visualization
   * saliency-networks
+* [dp examples](https://github.com/nicholas-leonard/dp/tree/master/examples):
+  * [Neural Network](https://github.com/nicholas-leonard/dp/blob/master/examples/neuralnetwork.lua) for Image Classification
+  * [Mixture of Experts](https://github.com/nicholas-leonard/dp/blob/master/examples/mixtureofexperts.lua) for Image Classification
+  * [Convolution Neural Network](https://github.com/nicholas-leonard/dp/blob/master/examples/convolutionneuralnetwork.lua) for Image Classification
+  * [Kaggle Facial Keypoint Detector](https://github.com/nicholas-leonard/dp/blob/master/examples/facialkeypointdetector.lua) using an MLP or a Convolution Neural Network
+  * [Neural Network Language Model](https://github.com/nicholas-leonard/dp/blob/master/examples/languagemodel.lua) for Google Billion Words dataset
+  * [Recurrent Neural Network Language Model] (https://github.com/nicholas-leonard/dp/blob/master/examples/recurrentlanguagemodel.lua)
+* [Imagenet single GPU and multi-GPU demo by Facebook](https://github.com/facebook/fbcunn/tree/master/examples/imagenet)
+* [Recurrent Networks with Long Short-term memory (LSTM)](https://github.com/wojzaremba/lstm) - for Language modeling
+* [Character Level RNNs with LSTM/GRU](https://github.com/karpathy/char-rnn) - Training character-level language models for Latex, English language, Linux kernel C code etc.
 * [Another face detector by @jonathantompson](https://github.com/jonathantompson/geiger_facedetector)
 * [Training a Convnet for the Galaxy-Zoo Kaggle challenge(CUDA demo)](https://github.com/soumith/galaxyzoo)
 * [Kaggle CIFAR-10 competition](https://github.com/nagadomi/kaggle-cifar10-torch7) Examples of Network-in-Network and GoogleNet Inception modules by @nagadomi
@@ -145,13 +152,6 @@ Demos
 * [Caffe models in Torch](https://github.com/szagoruyko/loadcaffe) - Several state-of-the-art models released to the Caffe PublicZoo can now be used in torch, thanks to @szagoruyko
 * [libCCV models in Torch](https://github.com/deltheil/loadccv) - libccv provides state-of-the-art models for computer vision. Load these models in torch and use them naturally.
 * [Variational Auto encoders](https://github.com/y0ast/VAE-Torch)
-* [dp examples](https://github.com/nicholas-leonard/dp/tree/master/examples):
-  * [Neural Network](https://github.com/nicholas-leonard/dp/blob/master/examples/neuralnetwork.lua) for Image Classification
-  * [Mixture of Experts](https://github.com/nicholas-leonard/dp/blob/master/examples/mixtureofexperts.lua) for Image Classification
-  * [Convolution Neural Network](https://github.com/nicholas-leonard/dp/blob/master/examples/convolutionneuralnetwork.lua) for Image Classification
-  * [Kaggle Facial Keypoint Detector](https://github.com/nicholas-leonard/dp/blob/master/examples/facialkeypointdetector.lua) using an MLP or a Convolution Neural Network
-  * [Neural Network Language Model](https://github.com/nicholas-leonard/dp/blob/master/examples/languagemodel.lua) for Google Billion Words dataset
-  * [Recurrent Neural Network Language Model] (https://github.com/nicholas-leonard/dp/blob/master/examples/recurrentlanguagemodel.lua)
 * [Object detection using rcnn and spp](https://github.com/fmassa/object-detection.torch) by fmassa
 
 List of Packages by Category
