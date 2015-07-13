@@ -270,6 +270,7 @@ Natural Language Processing
 * [rnn](https://github.com/Element-Research/rnn) - Recurrent Neural Network library that has a [Recurrent](https://github.com/Element-Research/rnn/blob/master/README.md#rnn.Recurrent) and [LSTM](https://github.com/Element-Research/rnn/blob/master/README.md#rnn.LSTM) that can be used for language modeling.
 * [dp](https://github.com/nicholas-leonard/dp) - A deep learning library for Torch. Includes Neural Network [Language Model Tutorial](http://dp.readthedocs.org/en/latest/languagemodeltutorial/index.html) and [Recurrent Neural Network Language Model](https://github.com/nicholas-leonard/dp/blob/master/examples/recurrentlanguagemodel.lua) implementations using the Google Billion Words dataset.
 * [senna](https://github.com/torch/senna) - Part-of-speech tagging, Chunking, Name Entity Recognition and Semantic Role Labeling, extremely fast and used to be state-of-the-art (dont know now)
+* [word2vec](https://github.com/rotmanmi/word2vec.torch) - Ready to use word2vec embeddings in torch. This repo reads the bin file of word2vec and loads the embeddings to be used. Provides example.
 
 Sensor Input/Output
 ------------
