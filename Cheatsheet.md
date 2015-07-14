@@ -182,6 +182,7 @@ Data formats
 * [ffmpeg](https://github.com/clementfarabet/lua---ffmpeg) - A simple abstraction class, that uses ffmpeg to encode/decode videos from/to Torch Tensors
 * [csv2tensor](https://github.com/willkurt/csv2tensor) - Package for loading CSV files containing numeric data directly to Torch Tensors
 * [torchx](https://github.com/nicholas-leonard/torchx/blob/master/README.md) - Contains `paths.indexdir` which can be used to efficiently load directories containing thousands of files
+* [npy4th](https://github.com/htwaijry/npy4th) - Loads NumPy .npy and .npz
 
 Machine Learning
 ------------
