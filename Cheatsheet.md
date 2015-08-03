@@ -81,13 +81,6 @@ Loading popular datasets
 * [Imagenet Loader](https://github.com/soumith/imagenetloader.torch)
 * [Imagenet multi-GPU training on AlexNet and Overfeat](https://github.com/soumith/imagenet-multiGPU.torch)
 * [Another imagenet loading + training by @eladhoffer](https://github.com/eladhoffer/ImageNet-Training)
-* [torch-datasets](https://github.com/rosejn/torch-datasets) - Scripts to load several popular datasets including:
-  * BSR 500
-  * CIFAR-10
-  * COIL
-  * Street View House Numbers
-  * MNIST
-  * NORB
 * [KITTI](https://github.com/Aysegul/torch-KITTI) - KITTI dataset loader by Aysegul Dundar
 * [Atari2600](https://github.com/fidlej/aledataset) - Scripts to generate a dataset with static frames from the Arcade Learning Environment
 * [torch-INRIA](https://github.com/Atcold/torch-INRIA) - INRIA dataset loader by Alfredo Canziani
@@ -97,9 +90,18 @@ Loading popular datasets
   * CIFAR-10
   * CIFAR-100
   * Google Street View House Numbers (SVHN)
+  * Purdue Face Detection
   * Google Billion Words
+  * Penn Tree Bank
   * ImageNet
 * [STL10 Loader](https://github.com/eladhoffer/stl10.torch)
+* [torch-datasets](https://github.com/rosejn/torch-datasets) - Scripts to load several popular datasets including:
+  * BSR 500
+  * CIFAR-10
+  * COIL
+  * Street View House Numbers
+  * MNIST
+  * NORB
 
 Tutorials, Demos by Category
 ===================================
