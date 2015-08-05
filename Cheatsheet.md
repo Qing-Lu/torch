@@ -60,13 +60,15 @@ EC2 AMI with the following pre-installed packages:
 AMI Id: ami-b36981d8. (Can be launched using g2.2xlarge instance)   
 [Launch](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-b36981d8) an instance
 
-Docker Image
+Docker Images
 -------------
 ``` docker pull kaixhin/torch ```
 
-CUDA 7 version - see [repo](https://registry.hub.docker.com/u/kaixhin/cuda-torch/) for requirements
-
+CUDA 7.0 version - see [repo](https://github.com/Kaixhin/dockerfiles/tree/master/cuda-torch) for requirements
 ``` docker pull kaixhin/cuda-torch ```
+
+CUDA 6.5 version - see [repo](https://github.com/Kaixhin/dockerfiles/tree/cuda_v6.5/cuda-torch) for requirements
+``` docker pull kaixhin/cuda-torch:6.5 ```
 
 Installing Packages
 ===================
