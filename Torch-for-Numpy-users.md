@@ -82,6 +82,7 @@ torch equivalents of numpy functions
 | Numpy            | Torch |
 | --------------------|:-------------:|
 | np.take(a, indices) | a[indices]
+| x[:,0]  | x[{{},1}]
 | np.put  | ????
 | x.repeat | x:repeatTensor
 | np.choose | ???
