@@ -467,9 +467,9 @@ OpenCL support, OpenCL examples
   * You get an additional tensor type torch.ClTensor (just like torch.FloatTensor). 
   * OpenCL double precision is not supported. 
 
-OpenCL implementatoins of `nn` are at:
+OpenCL implementations of `nn` are at:
 * [clnn](https://github.com/hughperkins/clnn)
-* [jtorch](https://github.com/jonathantompson/jtorch) (portable GPU prediction)
+* [jtorch](https://github.com/jonathantompson/jtorch) (cross-platform GPU prediction)
 
 Gotchas
 =======
