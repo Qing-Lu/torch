@@ -407,8 +407,8 @@ Using multiple GPUs parallely is supported. Look at [this link](https://github.c
 OpenCL
 ------------
 * [cltorch](https://github.com/hughperkins/cltorch) - Torch OpenCL Implementation
+* [clnn](https://github.com/hughperkins/clnn) - OpenCL nn implementation
 * [jtorch](https://github.com/jonathantompson/jtorch)  - forward-only OpenCL nn implementation
-* [clnn](https://github.com/hughperkins/clnn) - early stage OpenCL nn implementation
 
 Miscellaneous
 -------------
@@ -467,8 +467,8 @@ OpenCL support, OpenCL examples
   * You get an additional tensor type torch.ClTensor (just like torch.FloatTensor). 
   * OpenCL double precision is not supported. 
 
-In addition, there are early-stage OpenCL equivalents of `nn` at:
-* [clnn](https://github.com/hughperkins/clnn)  (early stages; just a few layer types provided)
+OpenCL implementatoins of `nn` are at:
+* [clnn](https://github.com/hughperkins/clnn)
 * [jtorch](https://github.com/jonathantompson/jtorch) (forward only, for predicting, using pre-trained weights)
 
 Gotchas
