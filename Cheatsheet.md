@@ -408,7 +408,7 @@ OpenCL
 ------------
 * [cltorch](https://github.com/hughperkins/cltorch) - Torch OpenCL Implementation
 * [clnn](https://github.com/hughperkins/clnn) - Torch OpenCL Neural Network Implementation
-* [jtorch](https://github.com/jonathantompson/jtorch)  - Torch forward-only OpenCL Neural Network Implementation
+* [jtorch](https://github.com/jonathantompson/jtorch)  - Torch cross-platform OpenCL Neural Network Prediction
 
 Miscellaneous
 -------------
@@ -469,7 +469,7 @@ OpenCL support, OpenCL examples
 
 OpenCL implementatoins of `nn` are at:
 * [clnn](https://github.com/hughperkins/clnn)
-* [jtorch](https://github.com/jonathantompson/jtorch) (forward only, for predicting, using pre-trained weights)
+* [jtorch](https://github.com/jonathantompson/jtorch) (portable GPU prediction)
 
 Gotchas
 =======
