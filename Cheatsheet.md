@@ -11,7 +11,7 @@ A quick page for everything Torch.
 ------------- | ------------- | ---------- 
 **[Data formats I/O](#data-formats)** | **[Sensor I/O](#sensor-inputoutput)** | **[Databases](#databases)** 
 **[Machine Learning](#machine-learning)**  | **[Computer Vision](#computer-vision)** | [NLP](#natural-language-processing)
-**[Parallel Processing](#distributed-computing--parallel-processing)** | **[CUDA](#cuda)** | [OpenCL](#opencl) |  
+**[Parallel Processing](#distributed-computing--parallel-processing)** | **[CUDA](#cuda)** | **[OpenCL](#opencl)** |  
 **[Images](#images)**  | **[Videos](#videos)** | **[Audio](#audio)**
 **[Asynchronous](#asynchronous-paradigm---like-nodejs)** | **[Networking](#networking)** | **[Security](#security)**
 [Alternative REPLs](#alternative-repls) | **[Interfaces to third-party libs](#interfaces-to-third-party-libraries)** | [Miscellaneous](#miscellaneous)
