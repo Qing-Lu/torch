@@ -402,7 +402,6 @@ Using multiple GPUs parallely is supported. Look at [this link](https://github.c
 * [ccn2](https://github.com/soumith/cuda-convnet2.torch) - cuda-convnet2 wrapped for torch
 
 * [Training an Object Classifier in Torch-7 on multiple GPUs over ImageNet](https://github.com/soumith/imagenet-multiGPU.torch) - Tutorial for training with Torch7 on multiple GPUs.
-* [Tutorial for GPU on EC2](https://gist.github.com/y0ast/1e80daf19a6d4e210706) - Tutorial for running Torch7 with CUDA on Amazon EC2 GPU instances.
 
 OpenCL
 ------------
