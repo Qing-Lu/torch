@@ -413,7 +413,7 @@ OpenCL
 
 Reinforcement Learning
 -------------
-* [dpnn](https://github.com/nicholas-leonard/dpnn) -- Has modules and criterions that implement the REINFORCE algorithm.
+* [dpnn](https://github.com/nicholas-leonard/dpnn/blob/master/README.md) - provides modules and criterions that implement the REINFORCE algorithm.
 
 Miscellaneous
 -------------
