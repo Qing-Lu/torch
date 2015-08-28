@@ -14,7 +14,7 @@ A quick page for everything Torch.
 **[Parallel Processing](#distributed-computing--parallel-processing)** | **[CUDA](#cuda)** | **[OpenCL](#opencl)** |  
 **[Images](#images)**  | **[Videos](#videos)** | **[Audio](#audio)**
 **[Asynchronous](#asynchronous-paradigm---like-nodejs)** | **[Networking](#networking)** | **[Security](#security)**
-[Alternative REPLs](#alternative-repls) | **[Interfaces to third-party libs](#interfaces-to-third-party-libraries)** | [Reinforcement Learning](#Reinforcement Learning)
+[Alternative REPLs](#alternative-repls) | **[Interfaces to third-party libs](#interfaces-to-third-party-libraries)** | [Reinforcement Learning](#reinforcement-learning)
 [Miscellaneous](#miscellaneous) |  | 
 
 * [Creating your own package](#creating-your-own-package)
