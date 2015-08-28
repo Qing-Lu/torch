@@ -14,7 +14,8 @@ A quick page for everything Torch.
 **[Parallel Processing](#distributed-computing--parallel-processing)** | **[CUDA](#cuda)** | **[OpenCL](#opencl)** |  
 **[Images](#images)**  | **[Videos](#videos)** | **[Audio](#audio)**
 **[Asynchronous](#asynchronous-paradigm---like-nodejs)** | **[Networking](#networking)** | **[Security](#security)**
-[Alternative REPLs](#alternative-repls) | **[Interfaces to third-party libs](#interfaces-to-third-party-libraries)** | [Miscellaneous](#miscellaneous)
+[Alternative REPLs](#alternative-repls) | **[Interfaces to third-party libs](#interfaces-to-third-party-libraries)** | [Reinforcement Learning](#Reinforcement Learning)
+[Miscellaneous](#miscellaneous) |  | 
 
 * [Creating your own package](#creating-your-own-package)
 * [Debuggers / Visual Debuggers / IDEs](#debuggers--visual-debuggers--ides)
@@ -409,6 +410,10 @@ OpenCL
 * [cltorch](https://github.com/hughperkins/cltorch) - Torch OpenCL Implementation
 * [clnn](https://github.com/hughperkins/clnn) - Torch OpenCL Neural Network Implementation
 * [jtorch](https://github.com/jonathantompson/jtorch)  - Torch cross-platform OpenCL Neural Network Prediction
+
+Reinforcement Learning
+-------------
+* [dpnn](https://github.com/nicholas-leonard/dpnn) -- Has modules and criterions that implement the REINFORCE algorithm.
 
 Miscellaneous
 -------------
