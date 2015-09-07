@@ -217,6 +217,7 @@ Machine Learning
 
 Visualization
 ------------
+
 Mainly provided by three styles:
 
 * [iTorch](https://github.com/facebook/iTorch) - An iPython kernel for torch. Has visualization of images,video, audio and plotting. [Example notebook](http://nbviewer.ipython.org/github/facebook/iTorch/blob/master/iTorch_Demo.ipynb)
@@ -231,7 +232,8 @@ or
 * [display](https://github.com/szym/display) - A simplified version of gfx.js that is easier to install and use.
 * [gfx.js](https://github.com/clementfarabet/gfx.js) - A graphics backend for the browser, with a Torch7 client. Extend this by writing simple html/javascript templates
 
-
+An excellent overview of all plotting packages in torch is given by Florian Strub in this blogpost:
+[http://www.lighting-torch.com/2015/08/24/plotting-with-torch7/](http://www.lighting-torch.com/2015/08/24/plotting-with-torch7/)
 
 Computer Vision
 ------------
