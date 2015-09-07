@@ -110,6 +110,7 @@ Tutorials, Demos by Category
 ===================================
 Tutorials
 ---------
+* [Deep Learning with Torch, a 60 minute tutorial](https://github.com/soumith/cvpr2015/blob/master/Deep%20Learning%20with%20Torch.ipynb)
 * [Tutorial](http://code.madbits.com/)
 * [code accompanying the tutorials](https://github.com/torch/tutorials)
 * [dp Tutorials](http://dp.readthedocs.org/en/latest/#tutorials-and-examples)
@@ -118,6 +119,7 @@ Tutorials
   * [Language Model](http://dp.readthedocs.org/en/latest/languagemodeltutorial/index.html)
 * [Torch cheatsheet for Matlab users](http://atamahjoubfar.github.io/)
 * [Oxford ML course problems](https://github.com/oxford-cs-ml-2015/)
+* [Implementing LSTMs with nngraph](http://apaszke.github.io/lstm-explained.html)
 
 Demos
 ------
