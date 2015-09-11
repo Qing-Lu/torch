@@ -65,10 +65,13 @@ Docker Images
 -------------
 ``` docker pull kaixhin/torch ```
 
-CUDA 7.0 version - see [repo](https://github.com/Kaixhin/dockerfiles/tree/master/cuda-torch) for requirements
+CUDA 7.5 version - see [repo](https://github.com/Kaixhin/dockerfiles/tree/master/cuda-torch/cuda_v7.5) for requirements
 ``` docker pull kaixhin/cuda-torch ```
 
-CUDA 6.5 version - see [repo](https://github.com/Kaixhin/dockerfiles/tree/cuda_v6.5/cuda-torch) for requirements
+CUDA 7.0 version - see [repo](https://github.com/Kaixhin/dockerfiles/tree/master/cuda-torch/cuda_v7.0) for requirements
+``` docker pull kaixhin/cuda-torch:7.0 ```
+
+CUDA 6.5 version - see [repo](https://github.com/Kaixhin/dockerfiles/tree/master/cuda-torch/cuda_v6.5) for requirements
 ``` docker pull kaixhin/cuda-torch:6.5 ```
 
 Installing Packages
