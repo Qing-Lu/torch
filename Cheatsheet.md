@@ -204,6 +204,7 @@ Machine Learning
 * [rnn](https://github.com/Element-Research/rnn) - Recurrent Neural Network library for nn
 * [nnx](https://github.com/clementfarabet/lua---nnx) - A completely unstable and experimental package that extends Torch's builtin nn library
 * [optim](https://github.com/torch/optim) - An optimization library for Torch. SGD, Adagrad, Conjugate-Gradient, LBFGS, RProp and more.
+* [hypero](https://github.com/Element-Research/hypero) - Simple distributed hyper-optimization library for torch7
 * [unsup](https://github.com/koraykv/unsup) - A package for unsupervised learning in Torch. Provides modules that are compatible with nn (LinearPsd, ConvPsd, AutoEncoder, ...), and self-contained algorithms (k-means, PCA). 
 * [manifold](https://github.com/clementfarabet/manifold) - A package to manipulate manifolds
 * [metriclearning](https://github.com/lvdmaaten/metriclearning) - A package for metric learning
@@ -301,6 +302,7 @@ Distributed Computing / Parallel Processing
 * [lua-llthreads](https://github.com/Neopallium/lua-llthreads) - Low-Level threads(pthreads or WIN32 threads) for Lua.
 * [MPIT](https://github.com/sixin-zh/mpiT) - MPI for Torch by Sixin Zhang
 * [lua-mapreduce](https://github.com/pakozm/lua-mapreduce) - A map-reduce framework by Paco Zamora Martínez
+* [hypero](https://github.com/Element-Research/hypero) - Simple distributed hyper-optimization library for torch7
 
 Alternative REPLs
 ------------
