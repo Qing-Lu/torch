@@ -120,7 +120,7 @@ Tutorials
   * [Neural Network](http://dp.readthedocs.org/en/latest/neuralnetworktutorial/index.html)
   * [Kaggle Facial Keypoint Detection](http://dp.readthedocs.org/en/latest/facialkeypointstutorial/index.html)
   * [Language Model](http://dp.readthedocs.org/en/latest/languagemodeltutorial/index.html)
-* [Torch cheatsheet for Matlab users](http://atamahjoubfar.github.io/)
+* [Torch cheatsheet for Matlab users](http://atamahjoubfar.github.io/Torch_for_Matlab_users.pdf)
 * [Oxford ML course problems](https://github.com/oxford-cs-ml-2015/)
 * [Implementing LSTMs with nngraph](http://apaszke.github.io/lstm-explained.html)
 
