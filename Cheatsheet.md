@@ -150,6 +150,7 @@ Demos
   * [Recurrent Neural Network Language Model] (https://github.com/nicholas-leonard/dp/blob/master/examples/recurrentlanguagemodel.lua)
 * [Imagenet single GPU and multi-GPU demo by Facebook](https://github.com/facebook/fbcunn/tree/master/examples/imagenet)
 * [Recurrent Models for Visual Attention](https://github.com/Element-Research/rnn/blob/master/examples/recurrent-visual-attention.lua) - for image classification
+* [Deep Recurrent Attentive Writer](https://github.com/vivanov879/draw) - for image generation
 * [Recurrent Networks with Long Short-term memory (LSTM)](https://github.com/wojzaremba/lstm) - for Language modeling
 * [Character Level RNNs with LSTM/GRU](https://github.com/karpathy/char-rnn) - Training character-level language models for Latex, English language, Linux kernel C code etc.
 * [Another face detector by @jonathantompson](https://github.com/jonathantompson/geiger_facedetector)
