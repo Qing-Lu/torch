@@ -452,6 +452,8 @@ Some advice from Florian STRUB:
 Therefore, I strongly advise you to use Eclipse if you are willing to use advanced debugging features.
 http://www.eclipse.org/ldt/
 
+In order to run Torch from Eclipse, Torch's LuaJIT should be added via Windows -> Preferences -> Lua -> Interpreters.
+
 GPU Support
 ===========
 CUDA Support, CUDA examples
