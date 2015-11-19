@@ -206,6 +206,7 @@ Machine Learning
 * [nnx](https://github.com/clementfarabet/lua---nnx) - A completely unstable and experimental package that extends Torch's builtin nn library
 * [optim](https://github.com/torch/optim) - An optimization library for Torch. SGD, Adagrad, Conjugate-Gradient, LBFGS, RProp and more.
 * [hypero](https://github.com/Element-Research/hypero) - Simple distributed hyper-optimization library for torch7
+* [nninit](https://github.com/Kaixhin/nninit) - Weight initialisation schemes for nn modules
 * [unsup](https://github.com/koraykv/unsup) - A package for unsupervised learning in Torch. Provides modules that are compatible with nn (LinearPsd, ConvPsd, AutoEncoder, ...), and self-contained algorithms (k-means, PCA); see [unsupgpu](https://github.com/viorik/unsupgpu) to run ConvPsd on mini-batches with CUDA.  
 * [manifold](https://github.com/clementfarabet/manifold) - A package to manipulate manifolds
 * [metriclearning](https://github.com/lvdmaaten/metriclearning) - A package for metric learning
