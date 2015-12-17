@@ -260,6 +260,7 @@ Computer Vision
 * [Overfeat-torch](https://github.com/jhjin/overfeat-torch) - Better Overfeat bindings for Torch by @jhjin
 * [similarity-matching-ratio tracker](https://github.com/Aysegul/smr_tracker) - A state-of-the-art tracker by Aysegul Dundar. [More info here](https://sites.google.com/site/ayseguldundar2012/in-the-news/stateofthearttrackersmrsimilarity-matching-ratio)
 * [Caffe bindings for Torch](https://github.com/szagoruyko/torch-caffe-binding)
+* [torch-opencv](https://github.com/VisionLabs/torch-opencv) - OpenCV 3.0 bindings for LuaJIT+Torch
 
 
 Images
