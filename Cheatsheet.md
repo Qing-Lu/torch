@@ -401,6 +401,7 @@ Networking
 ----------
 * LuaSocket - Network support for the Lua language
 * nixio - System, Networking and I/O library for Lua
+* [waffle](https://github.com/benglard/waffle) - Express-like web framework 
 
 Security
 --------
