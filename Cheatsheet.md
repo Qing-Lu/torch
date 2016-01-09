@@ -220,6 +220,7 @@ Machine Learning
 * [kernel smoothing](https://github.com/rlowrance/kernel-smoothers) - KNN, kernel-weighted average, local linear regression smoothers
 * [component analysis](https://github.com/iassael/component_analysis_torch7) - PCA, Whitened PCA, LDA, LPP, NPP, FastICA.
 * [reinforcement learning](https://github.com/Mononofu/reinforcement-learning) - Implementing exercises from Sutton & Barto's textbook Reinforcement Learning: An Introduction
+* [seq2seq learning](https://github.com/deepcoord/seq2seq) - A sequence to sequence learning
 
 Visualization
 ------------
