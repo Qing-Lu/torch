@@ -220,6 +220,9 @@ Machine Learning
 * [kernel smoothing](https://github.com/rlowrance/kernel-smoothers) - KNN, kernel-weighted average, local linear regression smoothers
 * [component analysis](https://github.com/iassael/component_analysis_torch7) - PCA, Whitened PCA, LDA, LPP, NPP, FastICA.
 * [reinforcement learning](https://github.com/Mononofu/reinforcement-learning) - Implementing exercises from Sutton & Barto's textbook Reinforcement Learning: An Introduction
+* [warp-ctc](https://github.com/baidu-research/warp-ctc) - A fast parallel implementation of CTC (Connectionist Temporal Classification), useful for performing supervised learning on sequence data, without needing an alignment between input data and labels.
+
+
 
 Visualization
 ------------
