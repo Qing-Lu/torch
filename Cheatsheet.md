@@ -375,7 +375,7 @@ Databases
 * LuaSQL-SQLite3 - Database connectivity for Lua (SQLite3 driver)
 * Luchia - Lua API for CouchDB.
 * [sqltable](https://zadzmo.org/code/sqltable) - Use sql databases as lua tables, SELECT, INSERT, UPDATE, and DELETE are all handled with metamethods in such a way that no SQL needs to be written in most cases.
-* persist - A persisting table, built on Redis.
+* [persist](https://github.com/clementfarabet/persist) - A persisting table, built on Redis.
 * redis-async - A redis client built off the torch/lua async framework
 * redis-queue - A redis queue framework using async redis
 * [luamongo](https://github.com/moai/luamongo) - Lua driver for mongodb (Use v0.2.0 rockspec)
