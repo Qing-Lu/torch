@@ -332,7 +332,8 @@ Utility libraries
 
 ##### Programming helpers
 * [argcheck](https://github.com/torch/argcheck) - Advanced function argument checker
-* [class](https://github.com/torch/class) - Simple object-oriented system for Lua, with classes supporting inheritance. 
+* [class](https://github.com/torch/class) - Simple object-oriented system for Lua, with classes supporting inheritance
+* [classic](https://github.com/deepmind/classic) - More advanced object-oriented system for Lua
 * [cwrap](https://github.com/torch/cwrap) - Advanced automatic wrapper for C functions
 * [fn](https://github.com/rosejn/lua-fn) - Some functional programming tools for Lua and Torch.
 * [inline-c](https://github.com/clementfarabet/lua---inline-C) - A package to dynamically build and run C from within Lua. Each function gets wrapped in it own little lua library which is then made accessible to the Lua runtime.
