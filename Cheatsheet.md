@@ -325,6 +325,7 @@ Utility libraries
 
 ##### Documentation
 * [torch-dokx](https://github.com/d11/torch-dokx) - An awesome automatic documentation generator for torch7
+* [dash-docset-torch](https://github.com/ppwwyyxx/dash-docset-torch/) - Dash/Zeal docset for torch and related libraries.
 
 ##### File System
 * fs - File system toolbox
