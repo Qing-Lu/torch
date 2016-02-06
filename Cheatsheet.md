@@ -421,7 +421,7 @@ Using multiple GPUs parallely is supported. Look at [this link](https://github.c
 * [nnbhwd](https://github.com/qassemoquab/nnbhwd) - Convnet implementations with the data-layout BHWD (by Maxime Oquab), very useful for certain applications. 
 * [cudnn](https://github.com/soumith/cudnn.torch) - NVIDIA CuDNN Bindings
 * [ccn2](https://github.com/soumith/cuda-convnet2.torch) - cuda-convnet2 wrapped for torch
-* [FindCUDA](https://github.com/hughperkins/FindCUDA)  Activate incremental builds for cutorch and cunn (experimental)
+* [FindCUDA](https://github.com/hughperkins/FindCUDA) - Activate incremental builds for cutorch and cunn (experimental)
 
 * [Training an Object Classifier in Torch-7 on multiple GPUs over ImageNet](https://github.com/soumith/imagenet-multiGPU.torch) - Tutorial for training with Torch7 on multiple GPUs.
 
