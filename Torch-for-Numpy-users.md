@@ -17,7 +17,7 @@ torch equivalents of numpy functions
 | Numpy            | Torch |
 | --------------------|:-------------:|
 | np.empty([2,2]) | torch.Tensor(2,2)
-| np.empty_like(x) | torch.Tensor(x:size())
+| np.empty_like(x) | x.new(x:size())
 | np.eye           | torch.eye
 | np.identity      | torch.eye
 | np.ones          | torch.ones
