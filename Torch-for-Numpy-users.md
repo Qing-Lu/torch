@@ -28,7 +28,7 @@ torch equivalents of numpy functions
 #### From existing data
 | Numpy            | Torch |
 | --------------------|:-------------:|
-| np.array([[1,2][3,4]])   | torch.Tensor({{1,2},{3,4}})
+| np.array([[1,2],[3,4]])   | torch.Tensor({{1,2},{3,4}})
 | np.ascontiguousarray(x)   | x:contiguous()
 | np.copy(x)    | x:clone()
 | np.fromfile(file) | torch.Tensor(torch.Storage(file))
