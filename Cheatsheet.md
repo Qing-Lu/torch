@@ -181,7 +181,7 @@ Data formats
 * [csvigo](https://github.com/clementfarabet/lua---csv) - A CSV library, for Torch
 * [hdf5](https://github.com/d11/torch-hdf5) - Read and write Torch tensor data to and from Hierarchical Data Format files.
 * [lua-cjson](http://www.kyne.com.au/~mark/software/lua-cjson.php) - A fast JSON encoding/parsing module
-* [mattorch](https://github.com/clementfarabet/lua---mattorch) - An interface between Matlab and Torch
+* [mattorch](https://github.com/clementfarabet/lua---mattorch) - An interface between Matlab and Torch (This repo is mostly abandoned and not maintained.)
 * [matio](https://github.com/soumith/matio-ffi.torch) - Package to load tensors from Matlab .mat files, without having matlab installed on your system. Needs open source libmatio.
 * LuaXML - a module that maps between Lua and XML without much ado
 * [lua-capnproto](https://github.com/cloudflare/lua-capnproto) Basically like Protocol buffers except MUCH faster 
