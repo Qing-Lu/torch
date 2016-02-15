@@ -77,6 +77,7 @@ torch equivalents of numpy functions
 | x.transpose | x:t()
 | x.flatten   | x:view(x:nElement())
 | x.squeeze   | x:squeeze
+| x.dimshuffle | x:permute
 
 #### Item selection and manipulation
 | Numpy            | Torch |
