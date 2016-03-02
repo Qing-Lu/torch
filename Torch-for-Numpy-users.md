@@ -93,10 +93,10 @@ torch equivalents of numpy functions
 #### Calculation
 | Numpy            | Torch |
 | --------------------|:-------------:|
-| ndarray.min | mins, indices = torch.min(dim)
-| ndarray.argmin | mins, indices = torch.min(dim)
-| ndarray.max | maxs, indices = torch.max(dim)
-| ndarray.argmax | maxs, indices = torch.max(dim)
+| ndarray.min | mins, indices = torch.min(x, [dim])
+| ndarray.argmin | mins, indices = torch.min(x, [dim])
+| ndarray.max | maxs, indices = torch.max(x, [dim])
+| ndarray.argmax | maxs, indices = torch.max(x, [dim])
 | ndarray.clip | 
 | ndarray.round | 
 | ndarray.trace | torch.trace
