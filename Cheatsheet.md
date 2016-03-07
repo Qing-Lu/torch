@@ -292,6 +292,7 @@ Natural Language Processing
 * [dp](https://github.com/nicholas-leonard/dp) - A deep learning library for Torch. Includes Neural Network [Language Model Tutorial](http://dp.readthedocs.org/en/latest/languagemodeltutorial/index.html) and [Recurrent Neural Network Language Model](https://github.com/nicholas-leonard/dp/blob/master/examples/recurrentlanguagemodel.lua) implementations using the Google Billion Words dataset.
 * [senna](https://github.com/torch/senna) - Part-of-speech tagging, Chunking, Name Entity Recognition and Semantic Role Labeling, extremely fast and used to be state-of-the-art (dont know now)
 * [word2vec](https://github.com/rotmanmi/word2vec.torch) - Ready to use word2vec embeddings in torch. This repo reads the bin file of word2vec and loads the embeddings to be used. Provides example.
+* [GloVe](https://github.com/rotmanmi/glove.torch) - Ready to use GloVe embeddings in torch. This repo reads the text files of GloVe and loads the embeddings to be used. Provides example.
 
 Sensor Input/Output
 ------------
