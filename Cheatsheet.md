@@ -221,7 +221,7 @@ Machine Learning
 * [component analysis](https://github.com/iassael/component_analysis_torch7) - PCA, Whitened PCA, LDA, LPP, NPP, FastICA.
 * [reinforcement learning](https://github.com/Mononofu/reinforcement-learning) - Implementing exercises from Sutton & Barto's textbook Reinforcement Learning: An Introduction
 * [warp-ctc](https://github.com/baidu-research/warp-ctc) - A fast parallel implementation of CTC (Connectionist Temporal Classification), useful for performing supervised learning on sequence data, without needing an alignment between input data and labels.
-
+* [torch-autograd](https://github.com/twitter/torch-autograd) - Autograd automatically differentiates native Torch code
 
 
 Visualization
@@ -310,6 +310,8 @@ Distributed Computing / Parallel Processing
 * [MPIT](https://github.com/sixin-zh/mpiT) - MPI for Torch by Sixin Zhang
 * [lua-mapreduce](https://github.com/pakozm/lua-mapreduce) - A map-reduce framework by Paco Zamora Martínez
 * [hypero](https://github.com/Element-Research/hypero) - Simple distributed hyper-optimization library for torch7
+* [torch-ipc](https://github.com/twitter/torch-ipc) - A set of primitives for parallel computation in Torch
+* [torch-distlearn](https://github.com/twitter/torch-distlearn) - A set of distributed learning algorithms for Torch
 
 Alternative REPLs
 ------------
