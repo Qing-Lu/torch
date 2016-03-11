@@ -90,6 +90,7 @@ Loading popular datasets
 * [KITTI](https://github.com/Aysegul/torch-KITTI) - KITTI dataset loader by Aysegul Dundar
 * [Atari2600](https://github.com/fidlej/aledataset) - Scripts to generate a dataset with static frames from the Arcade Learning Environment
 * [torch-INRIA](https://github.com/Atcold/torch-INRIA) - INRIA dataset loader by Alfredo Canziani
+* [dataload](https://github.com/Element-Research/dataload) - MNIST, Penn Tree Bank, and generic data loaders.
 * [dp](https://github.com/nicholas-leonard/dp) - A pylearn2-like deep learning library with several conveniently wrapped datasets including:
   * MNIST
   * NotMNIST
@@ -181,6 +182,7 @@ Data formats
 * [csvigo](https://github.com/clementfarabet/lua---csv) - A CSV library, for Torch
 * [hdf5](https://github.com/d11/torch-hdf5) - Read and write Torch tensor data to and from Hierarchical Data Format files.
 * [lua-cjson](http://www.kyne.com.au/~mark/software/lua-cjson.php) - A fast JSON encoding/parsing module
+* [dataload](https://github.com/Element-Research/dataload) - Load images from disk using multi-threading, etc. 
 * [mattorch](https://github.com/clementfarabet/lua---mattorch) - An interface between Matlab and Torch (This repo is mostly abandoned and not maintained.)
 * [matio](https://github.com/soumith/matio-ffi.torch) - Package to load tensors from Matlab .mat files, without having matlab installed on your system. Needs open source libmatio.
 * LuaXML - a module that maps between Lua and XML without much ado
