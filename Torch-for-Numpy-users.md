@@ -88,7 +88,7 @@ torch equivalents of numpy functions
 | np.choose | ???
 | np.sort | sorted, indices = torch.sort(x, [dim])
 | np.argsort | sorted, indices = torch.sort(x, [dim])
-| np.nonzero | x:gt(0)
+| np.nonzero | torch.find(x:gt(0), 1) (torchx)
 
 #### Calculation
 | Numpy            | Torch |
