@@ -267,6 +267,7 @@ Computer Vision
 * [similarity-matching-ratio tracker](https://github.com/Aysegul/smr_tracker) - A state-of-the-art tracker by Aysegul Dundar. [More info here](https://sites.google.com/site/ayseguldundar2012/in-the-news/stateofthearttrackersmrsimilarity-matching-ratio)
 * [Caffe bindings for Torch](https://github.com/szagoruyko/torch-caffe-binding)
 * [torch-opencv](https://github.com/VisionLabs/torch-opencv) - OpenCV 3.0 bindings for LuaJIT+Torch
+* [gSLICr-torch](https://github.com/jhjin/gSLICr-torch) - gSLICr superpixel algorithm binding for Torch
 
 
 Images
