@@ -267,7 +267,7 @@ Computer Vision
 * [Caffe bindings for Torch](https://github.com/szagoruyko/torch-caffe-binding)
 * [torch-opencv](https://github.com/VisionLabs/torch-opencv) - OpenCV 3.0 bindings for LuaJIT+Torch
 * [gSLICr-torch](https://github.com/jhjin/gSLICr-torch) - gSLICr superpixel algorithm binding for Torch
-
+* [pcl](https://github.com/Xamla/torch-pcl) - Point Cloud Library (PCL) bindings for Torch
 
 Images
 ------------
