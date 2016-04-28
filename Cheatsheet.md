@@ -116,6 +116,7 @@ Tutorials
 ---------
 * [Deep Learning with Torch, a 60 minute tutorial](https://github.com/soumith/cvpr2015/blob/master/Deep%20Learning%20with%20Torch.ipynb)
 * [Oxford ML course problems](https://github.com/oxford-cs-ml-2015/)
+* [Madbits tutorial](https://web.archive.org/web/20160201031326/http://code.madbits.com/wiki/doku.php)
 * [code complementing the tutorials](https://github.com/torch/tutorials)
 * [dp Tutorials](http://dp.readthedocs.org/en/latest/#tutorials-and-examples)
   * [Neural Network](http://dp.readthedocs.org/en/latest/neuralnetworktutorial/index.html)
