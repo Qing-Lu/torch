@@ -508,7 +508,7 @@ OpenCL implementations of `nn` are at:
 CPU backends
 ------------
 
-* [nnpack.torch](https://github.com/szagoruyko/nnpack.torch) - Very fast convolutions for modern Intel CPUs.
+* [nnpack.torch](https://github.com/szagoruyko/nnpack.torch) - very fast convolutions for modern Intel CPUs.
 
 Gotchas
 =======
