@@ -505,6 +505,11 @@ OpenCL implementations of `nn` are at:
 * [clnn](https://github.com/hughperkins/clnn)
 * [jtorch](https://github.com/jonathantompson/jtorch) (cross-platform GPU prediction)
 
+CPU backends
+------------
+
+* [nnpack.torch](https://github.com/szagoruyko/nnpack.torch) - Very fast convolutions for modern Intel CPUs.
+
 Gotchas
 =======
 LuaJIT limitations, gotchas and assumptions
