@@ -297,6 +297,7 @@ Natural Language Processing
 * [senna](https://github.com/torch/senna) - Part-of-speech tagging, Chunking, Name Entity Recognition and Semantic Role Labeling, extremely fast and used to be state-of-the-art (dont know now)
 * [word2vec](https://github.com/rotmanmi/word2vec.torch) - Ready to use word2vec embeddings in torch. This repo reads the bin file of word2vec and loads the embeddings to be used. Provides example.
 * [GloVe](https://github.com/rotmanmi/glove.torch) - Ready to use GloVe embeddings in torch. This repo reads the text files of GloVe and loads the embeddings to be used. Provides example.
+* [torch-word-emb](https://github.com/iamalbert/torch-word-emb) - load Word2Vec and GloVe word embeddings to Torch Tensors, implemented in pure C
 
 Sensor Input/Output
 ------------
