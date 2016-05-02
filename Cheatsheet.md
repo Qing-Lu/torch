@@ -496,14 +496,8 @@ NVIDIA Jetson TK1
 OpenCL support, OpenCL examples
 --------------------------------
 
-* Torch: OpenCL is supported by installing the package [cltorch](https://github.com/hughperkins/cltorch) . 
-  * Call `require "cltorch"` on an OpenCL-capable machine
-  * You get an additional tensor type torch.ClTensor (just like torch.FloatTensor). 
-  * OpenCL double precision is not supported. 
-
-OpenCL implementations of `nn` are at:
-* [clnn](https://github.com/hughperkins/clnn)
-* [jtorch](https://github.com/jonathantompson/jtorch) (cross-platform GPU prediction)
+* For a fairly complete port of torch to OpenCL, please see [distro-cl](https://github.com/hughperkins/distro-cl)
+* For cross-platform GPU prediction, please see [jtorch](https://github.com/jonathantompson/jtorch)
 
 CPU backends
 ------------
