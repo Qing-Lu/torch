@@ -41,7 +41,7 @@ torch equivalents of numpy functions
 #### Numerical Ranges
 | Numpy            | Torch |
 | --------------------|:-------------:|
-| np.arange(10)    | torch.linspace(0,9,10)
+| np.arange(10)    | torch.range(0,9)
 | np.arange(2, 3, 0.1) | torch.linspace(2, 2.9, 10)
 | np.linspace(1, 4, 6) | torch.linspace(1, 4, 6)
 | np.logspace | torch.logspace
