@@ -239,6 +239,7 @@ or
 * [qtlua](https://github.com/torch/qtlua) - Powerful QT interface to Lua
 * [qttorch](https://github.com/torch/qttorch) - QT interface to Torch
 * [gnuplot](https://github.com/torch/gnuplot) - Torch interface to Gnuplot
+* [iterm.torch](https://github.com/szagoruyko/iterm.torch) - Displays images and other docs right in terminal (OS X only)
 
 or
 * [display](https://github.com/szym/display) - A simplified version of gfx.js that is easier to install and use.
