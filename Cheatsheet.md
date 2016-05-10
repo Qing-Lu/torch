@@ -449,6 +449,7 @@ Miscellaneous
 -------------
 Packages which I didn't know where to put
 * [re](https://github.com/rlowrance/re) - Real Estate software 
+* [lutorpy](https://github.com/imodpasteur/lutorpy) - A python library for bridging Lua/Torch and Python/Numpy.
 
 
 Creating your own package
