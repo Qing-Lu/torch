@@ -198,6 +198,7 @@ Data formats
 * [csv2tensor](https://github.com/willkurt/csv2tensor) - Package for loading CSV files containing numeric data directly to Torch Tensors
 * [torchx](https://github.com/nicholas-leonard/torchx/blob/master/README.md) - Contains `paths.indexdir` which can be used to efficiently load directories containing thousands of files
 * [npy4th](https://github.com/htwaijry/npy4th) - Loads NumPy .npy and .npz
+* [torch-dataframe](https://github.com/AlexMili/torch-dataframe) - Loads and manipulates tabular data (e.g. Kaggle-style CSVs) inspired from R's and pandas' data 
 
 Machine Learning
 ------------
