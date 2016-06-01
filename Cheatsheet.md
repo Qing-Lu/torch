@@ -167,6 +167,7 @@ Demos
 * [Variational Auto encoders](https://github.com/y0ast/VAE-Torch)
 * [Object detection using rcnn and spp](https://github.com/fmassa/object-detection.torch) by fmassa
 * [Stacked Hourglass Networks for Human Pose estimation](https://github.com/anewell/pose-hg) - State-of-the-art on the FLIC and MPII benchmarks (2016/3/26).
+* [Generating adversarial examples and training a model with adversarial cost](https://github.com/ilarele/torch_examples)
 
 List of Packages by Category
 ============================
