@@ -446,6 +446,7 @@ Reinforcement Learning
 -------------
 * [dpnn](https://github.com/nicholas-leonard/dpnn/blob/master/README.md) - provides modules and criterions that implement the REINFORCE algorithm.
 * [rlenvs](https://github.com/Kaixhin/rlenvs) - Reinforcement learning environments
+* [rlcore](https://github.com/ludc/rlcore) - Reinforcement learning package (different environments and learning policies) with an interface to openAI Gym. 
 
 Miscellaneous
 -------------
