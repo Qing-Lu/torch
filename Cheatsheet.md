@@ -74,6 +74,8 @@ CUDA 7.0 version - see [repo](https://github.com/Kaixhin/dockerfiles/tree/master
 CUDA 6.5 version - see [repo](https://github.com/Kaixhin/dockerfiles/tree/master/cuda-torch/cuda_v6.5) for requirements
 ``` docker pull kaixhin/cuda-torch:6.5 ```
 
+Ubuntu 14.04 + [iTorch notebook](https://github.com/facebook/iTorch) - see docker hub [repo](https://hub.docker.com/r/dhunter/itorch-notebook) for details and usage ``` docker pull dhunter/itorch-notebook ```
+
 Installing Packages
 ===================
 Given a package name, you can install it at your terminal with:
