@@ -164,7 +164,7 @@ Demos
 * [Music Tagging](https://github.com/mbhenaff/MusicTagging) - Music Tagging scripts for torch7 by Mikael Henaff
 * [K-Means feature learning over CIFAR-10: Coates-Single-Layer Networks in Unsupervised Feature Learning](https://github.com/jhjin/kmeans-learning-torch)
 * [imagenet loading + training](https://github.com/eladhoffer/ImageNet-Training) - Train imagenet networks, like AlexNet, MattNet etc.
-* [Caffe models in Torch](https://github.com/szagoruyko/loadcaffe) - Several state-of-the-art models released to the Caffe PublicZoo can now be used in torch, thanks to @szagoruyko
+* [Caffe models in Torch](https://github.com/szagoruyko/loadcaffe) - Several state-of-the-art models released to the Caffe PublicZoo can now be used in torch, thanks to @szagoruyko. For non-sequential models like ResNets, try [caffegraph](https://github.com/nhynes/caffegraph).
 * [libCCV models in Torch](https://github.com/deltheil/loadccv) - libccv provides state-of-the-art models for computer vision. Load these models in torch and use them naturally.
 * [Variational Auto encoders](https://github.com/y0ast/VAE-Torch)
 * [Object detection using rcnn and spp](https://github.com/fmassa/object-detection.torch) by fmassa
