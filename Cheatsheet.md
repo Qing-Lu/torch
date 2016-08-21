@@ -288,6 +288,7 @@ Videos
 * [camera](https://github.com/clementfarabet/lua---camera) - A simple wrapper package to give torch access to a webcam
 * [ffmpeg](https://github.com/clementfarabet/lua---ffmpeg) - An FFMPEG interface for Torch. A simple abstraction class, that uses ffmpeg to encode/decode videos, and represent them as Tensors, in Torch.
 * [videograph](https://github.com/clementfarabet/videograph) - A video/graph library for Torch. This package provides routines to construct graphs on videos, segment them, build trees out of them, and convert them back to videos.
+* [torchvid](https://github.com/anibali/torchvid) - A Torch interface to the FFmpeg libraries for reading video image data. In contrast to lua---ffmpeg, torchvid does not use the ffmpeg executable or write frames to temporary files. This package also supports video transformations with filtergraphs (such as cropping, flipping and resizing).
 
 Audio
 ------------
