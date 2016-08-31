@@ -19,4 +19,6 @@
 
 "With the above, I just pulled the latest code from GitHub and built Torch 7. Currently I have the following luarocks packages installed: argcheck, cwrap, dok, env, fftw3, gnuplot, graph, image, lua-cjson, luaffi, luafilesystem, luasocket, nn, nngraph, nnx, optim, paths, penlight, qtlua, qttorch, signal, sundown, sys, torch, trepl, xlua."
 
+## Loading .t7 files
 
+You may encounter issues loading binary .t7 data files, because of differences in interpreting various data types as 32-bit or 64-bit.  You might be able to solve these by replacing `torch.load('somefile.t7')` with `torch.load('somefile.t7', 'b64')`
