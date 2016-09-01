@@ -41,18 +41,6 @@ Installing and Running Torch
 ============================
 To make sure that the install instructions are not replicated, and in a single place, we've put them [here](http://torch.ch/docs/getting-started.html#_).
 
-## OSX or Ubuntu
-There is an easy script that installs torch7 and all its dependencies on OSX or Ubuntu. Please have a look at [this ezinstall page](https://github.com/torch/ezinstall)
-
-## Other distros
-### Gentoo
-
-Some external instructions [here](http://spotofdata.com/installing-torch-gentoo/)
-
-## Windows
-
-Windows is not officially supported, but some users have had some success with running on Windows.  Very draft beta instructions at [Windows](https://github.com/torch/torch7/wiki/Windows)
-
 iOS
 ---------------
 * https://github.com/clementfarabet/torch-ios
