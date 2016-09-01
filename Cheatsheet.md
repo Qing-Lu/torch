@@ -73,7 +73,7 @@ EC2 AMI with the following pre-installed packages:
 * Anaconda
 
 AMI Id: ami-b36981d8. (Can be launched using g2.2xlarge instance)   
-[Launch](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-b36981d8) an instance
+[Launch](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-b36981d8) an instance.
 
 Docker Images
 -------------
@@ -482,8 +482,8 @@ You can quickly fork off of this example package:
 
 Debuggers / Visual Debuggers / IDEs
 ===================================
-* [ZeroBrane Studio](http://studio.zerobrane.com) -Provides a great IDE and visual debugging.
-* [LDT](http://www.eclipse.org/ldt/) - An eclipse plugin for Lua
+* [ZeroBrane Studio](http://studio.zerobrane.com) - Provides a great IDE and visual debugging.
+* [LDT](http://www.eclipse.org/ldt/) - An eclipse plugin for Lua.
 
 Some advice from Florian STRUB:
  - Eclipse + plugin. Its debug mode is very powerful with watcher, interactive console, stack-trace and so on. It has nice refactoring features but its coloring is quite poor.
