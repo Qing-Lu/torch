@@ -39,15 +39,29 @@ If you are used to Matlab, [have a look at this translation pdf](http://atamahjo
 
 Installing and Running Torch
 ============================
-To make sure that the install instructions are not replicated, and in a single place, we've put them [here](http://torch.ch/docs/getting-started.html#_).
+
+Mac OS X and Ubuntu 12+
+-----------------------
+
+To make sure that the main install instructions for Mac OS X and Ubuntu 12+ are not replicated, and in a single place, we've put them [here](http://torch.ch/docs/getting-started.html#_).
+
+Gentoo Linux
+------------
+
+Some external instructions [here](http://spotofdata.com/installing-torch-gentoo/).
+
+Windows
+-------
+
+Windows is not officially supported, but some users have had some success with running on Windows.  Very draft beta instructions at [Windows](https://github.com/torch/torch7/wiki/Windows).
 
 iOS
 ---------------
-* https://github.com/clementfarabet/torch-ios
+https://github.com/clementfarabet/torch-ios
 
 Android
 ---------------
-* https://github.com/soumith/torch-android
+https://github.com/soumith/torch-android
 
 EC2 Public AMI
 ---------------
