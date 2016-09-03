@@ -290,6 +290,7 @@ Computer Vision
 * [torch-opencv](https://github.com/VisionLabs/torch-opencv) - OpenCV 3.0 bindings for LuaJIT+Torch
 * [gSLICr-torch](https://github.com/jhjin/gSLICr-torch) - gSLICr superpixel algorithm binding for Torch
 * [pcl](https://github.com/Xamla/torch-pcl) - Point Cloud Library (PCL) bindings for Torch
+* [gvnn](https://github.com/ankurhanda/gvnn) - Geometric Vision with Neural Networks
 
 Images
 ------------
