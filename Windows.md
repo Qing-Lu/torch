@@ -5,7 +5,23 @@
   * [Building from sources](#building-from-sources)
     + [Using MinGW](#using-mingw)
     + [Using Visual Studio](#using-visual-studio)
-  * [Known run-time issues](#known-run-time-issues)
+      - [Prerequisites](#prerequisites)
+      - [LuaJIT + LuaRocks](#luajit---luarocks)
+      - [Torch](#torch)
+      - [The nn package](#the-nn-package)
+      - [The trepl package](#the-trepl-package)
+      - [Other packages](#other-packages)
+      - [Final notes](#final-notes)
+    + [Appendix: Prerequisites](#appendix--prerequisites)
+      - [Git](#git)
+      - [CMake](#cmake)
+      - [MinGW / MSYS (32-bit)](#mingw---msys--32-bit-)
+      - [Visual Studio](#visual-studio)
+      - [LAPACK (BLAS)](#lapack--blas-)
+    + [Appendix: Other tools](#appendix--other-tools)
+      - [Cmder](#cmder)
+      - [ZeroBrane Studio integration](#zerobrane-studio-integration)
+  * [Known runtime issues with native (non-VM) builds](#known-runtime-issues-with-native--non-vm--builds)
     + [Loading .t7 files](#loading-t7-files)
 
 <!-- TOC generator: http://ecotrust-canada.github.io/markdown-toc/ -->
@@ -69,13 +85,271 @@ With the above, I just pulled the latest code from GitHub and built Torch 7. Cur
 
 ### Using Visual Studio
 
-( https://groups.google.com/d/topic/torch7/iQpNfJB_oy0/discussion )
+#### Prerequisites
 
-( https://groups.google.com/d/topic/torch7/h4wDj23Ap7c/discussion )
+- [Git](https://github.com/torch/torch7/wiki/Windows#Git)
+- [CMake](https://github.com/torch/torch7/wiki/Windows#CMake)
+- [Visual Studio](https://github.com/torch/torch7/wiki/Windows#Visual_Studio)
+- BLAS (eg, [LAPACK](https://github.com/torch/torch7/wiki/Windows#LAPACK))
+- If building LAPACK from sources: [MinGW / MSYS](https://github.com/torch/torch7/wiki/Windows#mingw---msys--32-bit-)
+- Optional: [Cmder](https://github.com/torch/torch7/wiki/Windows#Cmder)
+
+These instructions assume that you use Cmder. You can use the Windows Developer Command Prompt or any other alternative, too.
+
+
+#### LuaJIT + LuaRocks
+
+We will install from the main Torch repo while following [diz-vara's build instructions](https://github.com/diz-vara/luajit-rocks) (mostly). You get LuaJIT 2.1 if you add -DWITH_LUAJIT21=ON to both of the cmake commands below, otherwise it will be LuaJIT 2.0. The build commands in the instructions might produce a debug build of LuaJIT, for some odd reason (Torch runs considerably slower with it). -DCMAKE_BUILD_TYPE=Release makes sure that we get a release version.
+
+Choose a directory into which you want to install LuaJIT, LuaRocks and Torch. In the following, it shall be X:\torch-luajit-rocks. Note, however, that the installation process will install stuff also into ..\share, ie, into X:\share in this case; you might want to add an additional directory level to keep things clean. Now, add the directory you chose to your PATH, while making sure that it comes _before_ CMake's bin directory.
+
+Start Cmder and make sure that the VS2015 task is active (see above). Cd into some temporary directory, then:
+
+    git clone https://github.com/torch/luajit-rocks.git
+    cd luajit-rocks
+    mkdir build
+    cd build
+    cmake .. -DCMAKE_INSTALL_PREFIX=X:\torch-luajit-rocks -G "NMake Makefiles" -DWIN32=1 -DCMAKE_BUILD_TYPE=Release
+    nmake
+    cmake -DCMAKE_INSTALL_PREFIX=X:/torch-luajit-rocks -G "NMake Makefiles" -DWIN32=1 -P cmake_install.cmake -DCMAKE_BUILD_TYPE=Release
+
+Set the following environment variables: (these have been modified a bit from diz-vara's instructions, so as to get some other packages to build)
+
+    LUA_CPATH = X:\torch-luajit-rocks\?.DLL;X:\torch-luajit-rocks\LIB\?.DLL;?.DLL
+    LUA_DEV = X:\torch-luajit-rocks
+    LUA_PATH = ;;X:\torch-luajit-rocks\?;X:\torch-luajit-rocks\?.lua;X:\torch-luajit-rocks\lua\?;X:\torch-luajit-rocks\lua\?.lua;X:\torch-luajit-rocks\lua\?\init.lua
+
+Test LuaJIT: Completely restart Cmder, then open the Torch task (eg, via the down arrow next to the green plus sign at lower right corner). Try writing some Lua to make sure that the REPL works.
+
+Test LuaRocks: Within Cmder, ctrl-tab back to the VS2015 task and type: luarocks. You should get its help text.
+
+
+#### Torch
+
+The instructions assume that LuaJIT + LuaRocks was installed to X:\torch-luajit-rocks and LAPACK was installed to X:\lapack. Substitute paths accordingly.
+
+Create the file X:\torch-luajit-rocks\cmake.cmd and add the following content:
+
+    if %1 == -E  (
+    cmake.exe  %* 
+    ) else (
+    cmake.exe -G "NMake Makefiles"  -DWIN32=1 -dLUA_WIN -DCMAKE_LINK_FLAGS:implib=libluajit.lib -DLUALIB=libluajit %*
+    )
+
+This is from <https://github.com/torch/paths/issues/9> , except -DLUALIB=libluajit has been added (needed to compile the sys package later on). Double-check that X:\torch-luajit-rocks is in your PATH _before_ CMake's bin directory.
+
+Now, in Cmder with VS2015 task active, cd into some temporary directory and write:
+
+    luarocks download torch
+
+For some reason, I didn't manage to have CMake auto-detect LAPACK (nor any other BLAS library, for that matter). I proceeded as follows. Open the downloaded rockspec file and add the following to the configuration command (the one starting with `cmake .. -DCMAKE_BUILD_TYPE=Release -DLUA=$(LUA) [...]`), eg, add right before the `&& $(MAKE)` part:
+
+    -DBLAS_LIBRARIES=X:/lapack/lib/libblas.lib -DBLAS_INFO=generic -DLAPACK_LIBRARIES=X:/lapack/lib/liblapack.lib -DLAPACK_FOUND=TRUE
+
+Back in Cmder's VS2015 task:
+
+    git clone git://github.com/torch/torch7.git
+    cd torch7
+    luarocks make ..\torch-scm-1.rockspec
+
+Test Torch by launching the Torch task from Cmder and then type:
+
+    require('torch')
+    torch.test()
+
+All tests should pass, except maybe the abs() test. (<https://github.com/torch/torch7/issues/627>, which seems to have been fixed a few days ago)
+
+
+#### The nn package
+
+The package depends on luaffi, which in turn fails to build out-of-the-box. Solution is here: <https://github.com/facebook/luaffifb/issues/10>; you need to patch some files.
+
+In Cmder's VS2015 task:
+
+    luarocks download luaffi
+    git clone git://github.com/facebook/luaffifb.git
+    cd luaffifb
+
+Now open the files ffi.h and test.c, and move the lines
+
+    #include <complex.h>
+    #define HAVE_COMPLEX
+
+up into the preceding #else blocks in both files (the #else branch of the #ifdef _WIN32 test).
+
+Back in Cmder's VS2015 task:
+
+    luarocks make ..\luaffi-scm-1.rockspec
+
+Now you should be able to install the nn package. Again in Cmder's VS2015:
+
+    luarocks install nn
+
+_Note_: At least for me, every compilation unit gives the following kind of warning: `warning C4273: 'THNN_FloatLogSigmoid_updateGradInput': inconsistent dll linkage.`
+Any ideas what this is about and how to avoid it?
+
+Now test it by launching Cmder's Torch task and typing:
+
+    require('nn')
+    nn.test()
+
+All tests should pass.
+
+
+#### The trepl package
+
+Install readline for Windows from <http://gnuwin32.sourceforge.net/packages/readline.htm>
+
+Add the GnuWin32 bin directory to your PATH now and completely restart Cmder. (note that having this in your path all the time will mess up some earlier Torch installation steps)
+
+In Cmder's VS2015 task:
+
+    luarocks download trepl
+    git clone git://github.com/torch/trepl
+
+Edit the rock file and modify the build/platforms/windows/modules/readline section:
+
+    incdirs = {"windows","C:/Program Files (x86)/GnuWin32/include"},
+    libdirs = {"windows","C:/Program Files (x86)/GnuWin32/lib"},
+    libraries = {'readline'}
+
+In Cmder's VS2015 task:
+
+    cd trepl
+    luarocks make ../trepl-scm-1.rockspec
+
+
+#### Other packages
+
+The following packages seem to at least compile/install just fine via luarocks (`luarocks install <packagename>`):
+
+> luafilesystem, inspect, image, nnx, optim, gnuplot
+
+The sys package: This installs without issues, as long as you have -DLUALIB=libluajit added to your cmake.cmd (see earlier).
+
+The dataset and ipc packages fail non-trivially, due to pthreads dependency.
+
+
+#### Final notes
+
+The preceding process always installs the most recent version of everything. Just in case that something has changed since writing this and broke something, here are the versions that were used and are known to work:
+
+> https://github.com/torch/luajit-rocks/commit/4eb4c5b6c6cf94badadebc8d5c39a1d470950036
+https://github.com/torch/torch7/commit/7c740d5e8ec7fc10edbc3a75f2667e481eb47180
+https://github.com/torch/paths/commit/68d579a2d3b1b0bb03a11637632e6e699b14ad80
+https://github.com/torch/cwrap/commit/dbd0a623dc4dfb4b8169d5aecc6dd9aec2f22792
+https://github.com/facebook/luaffifb/commit/d1c9712bfaaa73f9bc064227f120320e97fff517
+https://github.com/torch/nn/commit/07d3bdd496be72dd132eb70eab96478b96547ffe
+
+
+Source: https://groups.google.com/d/topic/torch7/iQpNfJB_oy0/discussion
+
+See also: https://groups.google.com/d/topic/torch7/h4wDj23Ap7c/discussion
 
 
 
-## Known run-time issues
+### Appendix: Prerequisites
+
+This section contains detailed install instructions for some of the prerequisites. You might not need all of these; please refer to the instructions above.
+
+
+#### Git
+
+PortableGit or Git for Windows are some possible options. Cmder seems to come with a git client, too. Install one, then make sure that you have the git executable in your PATH.
+
+
+#### CMake
+
+Install CMake as usual, then make sure that you have it's executable in your PATH.
+
+
+#### MinGW / MSYS (32-bit)
+
+Use the MinGW installer and install all meta-packages from the "Basic Setup" section. As usual with tools from the other side, don't install to Program Files (due to spaces).
+
+Add `C:\MinGW /mingw` (or whatever path you chose) to the MSYS etc/fstab file, as instructed at <http://www.mingw.org/wiki/getting_started> -> After Installing You Should ...
+
+Notes:
+- The package manager is at bin/mingw-get.exe
+- The MSYS environment can be started via msys\1.0\msys.bat
+- You might _not_ want to add the MinGW bin directory to PATH (at least if using MinGW only for BLAS and building the rest with VS)
+
+
+#### Visual Studio
+
+Visual Studio Community 2015 seems to work just fine. During installation, choose Custom Installation and check the C/C++ tools. When entering build commands, either use the Windows Developer Command Prompt (installed by VS) or use an alternative like [Cmder](https://github.com/torch/torch7/wiki/Windows#Cmder).
+
+
+#### LAPACK (BLAS)
+
+Following the instructions at <http://icl.cs.utk.edu/lapack-for-windows/lapack/#build> (loosely).
+
+Download and unzip <http://www.netlib.org/lapack/lapack-3.6.1.tgz> (or newer). Note that the site provides a precompiled version too, but it might be slower on your machine.
+
+Open MSYS and cd into the extracted package, then:
+
+    mkdir build
+    cd build
+    cmake-gui
+
+In CMake's GUI:
+- Set paths: Build into the current directory, use sources from parent dir
+- Configure: Select "MSYS Makefiles" and "Use default native compilers"
+- Set variables:
+  - BUILD_SHARED_LIBS = TRUE
+  - CMAKE_GNUtoMS = TRUE
+  - CMAKE_INSTALL_PREFIX = X:/lapack   (or whatever; can't recall whether the slash really had to be a forward slash)
+- Configure
+- Generate
+
+Now close CMake and continue in the MSYS prompt:
+
+    make
+    make install
+
+To proceed with Torch installation, make sure that you have the following DLLs in your path. You can copy then all to the directory into which you are going to install Torch, then add that directory to your PATH.
+- All DLLs from X:\lapack\bin\
+- The following DLLs from the bin directory of your MinGW installation: libgcc_s_dw2-1.dll, libgfortran-3.dll, libquadmath-0.dll
+
+
+
+### Appendix: Other tools
+
+
+#### Cmder
+
+You might want to use Cmder to replace the Windows Developer Command Prompt to make things less painful. The Torch REPL can be run through it, too.
+
+1. Download and install Cmder, or Cmder Lite if you already have another Git client installed.
+
+1. Create a new task for VS: Go to Settings -> Startup -> Tasks and create a new task. Name it VS2015 or something, make it the default task, and add the following string as the startup command (replace the project path with whatever you have):
+  `cmd /k ""%VS140COMNTOOLS%VsDevCmd.bat" & "%ConEmuDir%\..\init.bat"" -new_console:d:"X:\work\torch_projects":t:"VS2015"`
+
+1. Create a new task for Torch: Go to Settings -> Startup -> Tasks and create a new task. Name it Torch or something and add the following string as the startup command (replace the paths with whatever you are going to use):
+  `X:\torch-luajit-rocks\luajit.exe -new_console:d:"X:\work\torch_projects":t:"Torch"`
+
+Aliases can be added as usual (they persist restarts): `alias ll=ls -la --show-control-chars -F --color $*`
+Adding Sublime Text 3's program directory to your path lets you use the command "subl" to quickly open files (for deeper integration, see eg http://goo.gl/yF173L ).
+
+Note: There is the option "Inject ConEmuHk" under Settings -> Features. Enabling it slows down all command execution, especially compilation. Disabling it messes up colored output for second level processes. You might want to switch this temporarily on while trying to make sense of colored make output and otherwise keep it off.
+
+Then some patching: command line wrapping might be broken when inside git repos. To solve this, open the file `C:\Program Files (x86)\cmder_mini\config\cmder.lua` and comment out the line with the os.execute() call. (see https://github.com/cmderdev/cmder/issues/749 )
+
+
+#### ZeroBrane Studio integration
+
+The instructions at <http://notebook.kulchenko.com/zerobrane/torch-debugging-with-zerobrane-studio> seem to work, except that you might have to point ZBS to the LuaJIT executable instead of the installation directory: `path.torch = [[X:/torch-luajit-rocks/luajit.exe]]`
+
+The examples worked fine when executed from a script file, but using Torch from the ZBS's REPL did not work well (ZBS REPL seems to ignore the Lua interpreter setting and consequently uses the built-in, older version of LuaJIT).
+
+Starting a debugging session might complain about a missing lua51.dll. This is simply a naming issue: ZBS looks for lua51.dll, while we have libluajit.dll. A quick fix is to copy, in the Torch installation directory, libluajit.dll to lua51.dll.
+WARNING: This will work here, apparently because the dlls are used from different processes, but in general this is probably a bad solution. (Managing to load both dlls in a single application would lead to two different address spaces, if I understand correctly, and then to trouble. Does anyone have ideas for solving this in a better way?)
+
+Remote debugging (<https://studio.zerobrane.com/doc-remote-debugging>) seems to work, too, as long as you make sure that mobdebug.lua from C:\ZeroBraneStudio\lualibs\mobdebug is in your Lua search path (eg, copy it to the `lua` subdirectory in your Torch install directory).
+
+
+
+## Known runtime issues with native (non-VM) builds
 
 ### Loading .t7 files
 
