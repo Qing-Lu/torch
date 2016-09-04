@@ -3,7 +3,6 @@
   * [Using a virtual machine](#using-a-virtual-machine)
   * [Binary downloads](#binary-downloads)
   * [Building from sources](#building-from-sources)
-    + [Caveats](#caveats)
     + [Using MinGW](#using-mingw)
     + [Using Visual Studio](#using-visual-studio)
   * [Known run-time issues](#known-run-time-issues)
@@ -14,15 +13,28 @@
 
 There are several options to run Torch on Windows. At the moment, the easiest approach is to run Ubuntu inside a virtual machine and install Torch there. This way everything just works, but the downside is that you will quite likely lose GPU acceleration. Another option is to download and try, at your own risk, community-built Windows binaries from the discussion forums. Finally, you can try to build Torch from the sources, but note that this is somewhat tricky at the moment!
 
+> Caveats / work in progress
+- Windows is not officially supported.  These notes are best-effort, supplied by the community, your mileage may vary.  If you find some way(s) of improving these instructions, please go ahead and update this page, and/or post into the unofficial de facto discussion thread at [Add support for compilation on Windows using mingw32](https://github.com/torch/torch7/pull/287#issuecomment-243622035)
+- These instructions are a very beta interpretation of the experiences of unsupported community users on this unsupported Windows platform
+
+> Todo list
+- Expand the build instructions
+- Build script: We seem to now have an initial process for producing a working build. Writing this knowledge into a build script would make it less painful for new users to build Torch.
+  - Automated builds (CI): Once there is a build script, it could be used for setting up a CI server for automatically producing up-to-date Windows binaries.
+- 64-bit build: The current process is for producing a 32-bit build. Someone could try it out with a toolchain supporting 64-bit targets (MSYS2 / MinGW-w64, Visual Studio, .. ?)
+- Dealing with CPU extensions: The Torch build process auto-detects, by default, the CPU extensions (SSE, AVX, ..) supported by the host CPU and enables corresponding optimizations. Distributing the resulting binary might lead to crashes for users with older CPUs. (some options in the thread)
+- (VM) GPU acceleration with a VM install: PCIe passthrough...is this currently possible with any VM software on a Windows host?
+- (VM) Machine images: Are there any pre-made Torch VM images? How about the Docker images at [Cheatsheet](https://github.com/torch/torch7/wiki/Cheatsheet#installing-and-running-torch)?
+
+>If you have the time and skills for some of these tasks, then please, do contribute!
+
+>Discussion thread: [Add support for compilation on Windows using mingw32](https://github.com/torch/torch7/pull/287#issuecomment-243622035)
+
 
 
 ## Using a virtual machine
 
-You can use VirtualBox or some other virtualization software to set up Ubuntu and then simply install Torch onto that. However, GPU acceleration requires PCIe passthrough, which can be something from difficult to impossible to get working on Windows.
-
-(PCIe passthrough on a Windows host: is it currently possible with any VM software?)
-
-(Docker images? VirtualBox images?)
+You can use VirtualBox or some other virtualization software to set up Ubuntu and then simply install Torch onto that by following the [official Ubuntu install instructions](http://torch.ch/docs/getting-started.html#_). However, GPU acceleration requires PCIe passthrough, which can be something from difficult to impossible to get working on Windows.
 
 
 
@@ -34,18 +46,9 @@ There are some community-built Windows binaries available at least here:
 
 **Note**: These are _not_ official builds and they are not verified in any way by the Torch maintainers. Use at your own risk!
 
-(32 vs. 64 bit builds?)
-
-(SSE, AVX, ..: Binaries built for a CPU that supports certain extensions will crash on older CPUs. Ideal solution: use a compiler that supports CPU dispatching. At least the Intel compiler should be able to do this.)
-
 
 
 ## Building from sources
-
-
-### Caveats
-- Windows is not officially supported.  These notes are best-effort, supplied by the community, your mileage may vary.  If you find some way(s) of improving these instructions, please go ahead and update this page, and/or post into the unofficial de facto discussion thread at [Add support for compilation on Windows using mingw32](https://github.com/torch/torch7/pull/287#issuecomment-243622035)
-- These instructions are a very beta interpretation of the experiences of unsupported community users on this unsupported Windows platform
 
 
 ### Using MinGW
