@@ -34,7 +34,8 @@ There are several options to run Torch on Windows. At the moment, the easiest ap
 - These instructions are a very beta interpretation of the experiences of unsupported community users on this unsupported Windows platform
 
 > Todo list
-- Expand the build instructions
+- Expand / consolidate the build instructions
+- GPU support: Add instructions for OpenCL and CUDA versions of everything (blas, torch, nn, ...)
 - Build script: We seem to now have an initial process for producing a working build. Writing this knowledge into a build script would make it less painful for new users to build Torch.
   - Automated builds (CI): Once there is a build script, it could be used for setting up a CI server for automatically producing up-to-date Windows binaries.
 - 64-bit build: The current process is for producing a 32-bit build. Someone could try it out with a toolchain supporting 64-bit targets (MSYS2 / MinGW-w64, Visual Studio, .. ?)
