@@ -53,7 +53,7 @@ Some external instructions [here](http://spotofdata.com/installing-torch-gentoo/
 Windows
 -------
 
-Windows is not officially supported, but there exist a few options for Windows users. More information here: [Running Torch on Windows](https://github.com/torch/torch7/wiki/Windows)
+[Running Torch on Windows](https://github.com/torch/torch7/wiki/Windows)
 
 iOS
 ---------------
