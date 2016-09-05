@@ -6,25 +6,25 @@
     + [Using MinGW](#using-mingw)
     + [Using Visual Studio](#using-visual-studio)
       - [Prerequisites](#prerequisites)
-      - [LuaJIT + LuaRocks](#luajit---luarocks)
+      - [LuaJIT and LuaRocks](#luajit-and-luarocks)
       - [Torch](#torch)
       - [The nn package](#the-nn-package)
       - [The trepl package](#the-trepl-package)
       - [Other packages](#other-packages)
       - [Final notes](#final-notes)
-    + [Appendix: Prerequisites](#appendix--prerequisites)
+    + [Appendix: Prerequisites](#appendix-prerequisites)
       - [Git](#git)
       - [CMake](#cmake)
-      - [MinGW / MSYS 32-bit](#mingw---msys-32-bit)
+      - [MinGW and MSYS](#mingw-and-msys)
       - [Visual Studio](#visual-studio)
       - [LAPACK](#lapack)
-    + [Appendix: Other tools](#appendix--other-tools)
+    + [Appendix: Other tools](#appendix-other-tools)
       - [Cmder](#cmder)
       - [ZeroBrane Studio integration](#zerobrane-studio-integration)
-  * [Known runtime issues with native (non-VM) builds](#known-runtime-issues-with-native--non-vm--builds)
+  * [Known runtime issues with native builds](#known-runtime-issues-with-native-builds)
     + [Loading .t7 files](#loading-t7-files)
 
-<!-- TOC generator: http://ecotrust-canada.github.io/markdown-toc/ -->
+<!-- TOC generator: http://ecotrust-canada.github.io/markdown-toc/ Note: screws up non-alnum chars in headers (eg, ':' in appendices) -> verify and fix by hand after re-generating. -->
 
 
 There are several options to run Torch on Windows. At the moment, the easiest approach is to run Ubuntu inside a virtual machine and install Torch there. This way everything just works, but the downside is that you will quite likely lose GPU acceleration. Another option is to download and try, at your own risk, community-built Windows binaries from the discussion forums. Finally, you can try to build Torch from the sources, but note that this is somewhat tricky at the moment!
@@ -91,14 +91,14 @@ With the above, I just pulled the latest code from GitHub and built Torch 7. Cur
 - [Git](#git)
 - [CMake](#cmake)
 - [Visual Studio](#visual-studio)
-- BLAS (eg, [LAPACK](#lapack)
-- If building LAPACK from sources: [MinGW / MSYS](#mingw---msys-32-bit)
+- BLAS (eg, [LAPACK](#lapack))
+- If building LAPACK from sources: [MinGW / MSYS](#mingw-and-msys)
 - Optional: [Cmder](#cmder)
 
 These instructions assume that you use Cmder. You can use the Windows Developer Command Prompt or any other alternative, too.
 
 
-#### LuaJIT + LuaRocks
+#### LuaJIT and LuaRocks
 
 We will install from the main Torch repo while following [diz-vara's build instructions](https://github.com/diz-vara/luajit-rocks) (mostly). You get LuaJIT 2.1 if you add -DWITH_LUAJIT21=ON to both of the cmake commands below, otherwise it will be LuaJIT 2.0. The build commands in the instructions might produce a debug build of LuaJIT, for some odd reason (Torch runs considerably slower with it). -DCMAKE_BUILD_TYPE=Release makes sure that we get a release version.
 
@@ -264,7 +264,7 @@ PortableGit or Git for Windows are some possible options. Cmder seems to come wi
 Install CMake as usual, then make sure that you have it's executable in your PATH.
 
 
-#### MinGW / MSYS 32-bit
+#### MinGW and MSYS
 
 Use the MinGW installer and install all meta-packages from the "Basic Setup" section. As usual with tools from the other side, don't install to Program Files (due to spaces).
 
@@ -350,7 +350,7 @@ Remote debugging (<https://studio.zerobrane.com/doc-remote-debugging>) seems to 
 
 
 
-## Known runtime issues with native (non-VM) builds
+## Known runtime issues with native builds
 
 ### Loading .t7 files
 
