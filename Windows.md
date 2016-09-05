@@ -88,12 +88,12 @@ With the above, I just pulled the latest code from GitHub and built Torch 7. Cur
 
 #### Prerequisites
 
-- [Git](https://github.com/torch/torch7/wiki/Windows#Git)
-- [CMake](https://github.com/torch/torch7/wiki/Windows#CMake)
-- [Visual Studio](https://github.com/torch/torch7/wiki/Windows#Visual_Studio)
-- BLAS (eg, [LAPACK](https://github.com/torch/torch7/wiki/Windows#LAPACK))
-- If building LAPACK from sources: [MinGW / MSYS](https://github.com/torch/torch7/wiki/Windows#mingw---msys--32-bit-)
-- Optional: [Cmder](https://github.com/torch/torch7/wiki/Windows#Cmder)
+- [Git](#git)
+- [CMake](#cmake)
+- [Visual Studio](#visual-studio)
+- BLAS (eg, [LAPACK](#lapack--blas-)
+- If building LAPACK from sources: [MinGW / MSYS](#mingw---msys--32-bit-)
+- Optional: [Cmder](#cmder)
 
 These instructions assume that you use Cmder. You can use the Windows Developer Command Prompt or any other alternative, too.
 
@@ -278,7 +278,7 @@ Notes:
 
 #### Visual Studio
 
-Visual Studio Community 2015 seems to work just fine. During installation, choose Custom Installation and check the C/C++ tools. When entering build commands, either use the Windows Developer Command Prompt (installed by VS) or use an alternative like [Cmder](https://github.com/torch/torch7/wiki/Windows#Cmder).
+Visual Studio Community 2015 seems to work just fine. During installation, choose Custom Installation and check the C/C++ tools. When entering build commands, either use the Windows Developer Command Prompt (installed by VS) or use an alternative like [Cmder](#cmder).
 
 
 #### LAPACK (BLAS)
