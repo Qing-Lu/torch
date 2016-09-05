@@ -15,9 +15,9 @@
     + [Appendix: Prerequisites](#appendix--prerequisites)
       - [Git](#git)
       - [CMake](#cmake)
-      - [MinGW / MSYS (32-bit)](#mingw---msys--32-bit-)
+      - [MinGW / MSYS 32-bit](#mingw---msys-32-bit)
       - [Visual Studio](#visual-studio)
-      - [LAPACK (BLAS)](#lapack--blas-)
+      - [LAPACK](#lapack)
     + [Appendix: Other tools](#appendix--other-tools)
       - [Cmder](#cmder)
       - [ZeroBrane Studio integration](#zerobrane-studio-integration)
@@ -91,8 +91,8 @@ With the above, I just pulled the latest code from GitHub and built Torch 7. Cur
 - [Git](#git)
 - [CMake](#cmake)
 - [Visual Studio](#visual-studio)
-- BLAS (eg, [LAPACK](#lapack--blas-)
-- If building LAPACK from sources: [MinGW / MSYS](#mingw---msys--32-bit-)
+- BLAS (eg, [LAPACK](#lapack)
+- If building LAPACK from sources: [MinGW / MSYS](#mingw---msys-32-bit)
 - Optional: [Cmder](#cmder)
 
 These instructions assume that you use Cmder. You can use the Windows Developer Command Prompt or any other alternative, too.
@@ -264,7 +264,7 @@ PortableGit or Git for Windows are some possible options. Cmder seems to come wi
 Install CMake as usual, then make sure that you have it's executable in your PATH.
 
 
-#### MinGW / MSYS (32-bit)
+#### MinGW / MSYS 32-bit
 
 Use the MinGW installer and install all meta-packages from the "Basic Setup" section. As usual with tools from the other side, don't install to Program Files (due to spaces).
 
@@ -281,7 +281,7 @@ Notes:
 Visual Studio Community 2015 seems to work just fine. During installation, choose Custom Installation and check the C/C++ tools. When entering build commands, either use the Windows Developer Command Prompt (installed by VS) or use an alternative like [Cmder](#cmder).
 
 
-#### LAPACK (BLAS)
+#### LAPACK
 
 Following the instructions at <http://icl.cs.utk.edu/lapack-for-windows/lapack/#build> (loosely).
 
