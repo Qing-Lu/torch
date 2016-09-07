@@ -296,7 +296,11 @@ Notes:
 
 #### Visual Studio
 
-Visual Studio Community 2015 seems to work just fine. During installation, choose Custom Installation and check the C/C++ tools. When entering build commands, either use the Windows Developer Command Prompt (installed by VS) or use an alternative like [Cmder](#cmder).
+Visual Studio Community 2015 seems to work just fine. During installation, choose Custom Installation and check the C/C++ tools. When entering build commands, use one of the following shortcuts (installed by VS):
+- VS2015 x86 Native Tools Command Prompt (32-bit toolchain)
+- VS2015 x64 Native Tools Command Prompt (64-bit toolchain)
+
+or use an alternative like [Cmder](#cmder).
 
 
 #### LAPACK
