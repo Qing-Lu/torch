@@ -107,9 +107,9 @@ You can choose between a 32-bit and a 64-bit build by running the following buil
 
 We will install from the main Torch repo while following [diz-vara's build instructions](https://github.com/diz-vara/luajit-rocks) (mostly). You get LuaJIT 2.1 if you add -DWITH_LUAJIT21=ON to both of the cmake commands below, otherwise it will be LuaJIT 2.0. The build commands in the instructions might produce a debug build of LuaJIT, for some odd reason (Torch runs considerably slower with it). -DCMAKE_BUILD_TYPE=Release makes sure that we get a release version.
 
-Choose a directory into which you want to install LuaJIT, LuaRocks and Torch. In the following, it shall be X:\torch\install. Note, however, that the installation process will install stuff also into ..\share, ie, into X:\share in this case; you might want to add an additional directory level to keep things clean. Now, add the directory you chose to your PATH, while making sure that it comes _before_ CMake's bin directory.
+Choose a directory into which you want to install LuaJIT, LuaRocks and Torch. In the following, it shall be X:\torch\install. (The installation process will install stuff also into ..\share, so an additional directory level helps to keep things clean.) Now, add the directory you chose to your PATH, while making sure that it comes _before_ CMake's bin directory.
 
-Start Cmder and make sure that the VS2015 task is active (see above). Cd into some temporary directory, then:
+Start Cmder and make sure that the correct VS2015 task is active (see above). Cd into some temporary directory, then:
 
     git clone https://github.com/torch/luajit-rocks.git
     cd luajit-rocks
