@@ -164,6 +164,8 @@ Back in Cmder's VS2015 task:
     cd torch7
     luarocks make ../torch-scm-1.rockspec
 
+If you are building in 64-bit mode, then the Torch configuration phase might stall at the tests BLAS_F2C_DOUBLE_WORKS and BLAS_F2C_FLOAT_WORKS. Just kill the test processes via task manager (they have names like cmTC_3d42e.exe and they start hogging the CPU after a while). I have no idea why this happens and whether this has any side effects.
+
 Test Torch by launching the Torch task from Cmder and then type:
 
     require('torch')
