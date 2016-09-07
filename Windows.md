@@ -102,7 +102,7 @@ These instructions assume that you use Cmder. You can use the Windows Developer 
 
 We will install from the main Torch repo while following [diz-vara's build instructions](https://github.com/diz-vara/luajit-rocks) (mostly). You get LuaJIT 2.1 if you add -DWITH_LUAJIT21=ON to both of the cmake commands below, otherwise it will be LuaJIT 2.0. The build commands in the instructions might produce a debug build of LuaJIT, for some odd reason (Torch runs considerably slower with it). -DCMAKE_BUILD_TYPE=Release makes sure that we get a release version.
 
-Choose a directory into which you want to install LuaJIT, LuaRocks and Torch. In the following, it shall be X:\torch-luajit-rocks. Note, however, that the installation process will install stuff also into ..\share, ie, into X:\share in this case; you might want to add an additional directory level to keep things clean. Now, add the directory you chose to your PATH, while making sure that it comes _before_ CMake's bin directory.
+Choose a directory into which you want to install LuaJIT, LuaRocks and Torch. In the following, it shall be X:\torch\install. Note, however, that the installation process will install stuff also into ..\share, ie, into X:\share in this case; you might want to add an additional directory level to keep things clean. Now, add the directory you chose to your PATH, while making sure that it comes _before_ CMake's bin directory.
 
 Start Cmder and make sure that the VS2015 task is active (see above). Cd into some temporary directory, then:
 
@@ -110,15 +110,15 @@ Start Cmder and make sure that the VS2015 task is active (see above). Cd into so
     cd luajit-rocks
     mkdir build
     cd build
-    cmake .. -DCMAKE_INSTALL_PREFIX=X:\torch-luajit-rocks -G "NMake Makefiles" -DWIN32=1 -DCMAKE_BUILD_TYPE=Release
+    cmake .. -DCMAKE_INSTALL_PREFIX=X:/torch/install -G "NMake Makefiles" -DWIN32=1 -DCMAKE_BUILD_TYPE=Release
     nmake
-    cmake -DCMAKE_INSTALL_PREFIX=X:/torch-luajit-rocks -G "NMake Makefiles" -DWIN32=1 -P cmake_install.cmake -DCMAKE_BUILD_TYPE=Release
+    cmake -DCMAKE_INSTALL_PREFIX=X:/torch/install -G "NMake Makefiles" -DWIN32=1 -P cmake_install.cmake -DCMAKE_BUILD_TYPE=Release
 
 Set the following environment variables: (these have been modified a bit from diz-vara's instructions, so as to get some other packages to build)
 
-    LUA_CPATH = X:\torch-luajit-rocks\?.DLL;X:\torch-luajit-rocks\LIB\?.DLL;?.DLL
-    LUA_DEV = X:\torch-luajit-rocks
-    LUA_PATH = ;;X:\torch-luajit-rocks\?;X:\torch-luajit-rocks\?.lua;X:\torch-luajit-rocks\lua\?;X:\torch-luajit-rocks\lua\?.lua;X:\torch-luajit-rocks\lua\?\init.lua
+    LUA_CPATH = X:/torch/install/?.DLL;X:/torch/install/LIB/?.DLL;?.DLL
+    LUA_DEV = X:/torch/install
+    LUA_PATH = ;;X:/torch/install/?;X:/torch/install/?.lua;X:/torch/install/lua/?;X:/torch/install/lua/?.lua;X:/torch/install/lua/?/init.lua
 
 Test LuaJIT: Completely restart Cmder, then open the Torch task (eg, via the down arrow next to the green plus sign at lower right corner). Try writing some Lua to make sure that the REPL works.
 
@@ -127,9 +127,9 @@ Test LuaRocks: Within Cmder, ctrl-tab back to the VS2015 task and type: luarocks
 
 #### Torch
 
-The instructions assume that LuaJIT + LuaRocks was installed to X:\torch-luajit-rocks and LAPACK was installed to X:\lapack. Substitute paths accordingly.
+The instructions assume that LuaJIT + LuaRocks was installed to X:\torch\install and LAPACK was installed to X:\lapack. Substitute paths accordingly.
 
-Create the file X:\torch-luajit-rocks\cmake.cmd and add the following content:
+Create the file X:\torch\install\cmake.cmd and add the following content:
 
     if %1 == -E  (
     cmake.exe  %* 
@@ -137,7 +137,7 @@ Create the file X:\torch-luajit-rocks\cmake.cmd and add the following content:
     cmake.exe -G "NMake Makefiles"  -DWIN32=1 -dLUA_WIN -DCMAKE_LINK_FLAGS:implib=libluajit.lib -DLUALIB=libluajit %*
     )
 
-This is from <https://github.com/torch/paths/issues/9> , except -DLUALIB=libluajit has been added (needed to compile the sys package later on). Double-check that X:\torch-luajit-rocks is in your PATH _before_ CMake's bin directory.
+This is from <https://github.com/torch/paths/issues/9> , except -DLUALIB=libluajit has been added (needed to compile the sys package later on). Double-check that X:\torch\install is in your PATH _before_ CMake's bin directory.
 
 Now, in Cmder with VS2015 task active, cd into some temporary directory and write:
 
@@ -151,7 +151,7 @@ Back in Cmder's VS2015 task:
 
     git clone git://github.com/torch/torch7.git
     cd torch7
-    luarocks make ..\torch-scm-1.rockspec
+    luarocks make ../torch-scm-1.rockspec
 
 Test Torch by launching the Torch task from Cmder and then type:
 
@@ -327,7 +327,7 @@ You might want to use Cmder to replace the Windows Developer Command Prompt to m
   `cmd /k ""%VS140COMNTOOLS%VsDevCmd.bat" & "%ConEmuDir%\..\init.bat"" -new_console:d:"X:\work\torch_projects":t:"VS2015"`
 
 1. Create a new task for Torch: Go to Settings -> Startup -> Tasks and create a new task. Name it Torch or something and add the following string as the startup command (replace the paths with whatever you are going to use):
-  `X:\torch-luajit-rocks\luajit.exe -new_console:d:"X:\work\torch_projects":t:"Torch"`
+  `X:\torch\install\luajit.exe -new_console:d:"X:\work\torch_projects":t:"Torch"`
 
 Aliases can be added as usual (they persist restarts): `alias ll=ls -la --show-control-chars -F --color $*`
 Adding Sublime Text 3's program directory to your path lets you use the command "subl" to quickly open files (for deeper integration, see eg http://goo.gl/yF173L ).
@@ -339,7 +339,7 @@ Then some patching: command line wrapping might be broken when inside git repos.
 
 #### ZeroBrane Studio integration
 
-The instructions at <http://notebook.kulchenko.com/zerobrane/torch-debugging-with-zerobrane-studio> seem to work, except that you might have to point ZBS to the LuaJIT executable instead of the installation directory: `path.torch = [[X:/torch-luajit-rocks/luajit.exe]]`
+The instructions at <http://notebook.kulchenko.com/zerobrane/torch-debugging-with-zerobrane-studio> seem to work, except that you might have to point ZBS to the LuaJIT executable instead of the installation directory: `path.torch = [[X:/torch/install/luajit.exe]]`
 
 The examples worked fine when executed from a script file, but using Torch from the ZBS's REPL did not work well (ZBS REPL seems to ignore the Lua interpreter setting and consequently uses the built-in, older version of LuaJIT).
 
