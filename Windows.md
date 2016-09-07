@@ -15,7 +15,8 @@
     + [Appendix: Prerequisites](#appendix-prerequisites)
       - [Git](#git)
       - [CMake](#cmake)
-      - [MinGW and MSYS](#mingw-and-msys)
+      - [MinGW and MSYS 32-bit](#mingw-and-msys-32-bit)
+      - [MSYS2 64-bit](#msys2-64-bit)
       - [Visual Studio](#visual-studio)
       - [LAPACK](#lapack)
     + [Appendix: Other tools](#appendix-other-tools)
@@ -264,16 +265,33 @@ PortableGit or Git for Windows are some possible options. Cmder seems to come wi
 Install CMake as usual, then make sure that you have it's executable in your PATH.
 
 
-#### MinGW and MSYS
+#### MinGW and MSYS 32-bit
 
-Use the MinGW installer and install all meta-packages from the "Basic Setup" section. As usual with tools from the other side, don't install to Program Files (due to spaces).
+Use the MinGW installer from <http://www.mingw.org/> and install all meta-packages from the "Basic Setup" section. As usual with tools from the other side, don't install to Program Files (due to spaces).
 
 Add `C:\MinGW /mingw` (or whatever path you chose) to the MSYS etc/fstab file, as instructed at <http://www.mingw.org/wiki/getting_started> -> After Installing You Should ...
 
 Notes:
 - The package manager is at bin/mingw-get.exe
 - The MSYS environment can be started via msys\1.0\msys.bat
-- You might _not_ want to add the MinGW bin directory to PATH (at least if using MinGW only for BLAS and building the rest with VS)
+- You might _not_ want to add the bin directory to your PATH
+
+
+#### MSYS2 64-bit
+
+Use the 64-bit installer (msys2-x86_64) from the [MSYS2 site](https://msys2.github.io/). As usual with tools from the other side, don't install to Program Files (due to spaces).
+
+Follow the instructions at the MSYS2 site for updating everything.
+- If prompted to force close the window and restart MSYS2, you might need to also manually kill pacman.exe via task manager.
+- The update may break your MSYS2 Shell shortcut. Fix it by editing the shortcut file and changing the suffix of the target from .bat to .cmd.
+
+Now, install some packages. Open the MSYS2 Shell and enter:
+
+    pacman -S wget tar gcc gcc-fortran make
+
+Notes:
+- The MSYS2 environment can be started via the MSYS2 Shell shortcut
+- You might _not_ want to add the bin directory to your PATH
 
 
 #### Visual Studio
