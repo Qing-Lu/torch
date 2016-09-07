@@ -347,11 +347,16 @@ You might want to use Cmder to replace the Windows Developer Command Prompt to m
 
 1. Download and install Cmder, or Cmder Lite if you already have another Git client installed.
 
-1. Create a new task for VS: Go to Settings -> Startup -> Tasks and create a new task. Name it VS2015 or something, make it the default task, and add the following string as the startup command (replace the project path with whatever you have):
-  `cmd /k ""%VS140COMNTOOLS%VsDevCmd.bat" & "%ConEmuDir%\..\init.bat"" -new_console:d:"X:\work\torch_projects":t:"VS2015"`
+1. 32-bit toolchain: Create a new task for VS: Go to Settings -> Startup -> Tasks and create a new task. Name it "VS2015 x86" or something and add the following string as the startup command (replace the project path with whatever you have):
+  `cmd /k ""%VS140COMNTOOLS%..\..\VC\vcvarsall.bat" & "%ConEmuDir%\..\init.bat"" -new_console:d:"X:\work":t:"VS2015 x86"`
+
+1. 64-bit toolchain: Repeat as above, except name the task "VS2015 x64" or something and use the following startup command:
+  `cmd /k ""%VS140COMNTOOLS%..\..\VC\vcvarsall.bat" amd64 & "%ConEmuDir%\..\init.bat"" -new_console:d:"X:\work":t:"VS2015 x64"`
 
 1. Create a new task for Torch: Go to Settings -> Startup -> Tasks and create a new task. Name it Torch or something and add the following string as the startup command (replace the paths with whatever you are going to use):
   `X:\torch\install\luajit.exe -new_console:d:"X:\work\torch_projects":t:"Torch"`
+
+You might want to make the toolchain that you intend to use the default one, so as to avoid accidentally compiling with the wrong one.
 
 Aliases can be added as usual (they persist restarts): `alias ll=ls -la --show-control-chars -F --color $*`
 Adding Sublime Text 3's program directory to your path lets you use the command "subl" to quickly open files (for deeper integration, see eg http://goo.gl/yF173L ).
