@@ -115,9 +115,11 @@ Start Cmder and make sure that the correct VS2015 task is active (see above). Cd
     cd luajit-rocks
     mkdir build
     cd build
-    cmake .. -DCMAKE_INSTALL_PREFIX=X:/torch/install -G "NMake Makefiles" -DWIN32=1 -DCMAKE_BUILD_TYPE=Release
+    cmake .. -DCMAKE_INSTALL_PREFIX=X:/torch/install -G "NMake Makefiles" -DCMAKE_BUILD_TYPE=Release
     nmake
-    cmake -DCMAKE_INSTALL_PREFIX=X:/torch/install -G "NMake Makefiles" -DWIN32=1 -P cmake_install.cmake -DCMAKE_BUILD_TYPE=Release
+    cmake -DCMAKE_INSTALL_PREFIX=X:/torch/install -G "NMake Makefiles" -P cmake_install.cmake -DCMAKE_BUILD_TYPE=Release
+
+_Note_: The original instructions had an additional -DWIN32=1 option in both cmake commands! Everything seems to work without it, too. (Is it important, anyone?)
 
 Set the following environment variables: (these have been modified a bit from diz-vara's instructions, so as to get some other packages to build)
 
@@ -139,10 +141,14 @@ Create the file X:\torch\install\cmake.cmd and add the following content:
     if %1 == -E  (
     cmake.exe  %* 
     ) else (
-    cmake.exe -G "NMake Makefiles"  -DWIN32=1 -dLUA_WIN -DCMAKE_LINK_FLAGS:implib=libluajit.lib -DLUALIB=libluajit %*
+    cmake.exe -G "NMake Makefiles" -DCMAKE_LINK_FLAGS:implib=libluajit.lib -DLUALIB=libluajit %*
     )
 
-This is from <https://github.com/torch/paths/issues/9> , except -DLUALIB=libluajit has been added (needed to compile the sys package later on). Double-check that X:\torch\install is in your PATH _before_ CMake's bin directory.
+This is from <https://github.com/torch/paths/issues/9> , except -DLUALIB=libluajit has been added (needed to compile the sys package later on).
+
+_Note_: The original file had the additional cmake options -DWIN32=1 and -dLUA_WIN [sic]! Everything seems to work without them, too. (Are they important, anyone?)
+
+Double-check that X:\torch\install is in your PATH _before_ CMake's bin directory.
 
 Now, in Cmder with VS2015 task active, cd into some temporary directory and write:
 
