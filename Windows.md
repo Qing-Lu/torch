@@ -98,6 +98,10 @@ With the above, I just pulled the latest code from GitHub and built Torch 7. Cur
 
 These instructions assume that you use Cmder. You can use the Windows Developer Command Prompt or any other alternative, too.
 
+You can choose between a 32-bit and a 64-bit build by running the following build process in the corresponding environment.
+- 32-bit: use the "VS2015 x86" task in Cmder or the VS2015 x86 Native Tools Command Prompt
+- 64-bit: use the "VS2015 x64" task in Cmder or the VS2015 x64 Native Tools Command Prompt
+
 
 #### LuaJIT and LuaRocks
 
