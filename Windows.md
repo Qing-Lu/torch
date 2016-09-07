@@ -128,7 +128,7 @@ Test LuaRocks: Within Cmder, ctrl-tab back to the VS2015 task and type: luarocks
 
 #### Torch
 
-The instructions assume that LuaJIT + LuaRocks was installed to X:\torch\install and LAPACK was installed to X:\lapack. Substitute paths accordingly.
+The instructions assume that LuaJIT + LuaRocks was installed to X:\torch\install and LAPACK was installed to X:\torch\lapack. Substitute paths accordingly.
 
 Create the file X:\torch\install\cmake.cmd and add the following content:
 
@@ -146,7 +146,7 @@ Now, in Cmder with VS2015 task active, cd into some temporary directory and writ
 
 For some reason, I didn't manage to have CMake auto-detect LAPACK (nor any other BLAS library, for that matter). I proceeded as follows. Open the downloaded rockspec file and add the following to the configuration command (the one starting with `cmake .. -DCMAKE_BUILD_TYPE=Release -DLUA=$(LUA) [...]`), eg, add right before the `&& $(MAKE)` part:
 
-    -DBLAS_LIBRARIES=X:/lapack/lib/libblas.lib -DBLAS_INFO=generic -DLAPACK_LIBRARIES=X:/lapack/lib/liblapack.lib -DLAPACK_FOUND=TRUE
+    -DBLAS_LIBRARIES=X:/torch/lapack/lib/libblas.lib -DBLAS_INFO=generic -DLAPACK_LIBRARIES=X:/torch/lapack/lib/liblapack.lib -DLAPACK_FOUND=TRUE
 
 Back in Cmder's VS2015 task:
 
@@ -307,13 +307,13 @@ or use an alternative like [Cmder](#cmder).
 
 Following the instructions at <http://icl.cs.utk.edu/lapack-for-windows/lapack/#build> (loosely).
 
-Download and unzip <http://www.netlib.org/lapack/lapack-3.6.1.tgz> (or newer). Note that the site provides a precompiled version too, but it might be slower on your machine.
+Download and unzip <http://www.netlib.org/lapack/lapack-3.6.1.tgz> (or newer). Note that the site provides a prebuilt version too, but it might be slower on your machine (also, for me, VS recognized the prebuilt 64-bit lib as 32-bit).
 
-Open MSYS and cd into the extracted package, then:
+If you are building 32-bit libraries, then open MSYS. For 64-bit libraries, open MSYS2. Cd into the extracted package, then:
 
     mkdir build
     cd build
-    cmake-gui
+    cmake-gui   (you might have to use the full path to your cmake-gui.exe)
 
 In CMake's GUI:
 - Set paths: Build into the current directory, use sources from parent dir
@@ -321,18 +321,20 @@ In CMake's GUI:
 - Set variables:
   - BUILD_SHARED_LIBS = TRUE
   - CMAKE_GNUtoMS = TRUE
-  - CMAKE_INSTALL_PREFIX = X:/lapack   (or whatever; can't recall whether the slash really had to be a forward slash)
+  - CMAKE_INSTALL_PREFIX = X:/torch/lapack   (or whatever)
 - Configure
 - Generate
 
-Now close CMake and continue in the MSYS prompt:
+Now close CMake and continue in the MSYS or MSYS2 prompt:
 
     make
     make install
 
 To proceed with Torch installation, make sure that you have the following DLLs in your path. You can copy then all to the directory into which you are going to install Torch, then add that directory to your PATH.
-- All DLLs from X:\lapack\bin\
-- The following DLLs from the bin directory of your MinGW installation: libgcc_s_dw2-1.dll, libgfortran-3.dll, libquadmath-0.dll
+- All DLLs from X:\torch\lapack\bin\
+- The following DLLs from the bin directory of your MinGW installation:
+  - For 32-bit libraries and MSYS: libgcc_s_dw2-1.dll, libgfortran-3.dll, libquadmath-0.dll
+  - For 64-bit libraries and MSYS2: msys-2.0.dll, msys-gcc_s-seh-1.dll, msys-gfortran-3.dll, msys-quadmath-0.dll
 
 
 
