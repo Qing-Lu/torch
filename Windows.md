@@ -388,6 +388,8 @@ WARNING: This will work here, apparently because the dlls are used from differen
 
 Remote debugging (<https://studio.zerobrane.com/doc-remote-debugging>) seems to work, too, as long as you make sure that mobdebug.lua from C:\ZeroBraneStudio\lualibs\mobdebug is in your Lua search path (eg, copy it to the `lua` subdirectory in your Torch install directory).
 
+Debugging a 64-bit Torch build using ZBS seems to work just fine, too. You just need a 64-bit version of the socket library, which can be found [here](https://github.com/pkulchenko/ZeroBraneStudio/issues/500#issuecomment-122347792). Extract it under X:\torch\install\lib. You might need to copy also socket.lua from the ZBS installation, in addition to mobdebug.lua, into X:\torch\install\lua.
+
 
 
 ## Known runtime issues with native builds
