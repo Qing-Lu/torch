@@ -212,6 +212,8 @@ All tests should pass.
 
 #### The trepl package
 
+_Note_: This works only with a 32-bit build.
+
 Install readline for Windows from <http://gnuwin32.sourceforge.net/packages/readline.htm>
 
 Add the GnuWin32 bin directory to your PATH now and completely restart Cmder. (note that having this in your path all the time will mess up some earlier Torch installation steps)
@@ -234,6 +236,8 @@ In Cmder's VS2015 task:
 
 
 #### Other packages
+
+_Note_: Tested only with a 32-bit build.
 
 The following packages seem to at least compile/install just fine via luarocks (`luarocks install <packagename>`):
 
