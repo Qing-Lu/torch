@@ -161,7 +161,7 @@ Back in Cmder's VS2015 task:
 
     git clone git://github.com/torch/torch7.git
     cd torch7
-        (git checkout 7c740d5e8ec7fc10edbc3a75f2667e481eb47180)
+        (git checkout 7bbe17917ea560facdc652520e5ea01692e460d3)
     luarocks make ../torch-scm-1.rockspec
 
 (At the moment, the head version does not compile on Windows. If you get compilation errors, you might want to try the git checkout command above)
