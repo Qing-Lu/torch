@@ -316,7 +316,7 @@ or use an alternative like [Cmder](#cmder).
 
 #### LAPACK
 
-Following the instructions at <http://icl.cs.utk.edu/lapack-for-windows/lapack/#build> (loosely).
+Following the instructions at <http://icl.cs.utk.edu/lapack-for-windows/lapack/#build> (loosely). Note that using the GNUtoMS option requires that you have Visual Studio installed.
 
 Download and unzip <http://www.netlib.org/lapack/lapack-3.6.1.tgz> (or newer). Note that the site provides a prebuilt version too, but it might be slower on your machine (also, for me, VS recognized the prebuilt 64-bit lib as 32-bit).
 
