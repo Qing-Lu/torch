@@ -294,14 +294,16 @@ Use the 64-bit installer (msys2-x86_64) from the [MSYS2 site](https://msys2.gith
 
 Follow the instructions at the MSYS2 site for updating everything.
 - If prompted to force close the window and restart MSYS2, you might need to also manually kill pacman.exe via task manager.
-- The update may break your MSYS2 Shell shortcut. Fix it by editing the shortcut file and changing the suffix of the target from .bat to .cmd.
+- The update may break your MSYS2 Shell shortcuts. Fix it by editing the shortcut files: for MSYS2 Shell, change the suffix of the target from .bat to .cmd; for MinGW-w32 MinGW-w64 Shells, use the same cmd as with MSYS2 but add the options -mingw32 or -mingw64 after it.
 
 Now, install some packages. Open the MSYS2 Shell and enter:
 
-    pacman -S wget tar gcc gcc-fortran make
+    pacman -S git tar make mingw-w64-x86_64-gcc mingw-w64-x86_64-gcc-fortran
+        (don't install cmake, it won't work; you need to use the native Windows version of cmake)
 
 Notes:
-- The MSYS2 environment can be started via the MSYS2 Shell shortcut
+- The MSYS2 MSYS environment can be started via the MSYS2 Shell shortcut. Use this for package management etc.
+- The MSYS2 MinGW-w64 environment can be started via the MinGW-w64 Win64 Shell shortcut. Use this for compiling.
 - You might _not_ want to add the bin directory to your PATH
 
 
@@ -320,30 +322,18 @@ Following the instructions at <http://icl.cs.utk.edu/lapack-for-windows/lapack/#
 
 Download and unzip <http://www.netlib.org/lapack/lapack-3.6.1.tgz> (or newer). Note that the site provides a prebuilt version too, but it might be slower on your machine (also, for me, VS recognized the prebuilt 64-bit lib as 32-bit).
 
-If you are building 32-bit libraries, then open MSYS. For 64-bit libraries, open MSYS2. Cd into the extracted package, then:
+If you are building 32-bit libraries, then open MSYS. For 64-bit libraries, open the MSYS2 MinGW-w64 Shell (make sure that the command prompt shows the text `MINGW64`). Cd into the extracted package, then:
 
     mkdir build
     cd build
-    cmake-gui   (you might have to use the full path to your cmake-gui.exe)
-
-In CMake's GUI:
-- Set paths: Build into the current directory, use sources from parent dir
-- Configure: Select "MSYS Makefiles" and "Use default native compilers"
-- Set variables:
-  - BUILD_SHARED_LIBS = TRUE
-  - CMAKE_GNUtoMS = TRUE
-  - CMAKE_INSTALL_PREFIX = X:/torch/lapack   (or whatever)
-- Configure
-- Generate
-
-Now close CMake and continue in the MSYS or MSYS2 prompt:
-
+    cmake .. -DCMAKE_INSTALL_PREFIX=X:/torch/lapack -G "MSYS Makefiles" -DBUILD_SHARED_LIBS=1 -DCMAKE_GNUtoMS=1
+        (you might have to use the full cmake path)
     make
     make install
 
 To proceed with Torch installation, make sure that you have the following DLLs in your path. You can copy then all to the directory into which you are going to install Torch, then add that directory to your PATH.
 - All DLLs from X:\torch\lapack\bin\
-- The following DLLs from the bin directory of your MinGW installation:
+- The following DLLs from the bin directory of your MSYS(2) installation:
   - For 32-bit libraries and MSYS: libgcc_s_dw2-1.dll, libgfortran-3.dll, libquadmath-0.dll
   - For 64-bit libraries and MSYS2: msys-2.0.dll, msys-gcc_s-seh-1.dll, msys-gfortran-3.dll, msys-quadmath-0.dll
 
