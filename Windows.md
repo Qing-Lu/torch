@@ -335,7 +335,7 @@ To proceed with Torch installation, make sure that you have the following DLLs i
 - All DLLs from X:\torch\lapack\bin\
 - The following DLLs from the bin directory of your MSYS(2) installation:
   - For 32-bit libraries and MSYS: libgcc_s_dw2-1.dll, libgfortran-3.dll, libquadmath-0.dll
-  - For 64-bit libraries and MSYS2: msys-2.0.dll, msys-gcc_s-seh-1.dll, msys-gfortran-3.dll, msys-quadmath-0.dll
+  - For 64-bit libraries and MSYS2: libgcc_s_seh-1.dll, libgfortran-3.dll, libquadmath-0.dll, libwinpthread-1.dll
 
 
 
