@@ -161,16 +161,17 @@ Back in Cmder's VS2015 task:
 
     git clone git://github.com/torch/torch7.git
     cd torch7
+        (git checkout 7c740d5e8ec7fc10edbc3a75f2667e481eb47180)
     luarocks make ../torch-scm-1.rockspec
 
-If you are building in 64-bit mode, then the Torch configuration phase might stall at the tests BLAS_F2C_DOUBLE_WORKS and BLAS_F2C_FLOAT_WORKS. Just kill the test processes via task manager (they have names like cmTC_3d42e.exe and they start hogging the CPU after a while). I have no idea why this happens and whether this has any side effects.
+(At the moment, the head version does not compile on Windows. If you get compilation errors, you might want to try the git checkout command above)
 
 Test Torch by launching the Torch task from Cmder and then type:
 
     require('torch')
     torch.test()
 
-All tests should pass, except maybe the abs() test. (<https://github.com/torch/torch7/issues/627>, which seems to have been fixed a few days ago)
+All tests should pass.
 
 
 #### The nn package
