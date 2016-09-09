@@ -92,7 +92,7 @@ With the above, I just pulled the latest code from GitHub and built Torch 7. Cur
 - [CMake](#cmake)
 - [Visual Studio](#visual-studio)
 - BLAS (eg, [LAPACK](#lapack))
-- If building LAPACK from sources: [MinGW / MSYS](#mingw-and-msys)
+- If building LAPACK from sources: [MinGW and MSYS 32-bit](#mingw-and-msys-32-bit) or [MSYS2 64-bit](#msys2-64-bit)
 - Optional: [Cmder](#cmder)
 
 These instructions assume that you use Cmder. You can use the Windows Developer Command Prompt or any other alternative, too.
