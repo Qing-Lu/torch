@@ -22,6 +22,7 @@
     + [Appendix: Other tools](#appendix-other-tools)
       - [Cmder](#cmder)
       - [ZeroBrane Studio integration](#zerobrane-studio-integration)
+    + [Appendix: CI script](#ci-script)
   * [Known runtime issues with native builds](#known-runtime-issues-with-native-builds)
     + [Loading .t7 files](#loading-t7-files)
 
@@ -385,7 +386,15 @@ Remote debugging (<https://studio.zerobrane.com/doc-remote-debugging>) seems to 
 
 Debugging a 64-bit Torch build using ZBS seems to work just fine, too. You just need a 64-bit version of the socket library, which can be found [here](https://github.com/pkulchenko/ZeroBraneStudio/issues/500#issuecomment-122347792). Extract it under X:\torch\install\lib. You might need to copy also socket.lua from the ZBS installation, in addition to mobdebug.lua, into X:\torch\install\lua.
 
+### Appendix: CI Script
 
+There is a CI script in progress at: https://github.com/hughperkins/distro-cl/blob/distro-win/build_windows.bat
+
+(And a script to install msys64 at https://github.com/hughperkins/distro-cl/blob/distro-win/installdeps_win.bat )
+
+It seems plausible that if this script could be tweaked to work, then a CI box could be set up to build Windows binaries regularly.
+
+Currently there is a bug with building LAPACK, https://gist.github.com/hughperkins/e8e24522278ce5d98e48201cca030fbe
 
 ## Known runtime issues with native builds
 
