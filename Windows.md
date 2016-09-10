@@ -388,13 +388,11 @@ Debugging a 64-bit Torch build using ZBS seems to work just fine, too. You just 
 
 ### Appendix: CI Script
 
-There is a CI script in progress at: https://github.com/hughperkins/distro-cl/blob/distro-win/build_windows.bat
+There is a CI script at: https://github.com/hughperkins/distro-cl/blob/distro-win/build_windows.bat
 
 (And a script to install msys64 at https://github.com/hughperkins/distro-cl/blob/distro-win/installdeps_win.bat )
 
-It seems plausible that if this script could be tweaked to work, then a CI box could be set up to build Windows binaries regularly.
-
-Currently there is a bug with building LAPACK, https://gist.github.com/hughperkins/e8e24522278ce5d98e48201cca030fbe
+This will build the base `torch7` module, and run its unit tests.  In the future it could plausibly be extended to handle `nn`, and so on.
 
 ## Known runtime issues with native builds
 
