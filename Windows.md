@@ -22,7 +22,7 @@
     + [Appendix: Other tools](#appendix-other-tools)
       - [Cmder](#cmder)
       - [ZeroBrane Studio integration](#zerobrane-studio-integration)
-    + [Appendix: CI script](#ci-script)
+    + [Appendix: CI script](#appendix-ci-script)
   * [Known runtime issues with native builds](#known-runtime-issues-with-native-builds)
     + [Loading .t7 files](#loading-t7-files)
 
