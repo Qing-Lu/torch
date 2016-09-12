@@ -461,6 +461,7 @@ OpenCL
 * [cltorch](https://github.com/hughperkins/cltorch) - Torch OpenCL Implementation
 * [clnn](https://github.com/hughperkins/clnn) - Torch OpenCL Neural Network Implementation
 * [jtorch](https://github.com/jonathantompson/jtorch)  - Torch cross-platform OpenCL Neural Network Prediction
+* [pycltorch](https://github.com/hughperkins/pycltorch) - Wrappers for using cltorch/clnn from Python.
 
 Reinforcement Learning
 -------------
@@ -474,7 +475,7 @@ Miscellaneous
 Packages which I didn't know where to put
 * [re](https://github.com/rlowrance/re) - Real Estate software 
 * [lutorpy](https://github.com/imodpasteur/lutorpy) - A python library for bridging Lua/Torch and Python/Numpy.
-
+* [pytorch](https://github.com/hughperkins/pytorch) - Wrappers for using Lua and Torch from Python.
 
 Creating your own package
 =========================
