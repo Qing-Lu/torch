@@ -333,7 +333,7 @@ Following the instructions at <http://icl.cs.utk.edu/lapack-for-windows/lapack/#
 
 Download and unzip <http://www.netlib.org/lapack/lapack-3.6.1.tgz> (or newer). Note that the site provides a prebuilt version too, but it might be slower on your machine (also, for me, VS recognized the prebuilt 64-bit lib as 32-bit).
 
-If you are building 32-bit libraries, then open MSYS. For 64-bit libraries, open the MSYS2 MinGW-w64 Shell (make sure that the command prompt shows the text `MINGW64`). Cd into the extracted package, then:
+If you are building 64-bit libraries, then open the [MSYS2](#msys2) MinGW-w64 Win64 Shell. For 32-bit libraries, open the [MSYS2](#msys2) MinGW-w64 Win32 Shell. Make sure that the command prompt indicates the correct toolchain, either `MINGW64` or `MINGW32`. Cd into the extracted package, then:
 
     mkdir build
     cd build
@@ -345,8 +345,9 @@ If you are building 32-bit libraries, then open MSYS. For 64-bit libraries, open
 To proceed with Torch installation, make sure that you have the following DLLs in your path. You can copy then all to the directory into which you are going to install Torch, then add that directory to your PATH.
 - All DLLs from X:\torch\lapack\bin\
 - The following DLLs from the bin directory of your MSYS(2) installation:
-  - For 32-bit libraries and MSYS: libgcc_s_dw2-1.dll, libgfortran-3.dll, libquadmath-0.dll
-  - For 64-bit libraries and MSYS2: libgcc_s_seh-1.dll, libgfortran-3.dll, libquadmath-0.dll, libwinpthread-1.dll
+  - For 32-bit libraries: libgcc_s_dw2-1.dll
+  - For 64-bit libraries: libgcc_s_seh-1.dll
+  - For both 64-bit and 32-bit libraries: libgfortran-3.dll, libquadmath-0.dll, libwinpthread-1.dll (Note: if you installed both toolchains, then there will exist 64-bit and 32-bit versions of these; make sure to copy the correct ones!)
 
 
 
