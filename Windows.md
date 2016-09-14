@@ -284,9 +284,7 @@ Install CMake as usual, then make sure that you have it's executable in your PAT
 
 #### MSYS2
 
-The 64-bit version of MSYS2 provides toolchains for both 32-bit and 64-bit targets, so we are going to use it.
-
-Use the 64-bit installer (msys2-x86_64) from the [MSYS2 site](https://msys2.github.io/). As usual with tools from the other side, don't install to Program Files (due to spaces).
+The 64-bit version of MSYS2 provides toolchains for both 32-bit and 64-bit targets, so we are going to use it. Use the 64-bit installer (msys2-x86_64) from the [MSYS2 site](https://msys2.github.io/). As usual with tools from the other side, don't install to Program Files (due to spaces).
 
 Follow the instructions at the MSYS2 site for updating everything.
 - If prompted to force close the window and restart MSYS2, you might need to also manually kill pacman.exe via task manager.
@@ -301,14 +299,14 @@ Now, install some packages. Open the MSYS2 Shell and enter the following command
 
 Notes:
 - The MSYS2 MSYS environment can be started via the MSYS2 Shell shortcut. Use this for package management etc. Don't use this for compiling! 
-- The 64-bit toolchain can be used via the MinGW-w64 Win64 Shell shortcut. Use this for compiling 64-bit targets.
-- The 32-bit toolchain can be used via the MinGW-w64 Win32 Shell shortcut. Use this for compiling 32-bit targets.
+- The 64-bit toolchain can be used via the MinGW-w64 Win64 Shell shortcut.
+- The 32-bit toolchain can be used via the MinGW-w64 Win32 Shell shortcut.
 - You might _not_ want to add the bin directory to your PATH
 
 
 #### MSYS
 
-Note: [MSYS2](#msys2) provides both 32-bit and 64-bit toolchains, so you might want to use that in both cases!
+_Note_: [MSYS2](#msys2) provides both 32-bit and 64-bit toolchains, so you might want to use that in both cases!
 
 Use the MinGW installer from <http://www.mingw.org/> and install all meta-packages from the "Basic Setup" section. As usual with tools from the other side, don't install to Program Files (due to spaces).
 
