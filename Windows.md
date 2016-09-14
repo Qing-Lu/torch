@@ -15,8 +15,8 @@
     + [Appendix: Prerequisites](#appendix-prerequisites)
       - [Git](#git)
       - [CMake](#cmake)
-      - [MinGW and MSYS 32-bit](#mingw-and-msys-32-bit)
-      - [MSYS2 64-bit](#msys2-64-bit)
+      - [MSYS2](#msys2)
+      - [MSYS](#msys)
       - [Visual Studio](#visual-studio)
       - [LAPACK](#lapack)
     + [Appendix: Other tools](#appendix-other-tools)
@@ -93,7 +93,7 @@ With the above, I just pulled the latest code from GitHub and built Torch 7. Cur
 - [CMake](#cmake)
 - [Visual Studio](#visual-studio)
 - BLAS (eg, [LAPACK](#lapack))
-- If building LAPACK from sources: [MinGW and MSYS 32-bit](#mingw-and-msys-32-bit) or [MSYS2 64-bit](#msys2-64-bit)
+- If building LAPACK from sources: [MSYS2](#msys2)
 - Optional: [Cmder](#cmder)
 
 These instructions assume that you use Cmder. You can use the Windows Developer Command Prompt or any other alternative, too.
@@ -282,7 +282,33 @@ PortableGit or Git for Windows are some possible options. Cmder seems to come wi
 Install CMake as usual, then make sure that you have it's executable in your PATH.
 
 
-#### MinGW and MSYS 32-bit
+#### MSYS2
+
+The 64-bit version of MSYS2 provides toolchains for both 32-bit and 64-bit targets, so we are going to use it.
+
+Use the 64-bit installer (msys2-x86_64) from the [MSYS2 site](https://msys2.github.io/). As usual with tools from the other side, don't install to Program Files (due to spaces).
+
+Follow the instructions at the MSYS2 site for updating everything.
+- If prompted to force close the window and restart MSYS2, you might need to also manually kill pacman.exe via task manager.
+- The update may break your MSYS2 Shell shortcuts. Fix it by editing the shortcut files: for MSYS2 Shell, change the suffix of the target from .bat to .cmd; for MinGW-w32 MinGW-w64 Shells, use the same cmd as with MSYS2 but add the options -mingw32 or -mingw64 after it.
+
+Now, install some packages. Open the MSYS2 Shell and enter the following commands. The x86-64 packages are for 64-bit targets and the i686 packages are for 32-bit targets. Choose what you need or install both.
+
+    pacman -S git tar make
+        (don't install cmake, it won't work; you need to use the native Windows version of cmake)
+    pacman -S mingw-w64-x86_64-gcc mingw-w64-x86_64-gcc-fortran
+    pacman -S mingw-w64-i686-gcc mingw-w64-i686-gcc-fortran
+
+Notes:
+- The MSYS2 MSYS environment can be started via the MSYS2 Shell shortcut. Use this for package management etc. Don't use this for compiling! 
+- The 64-bit toolchain can be used via the MinGW-w64 Win64 Shell shortcut. Use this for compiling 64-bit targets.
+- The 32-bit toolchain can be used via the MinGW-w64 Win32 Shell shortcut. Use this for compiling 32-bit targets.
+- You might _not_ want to add the bin directory to your PATH
+
+
+#### MSYS
+
+Note: [MSYS2](#msys2) provides both 32-bit and 64-bit toolchains, so you might want to use that in both cases!
 
 Use the MinGW installer from <http://www.mingw.org/> and install all meta-packages from the "Basic Setup" section. As usual with tools from the other side, don't install to Program Files (due to spaces).
 
@@ -291,25 +317,6 @@ Add `C:\MinGW /mingw` (or whatever path you chose) to the MSYS etc/fstab file, a
 Notes:
 - The package manager is at bin/mingw-get.exe
 - The MSYS environment can be started via msys\1.0\msys.bat
-- You might _not_ want to add the bin directory to your PATH
-
-
-#### MSYS2 64-bit
-
-Use the 64-bit installer (msys2-x86_64) from the [MSYS2 site](https://msys2.github.io/). As usual with tools from the other side, don't install to Program Files (due to spaces).
-
-Follow the instructions at the MSYS2 site for updating everything.
-- If prompted to force close the window and restart MSYS2, you might need to also manually kill pacman.exe via task manager.
-- The update may break your MSYS2 Shell shortcuts. Fix it by editing the shortcut files: for MSYS2 Shell, change the suffix of the target from .bat to .cmd; for MinGW-w32 MinGW-w64 Shells, use the same cmd as with MSYS2 but add the options -mingw32 or -mingw64 after it.
-
-Now, install some packages. Open the MSYS2 Shell and enter:
-
-    pacman -S git tar make mingw-w64-x86_64-gcc mingw-w64-x86_64-gcc-fortran
-        (don't install cmake, it won't work; you need to use the native Windows version of cmake)
-
-Notes:
-- The MSYS2 MSYS environment can be started via the MSYS2 Shell shortcut. Use this for package management etc.
-- The MSYS2 MinGW-w64 environment can be started via the MinGW-w64 Win64 Shell shortcut. Use this for compiling.
 - You might _not_ want to add the bin directory to your PATH
 
 
