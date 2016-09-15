@@ -23,7 +23,7 @@
       - [Cmder](#cmder)
       - [ZeroBrane Studio integration](#zerobrane-studio-integration)
     + [Appendix: CI script](#appendix-ci-script)
-    + [Appendix: cutorch install](#appendix-cutorch_install)
+    + [Appendix: Installing cutorch](#appendix-installing-cutorch)
   * [Known runtime issues with native builds](#known-runtime-issues-with-native-builds)
     + [Loading .t7 files](#loading-t7-files)
 
