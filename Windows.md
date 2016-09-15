@@ -193,7 +193,7 @@ Now open the files ffi.h and test.c, and move the lines
 
 up into the preceding #else blocks in both files (the #else branch of the #ifdef _WIN32 test).
 
-Back in Cmder's VS2015 task:
+Back in Cmder's VS2015 task: (_Note_: there is a file with an identical name in the current directory; it won't work, so make sure that you have the `..\` part in the command)
 
     luarocks make ..\luaffi-scm-1.rockspec
 
