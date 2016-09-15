@@ -406,7 +406,7 @@ This will build the base `torch7` module, and run its unit tests.  In the future
 
 I'm keeping this separate from the above sections as this was my experience in installing, in particular, cutorch, after getting Lua, Torch and some other packages (like nn & nnx) installed.
 
-Note that the following instructions were performed for a 64-bit Luarocks version  installed in the directory `C:\luajit-rocks`
+Note that the following instructions were performed for a 64-bit Luarocks version  installed in the directory `C:\luajit-rocks` on my machine.
 
 Direct a command prompt to the `C:\luajit-rocks\luainstall` directory
 
