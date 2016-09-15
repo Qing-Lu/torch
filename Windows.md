@@ -23,6 +23,7 @@
       - [Cmder](#cmder)
       - [ZeroBrane Studio integration](#zerobrane-studio-integration)
     + [Appendix: CI script](#appendix-ci-script)
+    + [Appendix: cutorch install](#appendix-cutorch_install)
   * [Known runtime issues with native builds](#known-runtime-issues-with-native-builds)
     + [Loading .t7 files](#loading-t7-files)
 
@@ -399,6 +400,40 @@ There is a CI script at: https://github.com/hughperkins/distro-cl/blob/distro-wi
 (And a script to install msys64 at https://github.com/hughperkins/distro-cl/blob/distro-win/installdeps_win.bat )
 
 This will build the base `torch7` module, and run its unit tests.  In the future it could plausibly be extended to handle `nn`, and so on.
+
+
+### Appendix: Installing cutorch
+
+I'm keeping this separate from the above sections as this was my experience in installing, in particular, cutorch, after getting Lua, Torch and some other packages (like nn & nnx) installed.
+
+Note that the following instructions were performed for a 64-bit Luarocks version  installed in the directory `C:\luajit-rocks`
+
+Direct a command prompt to the `C:\luajit-rocks\luainstall` directory
+
+Typing `luarocks install cutorch` failed when implementing a cmake command, b/c the command is using a Linux -j argument related to the number of processors.
+
+To get around this, do the following (I got this idea online from 'smth chntla'):
+
+  cd into the C:\luajit-rocks\luainstall\luarocks folder
+  clone the cutorch source files with the command `git clone https://github.com/torch/cutorch`
+  Then edit the file `C:\luajit-rocks\luainstall\luarocks\cutorch\rocks\cutorch-scm-1.rockspec` by editing the cmake lines and deleting the -j options that specifies the number of processors (it is not critically important)
+
+Next step is, back in the command prompt, cd to the C:\luajit-rocks\luainstall\luarocks\cutorch directory and type `luarocks make rocks/cutorch-scm-1.rockspec`
+
+However, this gave an error related to the a.lib and a.exp files.  
+
+To overcome, do the following (got this online from Siavesh Gorji):
+
+   Open up the CMake Gui
+   In the source code entry put: `C:\luajit-rocks\luainstall\luarocks\cutorch`
+   Build the binaries at: `C:\luajit-rocks\luainstall\luarocks\cutorch\build`
+   Hit 'Configure' (you may get some warnings but should not get any errors)
+   Hit 'Generate' to generate the makefile you need.
+   Then go back to the command prompt and cd to C:\luajit-rocks\luainstall\luarocks\cutorch and run `luarocks make ./rocks/cutorch-scm-1.rockspec`   <= it takes about 10 minutes but cutorch should build.
+
+I hope the above helps someone navigate these waters - as it took me some time (and a lot of help from folks on the discussion boards!) to figure it out.
+
+
 
 ## Known runtime issues with native builds
 
