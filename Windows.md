@@ -414,9 +414,11 @@ Typing `luarocks install cutorch` failed when implementing a cmake command, b/c 
 
 To get around this, do the following (I got this idea online from 'smth chntla'):
 
-  cd into the C:\luajit-rocks\luainstall\luarocks folder
-  clone the cutorch source files with the command `git clone https://github.com/torch/cutorch`
-  Then edit the file `C:\luajit-rocks\luainstall\luarocks\cutorch\rocks\cutorch-scm-1.rockspec` by editing the cmake lines and deleting the -j options that specifies the number of processors (it is not critically important)
+   cd into the C:\luajit-rocks\luainstall\luarocks folder
+
+   clone the cutorch source files with the command `git clone https://github.com/torch/cutorch`
+
+   Then edit the file `C:\luajit-rocks\luainstall\luarocks\cutorch\rocks\cutorch-scm-1.rockspec` by editing the cmake lines and deleting the -j options that specifies the number of processors (it is not critically important)
 
 Next step is, back in the command prompt, cd to the C:\luajit-rocks\luainstall\luarocks\cutorch directory and type `luarocks make rocks/cutorch-scm-1.rockspec`
 
@@ -425,10 +427,15 @@ However, this gave an error related to the a.lib and a.exp files.
 To overcome, do the following (got this online from Siavesh Gorji):
 
    Open up the CMake Gui
+
    In the source code entry put: `C:\luajit-rocks\luainstall\luarocks\cutorch`
+
    Build the binaries at: `C:\luajit-rocks\luainstall\luarocks\cutorch\build`
+
    Hit 'Configure' (you may get some warnings but should not get any errors)
+
    Hit 'Generate' to generate the makefile you need.
+
    Then go back to the command prompt and cd to C:\luajit-rocks\luainstall\luarocks\cutorch and run `luarocks make ./rocks/cutorch-scm-1.rockspec`   <= it takes about 10 minutes but cutorch should build.
 
 I hope the above helps someone navigate these waters - as it took me some time (and a lot of help from folks on the discussion boards!) to figure it out.
