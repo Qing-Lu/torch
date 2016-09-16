@@ -440,9 +440,6 @@ Note that the following instructions were performed for a 64-bit Luarocks versio
 
 I hope the above helps someone navigate these waters - as it took me some time (and a lot of help from folks on the discussion boards!) to figure it out.
 
-Notes:
-- if you're using msvc 2015 to build, you need at least cuda 8.0 toolkit installed
-
 ## Known runtime issues with native builds
 
 ### Loading .t7 files
