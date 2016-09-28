@@ -100,6 +100,7 @@ luarocks install [packagename]
 Loading popular datasets 
 ============================
 * [MNIST Loader](https://github.com/andresy/mnist) - by Ronan Collobert
+* [CIFAR-10, CIFAR-100](https://github.com/soumith/cifar.torch) - CIFAR loader by Soumith Chintala
 * [Imagenet Loader](https://github.com/soumith/imagenetloader.torch)
 * [Imagenet multi-GPU training on AlexNet and Overfeat](https://github.com/soumith/imagenet-multiGPU.torch)
 * [Another imagenet loading + training by @eladhoffer](https://github.com/eladhoffer/ImageNet-Training)
