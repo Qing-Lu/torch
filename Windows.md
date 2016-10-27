@@ -4,7 +4,8 @@
   * [Binary downloads](#binary-downloads)
   * [Building from sources](#building-from-sources)
     + [Using MinGW](#using-mingw)
-    + [Using Visual Studio](#using-visual-studio)
+    + [Using MSVC automatically](#using-msvc-automatically)
+    + [Using Visual Studio manually](#using-visual-studio-manually)
       - [Prerequisites](#prerequisites)
       - [LuaJIT and LuaRocks](#luajit-and-luarocks)
       - [Torch](#torch)
@@ -86,7 +87,12 @@ Notes from jkjung-avt: "Specifically my build of Torch7 is with:
 With the above, I just pulled the latest code from GitHub and built Torch 7. Currently I have the following luarocks packages installed: argcheck, cwrap, dok, env, fftw3, gnuplot, graph, image, lua-cjson, luaffi, luafilesystem, luasocket, nn, nngraph, nnx, optim, paths, penlight, qtlua, qttorch, signal, sundown, sys, torch, trepl, xlua."
 
 
-### Using Visual Studio
+### Using MSVC automatically
+
+Before auto method is fully supported officially, please refer to this customized [distro](https://github.com/BTNC/distro-win) for automatic installation of the whole pack of Torch.
+
+
+### Using Visual Studio manually
 
 #### Prerequisites
 
