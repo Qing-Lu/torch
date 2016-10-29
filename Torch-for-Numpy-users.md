@@ -37,6 +37,7 @@ torch equivalents of numpy functions
 | np.fromiter | ???
 | np.fromstring | ???
 | np.loadtxt | ???
+| np.concatenate | torch.cat
 
 #### Numerical Ranges
 | Numpy            | Torch |
