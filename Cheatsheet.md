@@ -69,11 +69,17 @@ EC2 AMI with the following pre-installed packages:
 * CUDA
 * cuDNN
 * [torch-distro](https://github.com/soumith/torch-distro) (torch + common packages)
-* itorch
+* iTorch
 * Anaconda
 
 AMI Id: ami-b36981d8. (Can be launched using g2.2xlarge instance)   
 [Launch](https://console.aws.amazon.com/ec2/v2/home?region=us-east-1#LaunchInstanceWizard:ami=ami-b36981d8) an instance.
+
+EC2 Bitfusion AMI
+---------------
+EC2 AMI pre-installed with CUDA, cuDNN, [torch-distro](https://github.com/soumith/torch-distro) (torch + common packages), iTorch, Jupyter, and more. Also includes Bitfusion Boost which lets you combine multiple instances into a single virtual instance for max-performance applications and analysis without any code changes required.
+
+[Launch](https://aws.amazon.com/marketplace/pp/B01B4ZSX5S/ref=_ptnr_referral_docs_torch) an instance from the AWS Marketplace.
 
 Docker Images
 -------------
