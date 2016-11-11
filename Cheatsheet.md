@@ -27,15 +27,15 @@ Newbies
 =======
 1. Read this page end-to-end (especially the Gotchas)
 2. Install torch
-3. [Learn lua in 15 minutes](http://tylerneylon.com/a/learn-lua/)
-3. [Look at the tutorial](#tutorials-demos-by-category)
+3. [Go though chapter 1 of the video tutorials](https://github.com/Atcold/torch-Video-Tutorials)
+3. [Look at the coding tutorial](#tutorials-demos-by-category)
 4. Play around with the interpreter
 5. Create your own script
 6. [Create your own package](#creating-your-own-package)
 7. Contribute! :)
 
 If you are used to numpy, [have a look at this page](https://github.com/torch/torch7/wiki/Torch-for-Numpy-users)
-If you are used to Matlab, [have a look at this translation pdf](http://atamahjoubfar.github.io/Torch_for_Matlab_users.pdf)
+If you are used to Matlab, [have a look at this translation pdf](https://github.com/atamahjoubfar/Torch-for-Matlab-users/blob/master/Torch_for_Matlab_users.pdf)
 
 Installing and Running Torch
 ============================
@@ -147,7 +147,7 @@ Tutorials
   * [Language Model](http://dp.readthedocs.org/en/latest/languagemodeltutorial/index.html)
 * [Torch cheatsheet for Matlab users](https://github.com/atamahjoubfar/Torch-for-Matlab-users)
 * [Implementing LSTMs with nngraph](http://apaszke.github.io/lstm-explained.html)
-* [Torch Video Tutorials](https://github.com/Atcold/torch-Video-Tutorials)
+* [Torch Video Tutorials](https://github.com/Atcold/torch-Video-Tutorials): getting started, NN, CNN and RNN theory, implementation and training.
 
 Demos
 ------
@@ -492,6 +492,7 @@ You can quickly fork off of this example package:
 
 Debuggers / Visual Debuggers / IDEs
 ===================================
+* [Debugging tutorials](https://github.com/Atcold/torch-Developer-Guide#debugging) for *Lua* and *shared object* bindings
 * [ZeroBrane Studio](http://studio.zerobrane.com) - Provides a great IDE and visual debugging.
 * [LDT](http://www.eclipse.org/ldt/) - An eclipse plugin for Lua.
 
