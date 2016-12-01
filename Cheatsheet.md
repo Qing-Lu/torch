@@ -483,6 +483,7 @@ Packages which I didn't know where to put
 * [re](https://github.com/rlowrance/re) - Real Estate software 
 * [lutorpy](https://github.com/imodpasteur/lutorpy) - A python library for bridging Lua/Torch and Python/Numpy.
 * [pytorch](https://github.com/hughperkins/pytorch) - Wrappers for using Lua and Torch from Python.
+* [usegpu](https://github.com/lanpa/usegpu) - A convenient script to assign active GPU(s) for current session.
 
 Creating your own package
 =========================
