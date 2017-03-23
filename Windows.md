@@ -130,9 +130,9 @@ _Note_: The original instructions had an additional -DWIN32=1 option in both cma
 
 Set the following environment variables: (these have been modified a bit from diz-vara's instructions, so as to get some other packages to build)
 
-    LUA_CPATH = X:/torch/install/?.DLL;X:/torch/install/LIB/?.DLL;?.DLL
-    LUA_DEV = X:/torch/install
-    LUA_PATH = ;;X:/torch/install/?;X:/torch/install/?.lua;X:/torch/install/lua/?;X:/torch/install/lua/?.lua;X:/torch/install/lua/?/init.lua
+    set LUA_CPATH = X:/torch/install/?.DLL;X:/torch/install/LIB/?.DLL;?.DLL
+    set LUA_DEV = X:/torch/install
+    set LUA_PATH = ;;X:/torch/install/?;X:/torch/install/?.lua;X:/torch/install/lua/?;X:/torch/install/lua/?.lua;X:/torch/install/lua/?/init.lua
 
 Test LuaJIT: Completely restart Cmder, then open the Torch task (eg, via the down arrow next to the green plus sign at lower right corner). Try writing some Lua to make sure that the REPL works.
 
