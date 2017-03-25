@@ -349,7 +349,7 @@ If you are building 64-bit libraries, then open the [MSYS2](#msys2) MinGW-w64 Wi
     make
     make install
 
-To proceed with Torch installation, make sure that you have the following DLLs in your path. You can copy then all to the directory into which you are going to install Torch, then add that directory to your PATH.
+To proceed with Torch installation, make sure that you have the following DLLs in your path. You can copy these DLLs to the directory into which you are going to install Torch, then add that directory to your PATH.
 - All DLLs from X:\torch\lapack\bin\
 - The following DLLs from the bin directory of your MSYS2 installation:
   - For 32-bit libraries: libgcc_s_dw2-1.dll
