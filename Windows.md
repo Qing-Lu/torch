@@ -39,6 +39,7 @@ There are several options to run Torch on Windows. At the moment, the easiest ap
 
 > Todo list
 - Try building on Windows 10 using the [Windows Subsystem for Linux](https://msdn.microsoft.com/en-us/commandline/wsl/about)
+  - Running the Linux installation steps succeeds in the Windows Subsystem for Linux, although not much has been tested beyond running the 'tensors' demos.
 - GPU support: Add instructions for OpenCL and CUDA versions of everything (blas, torch, nn, ...)
 - Build script: We seem to now have an initial process for producing a working build. Writing this knowledge into a build script would make it less painful for new users to build Torch.
   - Automated builds (CI): Once there is a build script, it could be used for setting up a CI server for automatically producing up-to-date Windows binaries.
